@@ -1,0 +1,8 @@
+ NTv2 grid ETRF93/ETRS89 -> CH1903/LV95
+  Original source:
+    https://shop.swisstopo.admin.ch/en/products/geo_software/GIS_info
+  License:
+    These data sets may be freely distributed as long as the content is not changed. 
+  Available forms:
+    GSB
+      Original form

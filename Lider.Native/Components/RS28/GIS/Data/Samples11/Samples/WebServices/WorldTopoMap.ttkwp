@@ -1,0 +1,9 @@
+[TatukGIS Layer]
+Storage=WEBTILES
+Type=CUSTOM
+name=world_topo_map
+Caption=WorldTopoMap Tiles
+Url1=https://server.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer/tile/{level}/{row}/{col}.{ext}
+Format=png
+EndLevel=20
+Copyright=(c) Esri, Source: Esri, DeLorme, NAVTEQ, USGS, Intermap, iPC, NRCAN, METI, TomTom. 

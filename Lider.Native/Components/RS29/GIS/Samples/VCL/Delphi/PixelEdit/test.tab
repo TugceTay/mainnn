@@ -1,0 +1,11 @@
+!table
+!version 300
+!charset WindowsLatin1
+
+Definition Table
+  File "test.jpg"
+  Type "RASTER"
+  (-179.5,89.5) (0,0) Label "Pt1",
+  (179.5,89.5) (360,0) Label "Pt2",
+  (179.5,-90.5) (360,180) Label "Pt3"
+   CoordSys Earth Projection 1, 104 

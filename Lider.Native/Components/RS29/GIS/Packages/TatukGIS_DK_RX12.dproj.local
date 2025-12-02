@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899.12.30 00:00:00.000.800,C:\Lider.Native\Components\RS29\GIS\Source\Lider.CG.GIS.GeoCUDA.pas=</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.765,C:\Lider.Native\Components\RS29\GIS\Source\Lider.CG.GIS.GeoRtl.pas=</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.110,C:\Lider.Native\Components\RS29\GIS\Source\Lider.CG.GIS.GeoSlopeMap.pas=</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.705,C:\Lider.Native\Components\RS29\GIS\Source\Lider.CG.GIS.PVL.GeoControlLegendVectorWiz.pas=</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.028,C:\Lider.Native\Components\RS29\GIS\Source\Lider.CG.GIS.GeoPipeline.pas=</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.611,C:\Lider.Native\Components\RS29\GIS\Source\Lider.CG.GIS.GeoUtils.pas=</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.701,=FireDACCommon.dcp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.815,C:\Lider.Native\Components\RS29\GIS\Source\Lider.CG.GIS.GeoGeocoding.pas=</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.083,C:\Lider.Native\Components\RS29\GIS\Source\Lider.CG.GIS.GeoRasterAlgebra.pas=</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.140,C:\Lider.Native\Components\RS29\GIS\Source\Lider.CG.GIS.GeoVectorization.pas=</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.988,C:\Lider.Native\Components\RS29\GIS\Source\Lider.CG.GIS.GeoNetwork.pas=</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.687,=FireDACCommonDriver.dcp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.551,C:\Lider.Native\Components\RS29\GIS\Source\Lider.CG.GIS.GeoTopology.pas=</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.165,C:\Lider.Native\Components\RS29\GIS\Source\Lider.CG.GIS.GeoViewshed.pas=</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.747,C:\Lider.Native\Components\RS29\GIS\Source\Lider.CG.GIS.PVL.GeoPvlForms.pas=</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.851,C:\Lider.Native\Components\RS29\GIS\Source\Lider.CG.GIS.GeoShortestPath.pas=</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.836,C:\Lider.Native\Components\RS29\GIS\Source\Lider.CG.GIS.GeoOpenCL.pas=</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.789,C:\Lider.Native\Components\RS29\GIS\Source\Lider.CG.GIS.GeoRenderer3DDirectX9.pas=</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.569,C:\Lider.Native\Components\RS29\GIS\Source\Lider.CG.GIS.GeoTransform.pas=</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.701,C:\Lider.Native\Components\RS29\GIS\Source\Lider.CG.GIS.PVL.GeoControlLegendGridWiz.pas=</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.731,C:\Lider.Native\Components\RS29\GIS\Source\Lider.CG.GIS.PVL.GeoPvl.pas=</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.588,C:\Lider.Native\Components\RS29\GIS\Source\Lider.CG.GIS.GeoTypes.pas=</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.057,C:\Lider.Native\Components\RS29\GIS\Source\Lider.CG.GIS.GeoPixelFilter.pas=</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.710,C:\Lider.Native\Components\RS29\GIS\Source\Lider.CG.GIS.PVL.GeoControlSizeForm.pas=</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.645,=vclimg.dcp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.673,=FireDAC.dcp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.812,C:\Lider.Native\Components\RS29\GIS\Source\Lider.CG.GIS.GeoAllLayers.pas=</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.901,=TatukGIS_DK12_PRV.dcp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.630,=vcl.dcp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.008,C:\Lider.Native\Components\RS29\GIS\Source\Lider.CG.GIS.GeoOSMServices.pas=</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.658,C:\Lider.Native\Components\RS29\GIS\Source\Lider.CG.GIS.GeoDataSet.pas=</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.907,C:\Lider.Native\Components\RS29\GIS\Source\Lider.CG.GIS.GeoContour.pas=</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.344,C:\Lider.Native\Components\RS29\GIS\Source\Lider.CG.GIS.GeoGraticuleHelper.pas=</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.659,=vclx.dcp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.953,C:\Lider.Native\Components\RS29\GIS\Source\Lider.CG.GIS.GeoHydrology.pas=</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.683,C:\Lider.Native\Components\RS29\GIS\Source\Lider.CG.GIS.PVL.GeoControlFieldFactor.pas=</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.209,C:\Lider.Native\Components\RS29\GIS\Source\Lider.CG.GIS.GeoClasses.pas=</Transaction>
+  </Transactions>
+</BorlandProject>

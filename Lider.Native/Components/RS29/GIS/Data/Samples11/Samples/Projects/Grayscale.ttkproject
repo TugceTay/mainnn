@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<TatukGIS>
+  <Viewer>
+    <VisibleExtent>
+      <XMin>-199.937499998336</XMin>
+      <XMax>197.566406211913</XMax>
+      <YMin>-148.285156226141</YMin>
+      <YMax>149.531249994077</YMax>
+    </VisibleExtent>
+    <CS>
+      <EPSG>4326</EPSG>
+    </CS>
+  </Viewer>
+  <Layers>
+    <Layer Name="world_8km" Path="..\\..\\World\\VisibleEarth\\world_8km.jpg">
+      <Sections>
+        <Section>
+          <Visible>YES</Visible>
+          <Pixel>
+            <GrayScale>YES</GrayScale>
+          </Pixel>
+          <Active>YES</Active>
+          <Caption>world_8km</Caption>
+          <CodePage>1250</CodePage>
+          <CS>
+            <EPSG>4326</EPSG>
+          </CS>
+        </Section>
+      </Sections>
+    </Layer>
+  </Layers>
+  <Hierarchy>
+    <Groups>
+      <Group Name="Other" Caption="Other" Collapsed="False" Active="True">
+        <Layers>
+          <Layer Name="world_8km"/>
+        </Layers>
+      </Group>
+    </Groups>
+  </Hierarchy>
+</TatukGIS>

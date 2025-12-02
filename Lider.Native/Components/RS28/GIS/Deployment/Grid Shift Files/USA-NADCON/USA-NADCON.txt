@@ -1,0 +1,62 @@
+alaska
+  Original source:
+    https://vdatum.noaa.gov/download/data/vdatum_NADCON.zip
+  License:
+    https://vdatum.noaa.gov/download_agreement.php
+  Available forms:
+    TTKGS
+      Slim down version with same precision as original.
+
+conus
+  Original source:
+    https://vdatum.noaa.gov/download/data/vdatum_NADCON.zip
+  License:
+    https://vdatum.noaa.gov/download_agreement.php
+  Available forms:
+    TTKGS
+      Slim down version with same precision as original.
+
+hawaii
+  Original source:
+    https://vdatum.noaa.gov/download/data/vdatum_NADCON.zip
+  License:
+    https://vdatum.noaa.gov/download_agreement.php
+  Available forms:
+    TTKGS
+      Slim down version with same precision as original.
+
+prvi
+  Original source:
+    https://vdatum.noaa.gov/download/data/vdatum_NADCON.zip
+  License:
+    https://vdatum.noaa.gov/download_agreement.php
+  Available forms:
+    TTKGS
+      Slim down version with same precision as original.
+
+stgeorge
+  Original source:
+    https://vdatum.noaa.gov/download/data/vdatum_NADCON.zip
+  License:
+    https://vdatum.noaa.gov/download_agreement.php
+  Available forms:
+    TTKGS
+      Slim down version with same precision as original.
+
+stlrnc
+  Original source:
+    https://vdatum.noaa.gov/download/data/vdatum_NADCON.zip
+  License:
+    https://vdatum.noaa.gov/download_agreement.php
+  Available forms:
+    TTKGS
+      Slim down version with same precision as original.
+
+stpaul
+  Original source:
+    https://vdatum.noaa.gov/download/data/vdatum_NADCON.zip
+  License:
+    https://vdatum.noaa.gov/download_agreement.php
+  Available forms:
+    TTKGS
+      Slim down version with same precision as original.

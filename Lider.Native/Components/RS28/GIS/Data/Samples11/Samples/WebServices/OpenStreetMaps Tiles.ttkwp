@@ -1,0 +1,11 @@
+[TatukGIS Layer]
+Storage=WEBTILES
+Type=TMS
+name=opestreetmaps_osm
+Caption=OpenStreetMaps Tiles
+Url1=http://a.tile.openstreetmap.org/
+Url2=http://b.tile.openstreetmap.org/
+Url3=http://c.tile.openstreetmap.org/
+Format=png
+EndLevel=19
+Copyright=(c) OpenStreetMap contributors, CC-BY-SA. (use only to test; using in production environement is not allowed)

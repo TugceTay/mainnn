@@ -1,0 +1,136 @@
+object fmRangesEditor: TfmRangesEditor
+  Left = 451
+  Top = 194
+  BorderStyle = bsSizeToolWin
+  Caption = 'Tematik Aral'#305'klar'#305
+  ClientHeight = 348
+  ClientWidth = 261
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -12
+  Font.Name = 'Segoe UI'
+  Font.Style = []
+  OnClose = FormClose
+  TextHeight = 15
+  object Splitter1: TSplitter
+    Left = 65
+    Top = 33
+    Width = 4
+    Height = 315
+    ExplicitHeight = 327
+  end
+  object Panel1: TPanel
+    Left = 0
+    Top = 0
+    Width = 261
+    Height = 33
+    Align = alTop
+    TabOrder = 0
+    ExplicitWidth = 269
+    object btnAdd: TSpeedButton
+      Left = 8
+      Top = 4
+      Width = 24
+      Height = 24
+      Hint = 'Aral'#305'k Ekle'
+      Glyph.Data = {
+        EE000000424DEE000000000000007600000028000000100000000F0000000100
+        0400000000007800000000000000000000001000000010000000000000000000
+        8000008000000080800080000000800080008080000080808000C0C0C0000000
+        FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFFFF00FF7777777777
+        7777F000000000000007F0FBFBFBFB00FB07F0BFBFBFBF080F07F0FBFBFBFB0B
+        8007F0BFBFBFBF000007F0F7BFBFBBFBFB077BB7FB7BFFBFBF07F7F7B7BFBBFB
+        FB07777F7FBFBFBFBF07FB7BF7777000000FF7B7B7BFFFFFFFFF7BF7FF7BFFFF
+        FFFFBFF7BFF7FFFFFFFFFFF7FFFFFFFFFFFF}
+      ParentShowHint = False
+      ShowHint = True
+      OnClick = btnAddClick
+    end
+    object btnDelete: TSpeedButton
+      Left = 32
+      Top = 4
+      Width = 24
+      Height = 24
+      Hint = 'Aral'#305'k Sil'
+      Glyph.Data = {
+        E6000000424DE6000000000000007600000028000000100000000E0000000100
+        0400000000007000000000000000000000001000000010000000000000000000
+        8000008000000080800080000000800080008080000080808000C0C0C0000000
+        FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFFFF00FF7777777777
+        7777F000000000000007F0FBFBFBFB00FB0770BFBFBFBF080F0710FBFBFBFB0B
+        800711BFBF71BF000007717BF717FBFBFB07F117B11FBFBFBF07F71111FBFBFB
+        FB07F7111FBFBFBFBF07711117000000000F117F117FFFFFFFFFFFFFF117FFFF
+        FFFFFFFFFF117FFFFFFF}
+      ParentShowHint = False
+      ShowHint = True
+      OnClick = btnDeleteClick
+    end
+    object BtnUP: TSpeedButton
+      Left = 56
+      Top = 4
+      Width = 24
+      Height = 24
+      Hint = 'Yukar'#305
+      Glyph.Data = {
+        C6000000424DC60000000000000076000000280000000B0000000A0000000100
+        0400000000005000000000000000000000001000000010000000000000000000
+        8000008000000080800080000000800080008080000080808000C0C0C0000000
+        FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFFFF00FFF00000FFF0
+        0000FFF06660FFF00000FFF06660FFF00000FFF06660FFF00000000066600000
+        0000F066666660F00000FF0666660FF00000FFF06660FFF00000FFFF060FFFF0
+        0000FFFFF0FFFFF00000}
+      ParentShowHint = False
+      ShowHint = True
+      OnClick = BtnUPClick
+    end
+    object BtnDOWN: TSpeedButton
+      Left = 80
+      Top = 4
+      Width = 24
+      Height = 24
+      Hint = 'A'#351'a'#287#305
+      Glyph.Data = {
+        C6000000424DC60000000000000076000000280000000B0000000A0000000100
+        0400000000005000000000000000000000001000000010000000000000000000
+        8000008000000080800080000000800080008080000080808000C0C0C0000000
+        FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFFFF00FFFFF0FFFFF0
+        0000FFFF060FFFF00000FFF06660FFF00000FF0666660FF00000F066666660F0
+        00000000666000000000FFF06660FFF00000FFF06660FFF00000FFF06660FFF0
+        0000FFF00000FFF00000}
+      ParentShowHint = False
+      ShowHint = True
+      OnClick = BtnDOWNClick
+    end
+    object Panel2: TPanel
+      Left = 105
+      Top = 1
+      Width = 163
+      Height = 31
+      Align = alRight
+      BevelOuter = bvNone
+      TabOrder = 0
+      object Button2: TButton
+        Left = 82
+        Top = 3
+        Width = 75
+        Height = 25
+        Cancel = True
+        Caption = 'Kapat'
+        ModalResult = 2
+        TabOrder = 0
+      end
+    end
+  end
+  object ListBox1: TListBox
+    Left = 0
+    Top = 33
+    Width = 65
+    Height = 315
+    Style = lbOwnerDrawFixed
+    Align = alLeft
+    TabOrder = 1
+    OnClick = ListBox1Click
+    OnDrawItem = ListBox1DrawItem
+  end
+end

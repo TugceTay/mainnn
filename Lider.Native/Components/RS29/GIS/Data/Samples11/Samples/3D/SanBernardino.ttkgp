@@ -1,0 +1,58 @@
+[TatukGIS]
+CodePage=1250
+CS.EPSG=26911
+OutCodePage=1250
+VisibleExtent.XMax=500969.527655749
+VisibleExtent.XMin=494722.799223739
+VisibleExtent.YMax=3768269.78419044
+VisibleExtent.YMin=3764153.06639166
+
+[TatukGIS Layer1]
+Name=w001001
+Path=..\\..\\World\\Countries\\USA\\States\\California\\San Bernardino\\NED\\w001001.adf
+
+[TatukGIS Layer2]
+Active=YES
+Caption=37134877
+CodePage=1250
+CS.EPSG=26911
+CurrentPage=1
+Name=37134877
+OutCodePage=1250
+Path=..\\..\\World\\Countries\\USA\\States\\California\\San Bernardino\\DOQ\\37134877.jpg
+Pixel.BlueBand=3
+Pixel.GreenBand=2
+Pixel.RedBand=1
+Visible=YES
+
+[TatukGIS Layer3]
+Active=YES
+Caption=tl_2008_06071_edges_trunc
+CodePage=1250
+CS.EPSG=4269
+IgnoreShapeParams=YES
+Label.Alignment=FOLLOW
+Label.Color=WHITE
+Label.Duplicates=NO
+Label.Field=FULLNAME
+Label.Font.Color=WHITE
+Label.OutlineWidth=2
+Name=tl_2008_06071_edges_trunc
+OutCodePage=1250
+Path=..\\..\\World\\Countries\\USA\\States\\California\\San Bernardino\\TIGER\\tl_2008_06071_edges_trunc.shp
+Visible=YES
+
+[TatukGIS Hierarchy]
+Other=w001001;37134877;tl_2008_06071_edges_trunc
+
+[TatukGIS Group1]
+Active=YES
+Caption=Other
+CodePage=1250
+Name=Other
+OutCodePage=1250
+Visible=YES
+
+[EDT_VWR]
+Scale.Units.EPSG=904201
+

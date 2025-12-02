@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<TatukGIS>
+  <Viewer>
+    <VisibleExtent>
+      <XMin>-117.164488570413</XMin>
+      <XMax>-116.906028921491</XMax>
+      <YMin>33.9674798269898</YMin>
+      <YMax>34.1611220090973</YMax>
+    </VisibleExtent>
+    <CS>
+      <EPSG>4269</EPSG>
+    </CS>
+  </Viewer>
+  <Layers>
+    <Layer Name="Counties" Path="..\\..\\World\\Countries\\USA\\States\\California\\tl_2008_06_county.shp">
+      <Sections>
+        <Section>
+          <Visible>YES</Visible>
+          <Ground>OnDem</Ground>
+          <Line>
+            <OutlineWidth>SIZE:0 twips</OutlineWidth>
+          </Line>
+          <Active>YES</Active>
+          <Caption>Counties</Caption>
+          <CodePage>1250</CodePage>
+          <CS>
+            <EPSG>4269</EPSG>
+          </CS>
+        </Section>
+      </Sections>
+    </Layer>
+    <Layer Name="DEM" Path="..\\..\\World\\Countries\\USA\\States\\California\\San Bernardino\\NED\\w001001.adf"/>
+    <Layer Name="DOQ" Path="..\\..\\World\\Countries\\USA\\States\\California\\San Bernardino\\DOQ\\37134877.jpg">
+      <Sections>
+        <Section>
+          <Visible>YES</Visible>
+          <Active>YES</Active>
+          <Caption>DOQ</Caption>
+          <CodePage>1250</CodePage>
+          <CS>
+            <EPSG>26911</EPSG>
+          </CS>
+        </Section>
+      </Sections>
+    </Layer>
+    <Layer Name="Streets" Path="..\\..\\World\\Countries\\USA\\States\\California\\San Bernardino\\TIGER\\tl_2008_06071_edges_trunc.shp">
+      <Sections>
+        <Section>
+          <Visible>YES</Visible>
+          <Legend>Highways</Legend>
+          <Query>MTFCC &lt; &apos;S1400&apos;</Query>
+          <Ground>OnDem</Ground>
+          <Line>
+            <Width>SIZE:40 twips</Width>
+            <OutlineWidth>SIZE:0 twips</OutlineWidth>
+            <SmartSize>SIZE:16 twips</SmartSize>
+            <ShowLegend>YES</ShowLegend>
+          </Line>
+          <Label>
+            <Duplicates>NO</Duplicates>
+            <Value>{FULLNAME}</Value>
+            <Alignment>FOLLOW</Alignment>
+            <Color>ARGB:FFFFFFFF</Color>
+            <OutlineWidth>SIZE:2 twips</OutlineWidth>
+          </Label>
+          <Active>YES</Active>
+          <Caption>Streets</Caption>
+          <CodePage>1250</CodePage>
+          <CS>
+            <EPSG>4269</EPSG>
+          </CS>
+          <IgnoreShapeParams>YES</IgnoreShapeParams>
+        </Section>
+        <Section>
+          <Visible>YES</Visible>
+          <Legend>Locla roads</Legend>
+          <Query>MTFCC = &apos;S1400&apos;</Query>
+          <Ground>OnDem</Ground>
+          <Line>
+            <Width>SIZE:2 twips</Width>
+            <OutlineWidth>SIZE:0 twips</OutlineWidth>
+            <SmartSize>SIZE:15 twips</SmartSize>
+          </Line>
+        </Section>
+      </Sections>
+    </Layer>
+  </Layers>
+  <Hierarchy>
+    <Groups>
+      <Group Name="Other" Caption="Other" Collapsed="False" Active="True">
+        <Layers>
+          <Layer Name="Counties"/>
+          <Layer Name="DEM"/>
+          <Layer Name="DOQ"/>
+          <Layer Name="Streets"/>
+        </Layers>
+      </Group>
+    </Groups>
+  </Hierarchy>
+</TatukGIS>

@@ -1,0 +1,9 @@
+[TatukGIS Layer]
+Storage=WEBTILES
+Type=TMS
+name=tf_atlase_osm
+Caption=Thunderforest atlas Tiles
+Url1=http://tile.thunderforest.com/atlas/
+Format=png
+EndLevel=20
+Copyright=(c) OpenStreetMap contributors, Provided by Thunderforest.com

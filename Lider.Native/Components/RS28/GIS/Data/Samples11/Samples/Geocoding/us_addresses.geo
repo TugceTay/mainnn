@@ -1,0 +1,1170 @@
+[FORMULA]
+;14127
+002=<ZIPCODE>,?
+;14127-6105
+003=<ZIPCODE>-<ZIP4CODE>,?
+;FL
+;004=<STATECODE>,?
+;FL 14127
+006=<STATECODE> <ZIPCODE>,?
+;FL 14127-6105
+007=<STATECODE> <ZIPCODE>-<ZIP4CODE>,?
+;Stamford
+010=<CITYNAME>,?
+;Stamford, 14127
+012=<CITYNAME>,? <ZIPCODE>,?
+;Stamford, 14127-6105
+013=<CITYNAME>,? <ZIPCODE>-<ZIP4CODE>,?
+;Stamford, FL
+014=<CITYNAME>,? <STATECODE>,?
+;Stamford, FL 14127
+016=<CITYNAME>,? <STATECODE> <ZIPCODE>,?
+;Stamford, FL 14127-6105
+017=<CITYNAME>,? <STATECODE> <ZIPCODE>-<ZIP4CODE>,?
+;NE (suffix)
+020=<DIRSUFFIX>\.?,?
+;NE (suffix), 14127
+022=<DIRSUFFIX>\.?,? <ZIPCODE>,?
+;NE (suffix), 14127-6105
+023=<DIRSUFFIX>\.?,? <ZIPCODE>-<ZIP4CODE>,?
+;NE (suffix), FL
+024=<DIRSUFFIX>\.?,? <STATECODE>,?
+;NE (suffix), FL 14127
+026=<DIRSUFFIX>\.?,? <STATECODE> <ZIPCODE>,?
+;NE (suffix), FL 14127-6105
+027=<DIRSUFFIX>\.?,? <STATECODE> <ZIPCODE>-<ZIP4CODE>,?
+;NE (suffix), Stamford
+030=<DIRSUFFIX>\.?,? <CITYNAME>,?
+;NE (suffix), Stamford, 14127
+032=<DIRSUFFIX>\.?,? <CITYNAME>,? <ZIPCODE>,?
+;NE (suffix), Stamford, 14127-6105
+033=<DIRSUFFIX>\.?,? <CITYNAME>,? <ZIPCODE>-<ZIP4CODE>,?
+;NE (suffix), Stamford, FL
+034=<DIRSUFFIX>\.?,? <CITYNAME>,? <STATECODE>,?
+;NE (suffix), Stamford, FL 14127
+036=<DIRSUFFIX>\.?,? <CITYNAME>,? <STATECODE> <ZIPCODE>,?
+;NE (suffix), Stamford, FL 14127-6105
+037=<DIRSUFFIX>\.?,? <CITYNAME>,? <STATECODE> <ZIPCODE>-<ZIP4CODE>,?
+;Rd
+;040=<STREETTYPE>\.?,?
+;Rd, 14127
+;042=<STREETTYPE>\.?,? <ZIPCODE>,?
+;Rd, 14127-6105
+;043=<STREETTYPE>\.?,? <ZIPCODE>-<ZIP4CODE>,?
+;Rd, FL
+;044=<STREETTYPE>\.?,? <STATECODE>,?
+;Rd, FL 14127
+;046=<STREETTYPE>\.?,? <STATECODE> <ZIPCODE>,?
+;Rd, FL 14127-6105
+;047=<STREETTYPE>\.?,? <STATECODE> <ZIPCODE>-<ZIP4CODE>,?
+;Rd, Stamford
+;050=<STREETTYPE>\.?,? <CITYNAME>,?
+;Rd, Stamford, 14127
+;052=<STREETTYPE>\.?,? <CITYNAME>,? <ZIPCODE>,?
+;Rd, Stamford, 14127-6105
+;053=<STREETTYPE>\.?,? <CITYNAME>,? <ZIPCODE>-<ZIP4CODE>,?
+;Rd, Stamford, FL
+;054=<STREETTYPE>\.?,? <CITYNAME>,? <STATECODE>,?
+;Rd, Stamford, FL 14127
+;056=<STREETTYPE>\.?,? <CITYNAME>,? <STATECODE> <ZIPCODE>,?
+;Rd, Stamford, FL 14127-6105
+;057=<STREETTYPE>\.?,? <CITYNAME>,? <STATECODE> <ZIPCODE>-<ZIP4CODE>,?
+;Rd NE (suffix)
+060=<STREETTYPE>\.? <DIRSUFFIX>\.?,?
+;Rd NE (suffix), 14127
+062=<STREETTYPE>\.? <DIRSUFFIX>\.?,? <ZIPCODE>,?
+;Rd NE (suffix), 14127-6105
+063=<STREETTYPE>\.? <DIRSUFFIX>\.?,? <ZIPCODE>-<ZIP4CODE>,?
+;Rd NE (suffix), FL
+064=<STREETTYPE>\.? <DIRSUFFIX>\.?,? <STATECODE>,?
+;Rd NE (suffix), FL 14127
+066=<STREETTYPE>\.? <DIRSUFFIX>\.?,? <STATECODE> <ZIPCODE>,?
+;Rd NE (suffix), FL 14127-6105
+067=<STREETTYPE>\.? <DIRSUFFIX>\.?,? <STATECODE> <ZIPCODE>-<ZIP4CODE>,?
+;Rd NE (suffix), Stamford
+070=<STREETTYPE>\.? <DIRSUFFIX>\.?,?
+;Rd NE (suffix), Stamford, 14127
+072=<STREETTYPE>\.? <DIRSUFFIX>\.?,? <ZIPCODE>,?
+;Rd NE (suffix), Stamford, 14127-6105
+073=<STREETTYPE>\.? <DIRSUFFIX>\.?,? <ZIPCODE>-<ZIP4CODE>,?
+;Rd NE (suffix), Stamford, FL
+074=<STREETTYPE>\.? <DIRSUFFIX>\.?,? <STATECODE>,?
+;Rd NE (suffix), Stamford, FL 14127
+076=<STREETTYPE>\.? <DIRSUFFIX>\.?,? <STATECODE> <ZIPCODE>,?
+;Rd NE (suffix), Stamford, FL 14127-6105
+077=<STREETTYPE>\.? <DIRSUFFIX>\.?,? <STATECODE> <ZIPCODE>-<ZIP4CODE>,?
+;Main
+100=<STREETNAME>,?
+;Main, 14127
+102=<STREETNAME>,? <ZIPCODE>,?
+;PO BOX 12345, 14127
+1020=\s*P\.?O\.?\s+BOX\s+\w+,? <ZIPCODE>,?
+;PO BOX, 14127
+1021=\s*P\.?O\.?\s+BOX,? <ZIPCODE>,?
+;General Delivery, 14127
+1022=\s*General Delivery,? <ZIPCODE>,?
+;Poste Restante Yellow, 14127
+1023=\s*Poste Restante\s+\w+,? <ZIPCODE>,?
+;Poste Restante, 14127
+1024=\s*Poste Restante,? <ZIPCODE>,?
+;Main, 14127-6105
+103=<STREETNAME>,? <ZIPCODE>-<ZIP4CODE>,?
+;PO BOX 12345, 14127-6105
+1030=\s*P\.?O\.?\s+BOX\s+\w+,? <ZIPCODE>-<ZIP4CODE>,?
+;PO BOX, 14127-6105
+1031=\s*P\.?O\.?\s+BOX,? <ZIPCODE>-<ZIP4CODE>,?
+;General Delivery, 14127-6105
+1032=\s*General Delivery,? <ZIPCODE>-<ZIP4CODE>,?
+;Poste Restante Yellow, 14127-6105
+1033=\s*Poste Restante\s+\w+,? <ZIPCODE>-<ZIP4CODE>,?
+;Poste Restante, 14127-6105
+1034=\s*Poste Restante,? <ZIPCODE>-<ZIP4CODE>,?
+;Main, FL
+104=<STREETNAME>,? <STATECODE>,?
+;Main, FL 14127
+106=<STREETNAME>,? <STATECODE> <ZIPCODE>,?
+;PO BOX 12345, FL 14127
+1060=\s*P\.?O\.?\s+BOX\s+\w+,? <STATECODE> <ZIPCODE>,?
+;PO BOX, FL 14127
+1061=\s*P\.?O\.?\s+BOX,? <STATECODE> <ZIPCODE>,?
+;General Delivery, FL 14127
+1062=\s*General Delivery,? <STATECODE> <ZIPCODE>,?
+;Poste Restante Yellow, FL 14127
+1063=\s*Poste Restante\s+\w+,? <STATECODE> <ZIPCODE>,?
+;Poste Restante, FL 14127
+1064=\s*Poste Restante,? <STATECODE> <ZIPCODE>,?
+;Main, FL 14127-6105
+107=<STREETNAME>,? <STATECODE> <ZIPCODE>-<ZIP4CODE>,?
+;PO BOX 12345, FL 14127-6105
+1070=\s*P\.?O\.?\s+BOX\s+\w+,? <STATECODE> <ZIPCODE>-<ZIP4CODE>,?
+;PO BOX, FL 14127-6105
+1071=\s*P\.?O\.?\s+BOX,? <STATECODE> <ZIPCODE>-<ZIP4CODE>,?
+;General Delivery, FL 14127-6105
+1072=\s*General Delivery,? <STATECODE> <ZIPCODE>-<ZIP4CODE>,?
+;Poste Restante Yellow, FL 14127-6105
+1073=\s*Poste Restante\s+\w+,? <STATECODE> <ZIPCODE>-<ZIP4CODE>,?
+;Poste Restante, FL 14127-6105
+1074=\s*Poste Restante,? <STATECODE> <ZIPCODE>-<ZIP4CODE>,?
+;Main, Stamford
+110=<STREETNAME>,? <CITYNAME>,?
+;Main, Stamford, 14127
+112=<STREETNAME>,? <CITYNAME>,? <ZIPCODE>,?
+;PO BOX 12345, Stamford, 14127
+1120=\s*P\.?O\.?\s+BOX\s+\w+,? <CITYNAME>,? <ZIPCODE>,?
+;PO BOX, Stamford, 14127
+1121=\s*P\.?O\.?\s+BOX,? <CITYNAME>,? <ZIPCODE>,?
+;General Delivery, Stamford, 14127
+1122=\s*General Delivery,? <CITYNAME>,? <ZIPCODE>,?
+;Poste Restante Yellow, Stamford, 14127
+1123=\s*Poste Restante\s+\w+,? <CITYNAME>,? <ZIPCODE>,?
+;Poste Restante, Stamford, 14127
+1124=\s*Poste Restante,? <CITYNAME>,? <ZIPCODE>,?
+;Main, Stamford, 14127-6105
+113=<STREETNAME>,? <CITYNAME>,? <ZIPCODE>-<ZIP4CODE>,?
+;PO BOX 12345, Stamford, 14127-6105
+1130=\s*P\.?O\.?\s+BOX\s+\w+,? <CITYNAME>,? <ZIPCODE>-<ZIP4CODE>,?
+;PO BOX, Stamford, 14127-6105
+1131=\s*P\.?O\.?\s+BOX,? <CITYNAME>,? <ZIPCODE>-<ZIP4CODE>,?
+;General Delivery, Stamford, 14127-6105
+1132=\s*General Delivery,? <CITYNAME>,? <ZIPCODE>-<ZIP4CODE>,?
+;Poste Restante Yellow, Stamford, 14127-6105
+1133=\s*Poste Restante\s+\w+,? <CITYNAME>,? <ZIPCODE>-<ZIP4CODE>,?
+;Poste Restante, Stamford, 14127-6105
+1134=\s*Poste Restante,? <CITYNAME>,? <ZIPCODE>-<ZIP4CODE>,?
+;Main, Stamford, FL
+114=<STREETNAME>,? <CITYNAME>,? <STATECODE>,?
+;Main, Stamford, FL 14127
+116=<STREETNAME>,? <CITYNAME>,? <STATECODE> <ZIPCODE>,?
+;PO BOX 12345, Stamford, FL 14127
+1160=\s*P\.?O\.?\s+BOX\s+\w+,? <CITYNAME>,? <STATECODE> <ZIPCODE>,?
+;PO BOX, Stamford, FL 14127
+1161=\s*P\.?O\.?\s+BOX,? <CITYNAME>,? <STATECODE> <ZIPCODE>,?
+;General Delivery, Stamford, FL 14127
+1162=\s*General Delivery,? <CITYNAME>,? <STATECODE> <ZIPCODE>,?
+;Poste Restante Yellow, Stamford, FL 14127
+1163=\s*Poste Restante\s+\w+,? <CITYNAME>,? <STATECODE> <ZIPCODE>,?
+;Poste Restante, Stamford, FL 14127
+1164=\s*Poste Restante,? <CITYNAME>,? <STATECODE> <ZIPCODE>,?
+;Main, Stamford, FL 14127-6105
+117=<STREETNAME>,? <CITYNAME>,? <STATECODE> <ZIPCODE>-<ZIP4CODE>,?
+;PO BOX 12345, Stamford, FL 14127-6105
+1170=\s*P\.?O\.?\s+BOX\s+\w+,? <CITYNAME>,? <STATECODE> <ZIPCODE>-<ZIP4CODE>,?
+;PO BOX, Stamford, FL 14127-6105
+1171=\s*P\.?O\.?\s+BOX,? <CITYNAME>,? <STATECODE> <ZIPCODE>-<ZIP4CODE>,?
+;General Delivery, Stamford, FL 14127-6105
+1172=\s*General Delivery,? <CITYNAME>,? <STATECODE> <ZIPCODE>-<ZIP4CODE>,?
+;Poste Restante Yellow, Stamford, FL 14127-6105
+1173=\s*Poste Restante\s+\w+,? <CITYNAME>,? <STATECODE> <ZIPCODE>-<ZIP4CODE>,?
+;Poste Restante, Stamford, FL 14127-6105
+1174=\s*Poste Restante,? <CITYNAME>,? <STATECODE> <ZIPCODE>-<ZIP4CODE>,?
+;Providence NE
+120=<STREETNAME> <DIRSUFFIX>\.?,?
+;Providence NE, 90210
+122=<STREETNAME> <DIRSUFFIX>\.?,? <ZIPCODE>,?
+;Providence NE, 90210-6105
+123=<STREETNAME> <DIRSUFFIX>\.?,? <ZIPCODE>-<ZIP4CODE>,?
+;Providence NE, FL
+124=<STREETNAME> <DIRSUFFIX>\.?,? <STATECODE>,?
+;Providence NE, FL 90210
+126=<STREETNAME> <DIRSUFFIX>\.?,? <STATECODE> <ZIPCODE>,?
+;Providence NE, FL 90210-6105
+127=<STREETNAME> <DIRSUFFIX>\.?,? <STATECODE> <ZIPCODE>-<ZIP4CODE>,?
+;Providence NE, Stamford
+130=<STREETNAME> <DIRSUFFIX>\.?,? <CITYNAME>,?
+;Providence NE, Stamford, 90210
+132=<STREETNAME> <DIRSUFFIX>\.?,? <CITYNAME>,? <ZIPCODE>,?
+;Providence NE, Stamford, 90210-6105
+133=<STREETNAME> <DIRSUFFIX>\.?,? <CITYNAME>,? <ZIPCODE>-<ZIP4CODE>,?
+;Providence NE, Stamford, FL
+134=<STREETNAME> <DIRSUFFIX>\.?,? <CITYNAME>,? <STATECODE>,?
+;Providence NE, Stamford, FL 90210
+136=<STREETNAME> <DIRSUFFIX>\.?,? <CITYNAME>,? <STATECODE> <ZIPCODE>,?
+;Providence NE, Stamford, FL 90210-6105
+137=<STREETNAME> <DIRSUFFIX>\.?,? <CITYNAME>,? <STATECODE> <ZIPCODE>-<ZIP4CODE>,?
+;Main St
+140=<STREETNAME> <STREETTYPE>\.?,?
+;Main St, 90210
+142=<STREETNAME> <STREETTYPE>\.?,? <ZIPCODE>,?
+;Main St, 90210-6105
+143=<STREETNAME> <STREETTYPE>\.?,? <ZIPCODE>-<ZIP4CODE>,?
+;Main St, FL
+144=<STREETNAME> <STREETTYPE>\.?,? <STATECODE>,?
+;Main St, FL 90210
+146=<STREETNAME> <STREETTYPE>\.?,? <STATECODE> <ZIPCODE>,?
+;Main St, FL 90210-6105
+147=<STREETNAME> <STREETTYPE>\.?,? <STATECODE> <ZIPCODE>-<ZIP4CODE>,?
+;Main St, Stamford
+150=<STREETNAME> <STREETTYPE>\.?,? <CITYNAME>,?
+;Main St, Stamford, 90210
+152=<STREETNAME> <STREETTYPE>\.?,? <CITYNAME>,? <ZIPCODE>,?
+;Main St, Stamford, 90210-6105
+153=<STREETNAME> <STREETTYPE>\.?,? <CITYNAME>,? <ZIPCODE>-<ZIP4CODE>,?
+;Main St, Stamford, FL
+154=<STREETNAME> <STREETTYPE>\.?,? <CITYNAME>,? <STATECODE>,?
+;Main St, Stamford, FL 90210
+156=<STREETNAME> <STREETTYPE>\.?,? <CITYNAME>,? <STATECODE> <ZIPCODE>,?
+;Main St, Stamford, FL 90210-6105
+157=<STREETNAME> <STREETTYPE>\.?,? <CITYNAME>,? <STATECODE> <ZIPCODE>-<ZIP4CODE>,?
+;Providence St NE
+160=<STREETNAME> <STREETTYPE>\.? <DIRSUFFIX>\.?,?
+;Providence St NE, 90210
+162=<STREETNAME> <STREETTYPE>\.? <DIRSUFFIX>\.?,? <ZIPCODE>,?
+;Providence St NE, 90210-6105
+163=<STREETNAME> <STREETTYPE>\.? <DIRSUFFIX>\.?,? <ZIPCODE>-<ZIP4CODE>,?
+;Providence St NE, FL
+164=<STREETNAME> <STREETTYPE>\.? <DIRSUFFIX>\.?,? <STATECODE>,?
+;Providence St NE, FL 90210
+166=<STREETNAME> <STREETTYPE>\.? <DIRSUFFIX>\.?,? <STATECODE> <ZIPCODE>,?
+;Providence St NE, FL 90210-6105
+167=<STREETNAME> <STREETTYPE>\.? <DIRSUFFIX>\.?,? <STATECODE> <ZIPCODE>-<ZIP4CODE>,?
+;Providence St NE, Stamford
+170=<STREETNAME> <STREETTYPE>\.? <DIRSUFFIX>\.?,? <CITYNAME>,?
+;Providence St NE, Stamford, 90210
+172=<STREETNAME> <STREETTYPE>\.? <DIRSUFFIX>\.?,? <CITYNAME>,? <ZIPCODE>,?
+;Providence St NE, Stamford, 90210-6105
+173=<STREETNAME> <STREETTYPE>\.? <DIRSUFFIX>\.?,? <CITYNAME>,? <ZIPCODE>-<ZIP4CODE>,?
+;Providence St NE, Stamford, FL
+174=<STREETNAME> <STREETTYPE>\.? <DIRSUFFIX>\.?,? <CITYNAME>,? <STATECODE>,?
+;Providence St NE, Stamford, FL 90210
+176=<STREETNAME> <STREETTYPE>\.? <DIRSUFFIX>\.?,? <CITYNAME>,? <STATECODE> <ZIPCODE>,?
+;Providence St NE, Stamford, FL 90210-6105
+177=<STREETNAME> <STREETTYPE>\.? <DIRSUFFIX>\.?,? <CITYNAME>,? <STATECODE> <ZIPCODE>-<ZIP4CODE>,?
+;NE (prefix)
+200=<DIRPREFIX>\.?,?
+;NE (prefix), 90210
+202=<DIRPREFIX>\.?,? <ZIPCODE>,?
+;NE (prefix), 90210-6105
+203=<DIRPREFIX>\.?,? <ZIPCODE>-<ZIP4CODE>,?
+;NE (prefix), FL
+204=<DIRPREFIX>\.?,? <STATECODE>,?
+;NE (prefix), FL 90210
+206=<DIRPREFIX>\.?,? <STATECODE> <ZIPCODE>,?
+;NE (prefix), FL 90210-6105
+207=<DIRPREFIX>\.?,? <STATECODE> <ZIPCODE>-<ZIP4CODE>,?
+;NE (prefix), Stamford
+210=<DIRPREFIX>\.?,? <CITYNAME>,?
+;NE (prefix), Stamford, 90210
+212=<DIRPREFIX>\.?,? <CITYNAME>,? <ZIPCODE>,?
+;NE (prefix), Stamford, 90210-6105
+213=<DIRPREFIX>\.?,? <CITYNAME>,? <ZIPCODE>-<ZIP4CODE>,?
+;NE (prefix), Stamford, FL
+214=<DIRPREFIX>\.?,? <CITYNAME>,? <STATECODE>,?
+;NE (prefix), Stamford, FL 90210
+216=<DIRPREFIX>\.?,? <CITYNAME>,? <STATECODE> <ZIPCODE>,?
+;NE (prefix), Stamford, FL 90210-6105
+217=<DIRPREFIX>\.?,? <CITYNAME>,? <STATECODE> <ZIPCODE>-<ZIP4CODE>,?
+;NE (prefix) Rd
+240=<DIRPREFIX>\.? <STREETTYPE>\.?,?
+;NE (prefix) Rd, 90210
+242=<DIRPREFIX>\.? <STREETTYPE>\.?,? <ZIPCODE>,?
+;NE (prefix) Rd, 90210-6105
+243=<DIRPREFIX>\.? <STREETTYPE>\.?,? <ZIPCODE>-<ZIP4CODE>,?
+;NE (prefix) Rd, FL
+244=<DIRPREFIX>\.? <STREETTYPE>\.?,? <STATECODE>,?
+;NE (prefix) Rd, FL 90210
+246=<DIRPREFIX>\.? <STREETTYPE>\.?,? <STATECODE> <ZIPCODE>,?
+;NE (prefix) Rd, FL 90210-6105
+247=<DIRPREFIX>\.? <STREETTYPE>\.?,? <STATECODE> <ZIPCODE>-<ZIP4CODE>,?
+;NE (prefix) Rd, Stamford
+250=<DIRPREFIX>\.? <STREETTYPE>\.?,? <CITYNAME>,?
+;NE (prefix) Rd, Stamford, 90210
+252=<DIRPREFIX>\.? <STREETTYPE>\.?,? <CITYNAME>,? <ZIPCODE>,?
+;NE (prefix) Rd, Stamford, 90210-6105
+253=<DIRPREFIX>\.? <STREETTYPE>\.?,? <CITYNAME>,? <ZIPCODE>-<ZIP4CODE>,?
+;NE (prefix) Rd, Stamford, FL
+254=<DIRPREFIX>\.? <STREETTYPE>\.?,? <CITYNAME>,? <STATECODE>,?
+;NE (prefix) Rd, Stamford, FL 90210
+256=<DIRPREFIX>\.? <STREETTYPE>\.?,? <CITYNAME>,? <STATECODE> <ZIPCODE>,?
+;NE (prefix) Rd, Stamford, FL 90210-6105
+257=<DIRPREFIX>\.? <STREETTYPE>\.?,? <CITYNAME>,? <STATECODE> <ZIPCODE>-<ZIP4CODE>,?
+;N Adams
+300=<DIRPREFIX>\.? <STREETNAME>,?
+;N Adams, 90210
+302=<DIRPREFIX>\.? <STREETNAME>,? <ZIPCODE>,?
+;N Adams, 90210-6105
+303=<DIRPREFIX>\.? <STREETNAME>,? <ZIPCODE>-<ZIP4CODE>,?
+;N Adams, FL
+304=<DIRPREFIX>\.? <STREETNAME>,? <STATECODE>,?
+;N Adams, FL 90210
+306=<DIRPREFIX>\.? <STREETNAME>,? <STATECODE> <ZIPCODE>,?
+;N Adams, FL 90210-6105
+307=<DIRPREFIX>\.? <STREETNAME>,? <STATECODE> <ZIPCODE>-<ZIP4CODE>,?
+;N Adams, Stamford
+310=<DIRPREFIX>\.? <STREETNAME>,? <CITYNAME>,?
+;N Adams, Stamford, 90210
+312=<DIRPREFIX>\.? <STREETNAME>,? <CITYNAME>,? <ZIPCODE>,?
+;N Adams, Stamford, 90210-6105
+313=<DIRPREFIX>\.? <STREETNAME>,? <CITYNAME>,? <ZIPCODE>-<ZIP4CODE>,?
+;N Adams, Stamford, FL
+314=<DIRPREFIX>\.? <STREETNAME>,? <CITYNAME>,? <STATECODE>,?
+;N Adams, Stamford, FL 90210
+316=<DIRPREFIX>\.? <STREETNAME>,? <CITYNAME>,? <STATECODE> <ZIPCODE>,?
+;N Adams, Stamford, FL 90210-6105
+317=<DIRPREFIX>\.? <STREETNAME>,? <CITYNAME>,? <STATECODE> <ZIPCODE>-<ZIP4CODE>,?
+;N Adams Ave
+340=<DIRPREFIX>\.? <STREETNAME> <STREETTYPE>\.?,?
+;N Adams Ave, 90210
+342=<DIRPREFIX>\.? <STREETNAME> <STREETTYPE>\.?,? <ZIPCODE>,?
+;N Adams Ave, 90210-6105
+343=<DIRPREFIX>\.? <STREETNAME> <STREETTYPE>\.?,? <ZIPCODE>-<ZIP4CODE>,?
+;N Adams Ave, FL
+344=<DIRPREFIX>\.? <STREETNAME> <STREETTYPE>\.?,? <STATECODE>,?
+;N Adams Ave, FL 90210
+346=<DIRPREFIX>\.? <STREETNAME> <STREETTYPE>\.?,? <STATECODE> <ZIPCODE>,?
+;N Adams Ave, FL 90210-6105
+347=<DIRPREFIX>\.? <STREETNAME> <STREETTYPE>\.?,? <STATECODE> <ZIPCODE>-<ZIP4CODE>,?
+;N Adams Ave, Stamford
+350=<DIRPREFIX>\.? <STREETNAME> <STREETTYPE>\.?,? <CITYNAME>,?
+;N Adams Ave, Stamford, 90210
+352=<DIRPREFIX>\.? <STREETNAME> <STREETTYPE>\.?,? <CITYNAME>,? <ZIPCODE>,?
+;N Adams Ave, Stamford, 90210-6105
+353=<DIRPREFIX>\.? <STREETNAME> <STREETTYPE>\.?,? <CITYNAME>,? <ZIPCODE>-<ZIP4CODE>,?
+;N Adams Ave, Stamford, FL
+354=<DIRPREFIX>\.? <STREETNAME> <STREETTYPE>\.?,? <CITYNAME>,? <STATECODE>,?
+;N Adams Ave, Stamford, FL 90210
+356=<DIRPREFIX>\.? <STREETNAME> <STREETTYPE>\.?,? <CITYNAME>,? <STATECODE> <ZIPCODE>,?
+;N Adams Ave, Stamford, FL 90210-6105
+357=<DIRPREFIX>\.? <STREETNAME> <STREETTYPE>\.?,? <CITYNAME>,? <STATECODE> <ZIPCODE>-<ZIP4CODE>,?
+;213
+;400=<HOUSENUMBER>,?
+;213, 90210
+;402=<HOUSENUMBER>,? <ZIPCODE>,?
+;213, 90210-6105
+;403=<HOUSENUMBER>,? <ZIPCODE>-<ZIP4CODE>,?
+;213, FL
+;404=<HOUSENUMBER>,? <STATECODE>,?
+;213, FL 90210
+;406=<HOUSENUMBER>,? <STATECODE> <ZIPCODE>,?
+;213, FL 90210-6105
+;407=<HOUSENUMBER>,? <STATECODE> <ZIPCODE>-<ZIP4CODE>,?
+;213, Stamford
+;410=<HOUSENUMBER>,? <CITYNAME>,?
+;213, Stamford, 90210
+;412=<HOUSENUMBER>,? <CITYNAME>,? <ZIPCODE>,?
+;213, Stamford, 90210-6105
+;413=<HOUSENUMBER>,? <CITYNAME>,? <ZIPCODE>-<ZIP4CODE>,?
+;213, Stamford, FL
+;414=<HOUSENUMBER>,? <CITYNAME>,? <STATECODE>,?
+;213, Stamford, FL 90210
+;416=<HOUSENUMBER>,? <CITYNAME>,? <STATECODE> <ZIPCODE>,?
+;213, Stamford, FL 90210-6105
+;417=<HOUSENUMBER>,? <CITYNAME>,? <STATECODE> <ZIPCODE>-<ZIP4CODE>,?
+;213 NE (suffix)
+;420=<HOUSENUMBER> <DIRSUFFIX>,?
+;213 NE (suffix), 90210
+;422=<HOUSENUMBER> <DIRSUFFIX>,? <ZIPCODE>,?
+;213 NE (suffix), 90210-6105
+;423=<HOUSENUMBER> <DIRSUFFIX>,? <ZIPCODE>-<ZIP4CODE>,?
+;213 NE (suffix), FL
+;424=<HOUSENUMBER> <DIRSUFFIX>,? <STATECODE>,?
+;213 NE (suffix), FL 90210
+;426=<HOUSENUMBER> <DIRSUFFIX>,? <STATECODE> <ZIPCODE>,?
+;213 NE (suffix), FL 90210-6105
+;427=<HOUSENUMBER> <DIRSUFFIX>,? <STATECODE> <ZIPCODE>-<ZIP4CODE>,?
+;213 NE (suffix), Stamford
+;430=<HOUSENUMBER> <DIRSUFFIX>,? <CITYNAME>,?
+;213 NE (suffix), Stamford, 90210
+;432=<HOUSENUMBER> <DIRSUFFIX>,? <CITYNAME>,? <ZIPCODE>,?
+;213 NE (suffix), Stamford, 90210-6105
+;433=<HOUSENUMBER> <DIRSUFFIX>,? <CITYNAME>,? <ZIPCODE>-<ZIP4CODE>,?
+;213 NE (suffix), Stamford, FL
+;434=<HOUSENUMBER> <DIRSUFFIX>,? <CITYNAME>,? <STATECODE>,?
+;213 NE (suffix), Stamford, FL 90210
+;436=<HOUSENUMBER> <DIRSUFFIX>,? <CITYNAME>,? <STATECODE> <ZIPCODE>,?
+;213 NE (suffix), Stamford, FL 90210-6105
+;437=<HOUSENUMBER> <DIRSUFFIX>,? <CITYNAME>,? <STATECODE> <ZIPCODE>-<ZIP4CODE>,?
+;213 Rd
+;440=<HOUSENUMBER> <STREETTYPE>,?
+;213 Rd, 90210
+;442=<HOUSENUMBER> <STREETTYPE>,? <ZIPCODE>,?
+;213 Rd, 90210-6105
+;443=<HOUSENUMBER> <STREETTYPE>,? <ZIPCODE>-<ZIP4CODE>,?
+;213 Rd, FL
+;444=<HOUSENUMBER> <STREETTYPE>,? <STATECODE>,?
+;213 Rd, FL 90210
+;446=<HOUSENUMBER> <STREETTYPE>,? <STATECODE> <ZIPCODE>,?
+;213 Rd, FL 90210-6105
+;447=<HOUSENUMBER> <STREETTYPE>,? <STATECODE> <ZIPCODE>-<ZIP4CODE>,?
+;213 Rd, Stamford
+;450=<HOUSENUMBER> <STREETTYPE>,? <CITYNAME>,?
+;213 Rd, Stamford, 90210
+;452=<HOUSENUMBER> <STREETTYPE>,? <CITYNAME>,? <ZIPCODE>,?
+;213 Rd, Stamford, 90210-6105
+;453=<HOUSENUMBER> <STREETTYPE>,? <CITYNAME>,? <ZIPCODE>-<ZIP4CODE>,?
+;213 Rd, Stamford, FL
+;454=<HOUSENUMBER> <STREETTYPE>,? <CITYNAME>,? <STATECODE>,?
+;213 Rd, Stamford, FL 90210
+;456=<HOUSENUMBER> <STREETTYPE>,? <CITYNAME>,? <STATECODE> <ZIPCODE>,?
+;213 Rd, Stamford, FL 90210-6105
+;457=<HOUSENUMBER> <STREETTYPE>,? <CITYNAME>,? <STATECODE> <ZIPCODE>-<ZIP4CODE>,?
+;213 Rd NE
+;460=<HOUSENUMBER> <STREETTYPE> <DIRSUFFIX>,?
+;213 Rd NE, 90210
+;462=<HOUSENUMBER> <STREETTYPE> <DIRSUFFIX>,? <ZIPCODE>,?
+;213 Rd NE, 90210-6105
+;463=<HOUSENUMBER> <STREETTYPE> <DIRSUFFIX>,? <ZIPCODE>-<ZIP4CODE>,?
+;213 Rd NE, FL
+;464=<HOUSENUMBER> <STREETTYPE> <DIRSUFFIX>,? <STATECODE>,?
+;213 Rd NE, FL 90210
+;466=<HOUSENUMBER> <STREETTYPE> <DIRSUFFIX>,? <STATECODE> <ZIPCODE>,?
+;213 Rd NE, FL 90210-6105
+;467=<HOUSENUMBER> <STREETTYPE> <DIRSUFFIX>,? <STATECODE> <ZIPCODE>-<ZIP4CODE>,?
+;213 Rd NE, Stamford
+;470=<HOUSENUMBER> <STREETTYPE> <DIRSUFFIX>,? <CITYNAME>,?
+;213 Rd NE, Stamford, 90210
+;472=<HOUSENUMBER> <STREETTYPE> <DIRSUFFIX>,? <CITYNAME>,? <ZIPCODE>,?
+;213 Rd NE, Stamford, 90210-6105
+;473=<HOUSENUMBER> <STREETTYPE> <DIRSUFFIX>,? <CITYNAME>,? <ZIPCODE>-<ZIP4CODE>,?
+;213 Rd NE, Stamford, FL
+;474=<HOUSENUMBER> <STREETTYPE> <DIRSUFFIX>,? <CITYNAME>,? <STATECODE>,?
+;213 Rd NE, Stamford, FL 90210
+;476=<HOUSENUMBER> <STREETTYPE> <DIRSUFFIX>,? <CITYNAME>,? <STATECODE> <ZIPCODE>,?
+;213 Rd NE, Stamford, FL 90210-6105
+;477=<HOUSENUMBER> <STREETTYPE> <DIRSUFFIX>,? <CITYNAME>,? <STATECODE> <ZIPCODE>-<ZIP4CODE>,?
+;213 Main
+500=<HOUSENUMBER> <STREETNAME>,?
+;213 Main, 90210
+502=<HOUSENUMBER> <STREETNAME>,? <ZIPCODE>,?
+;213 Main, 90210-6105
+503=<HOUSENUMBER> <STREETNAME>,? <ZIPCODE>-<ZIP4CODE>,?
+;213 Main, FL
+504=<HOUSENUMBER> <STREETNAME>,? <STATECODE>,?
+;213 Main, FL 90210
+506=<HOUSENUMBER> <STREETNAME>,? <STATECODE> <ZIPCODE>,?
+;213 Main, FL 90210-6105
+507=<HOUSENUMBER> <STREETNAME>,? <STATECODE> <ZIPCODE>-<ZIP4CODE>,?
+;213 Main, Stamford
+510=<HOUSENUMBER> <STREETNAME>,? <CITYNAME>,?
+;213 Main, Stamford, 90210
+512=<HOUSENUMBER> <STREETNAME>,? <CITYNAME>,? <ZIPCODE>,?
+;213 Main, Stamford, 90210-6105
+513=<HOUSENUMBER> <STREETNAME>,? <CITYNAME>,? <ZIPCODE>-<ZIP4CODE>,?
+;213 Main, Stamford, FL
+514=<HOUSENUMBER> <STREETNAME>,? <CITYNAME>,? <STATECODE>,?
+;213 Main, Stamford, FL 90210
+516=<HOUSENUMBER> <STREETNAME>,? <CITYNAME>,? <STATECODE> <ZIPCODE>,?
+;213 Main, Stamford, FL 90210-6105
+517=<HOUSENUMBER> <STREETNAME>,? <CITYNAME>,? <STATECODE> <ZIPCODE>-<ZIP4CODE>,?
+;213 Providence NE
+520=<HOUSENUMBER> <STREETNAME> <DIRSUFFIX>\.?,?
+;213 Providence NE, 90210
+522=<HOUSENUMBER> <STREETNAME> <DIRSUFFIX>\.?,? <ZIPCODE>,?
+;213 Providence NE, 90210-6105
+523=<HOUSENUMBER> <STREETNAME> <DIRSUFFIX>\.?,? <ZIPCODE>-<ZIP4CODE>,?
+;213 Providence NE, FL
+524=<HOUSENUMBER> <STREETNAME> <DIRSUFFIX>\.?,? <STATECODE>,?
+;213 Providence NE, FL 90210
+526=<HOUSENUMBER> <STREETNAME> <DIRSUFFIX>\.?,? <STATECODE> <ZIPCODE>,?
+;213 Providence NE, FL 90210-6105
+527=<HOUSENUMBER> <STREETNAME> <DIRSUFFIX>\.?,? <STATECODE> <ZIPCODE>-<ZIP4CODE>,?
+;213 Providence NE, Stamford
+530=<HOUSENUMBER> <STREETNAME> <DIRSUFFIX>\.?,? <CITYNAME>,?
+;213 Providence NE, Stamford, 90210
+532=<HOUSENUMBER> <STREETNAME> <DIRSUFFIX>\.?,? <CITYNAME>,? <ZIPCODE>,?
+;213 Providence NE, Stamford, 90210-6105
+533=<HOUSENUMBER> <STREETNAME> <DIRSUFFIX>\.?,? <CITYNAME>,? <ZIPCODE>-<ZIP4CODE>,?
+;213 Providence NE, Stamford, FL
+534=<HOUSENUMBER> <STREETNAME> <DIRSUFFIX>\.?,? <CITYNAME>,? <STATECODE>,?
+;213 Providence NE, Stamford, FL 90210
+536=<HOUSENUMBER> <STREETNAME> <DIRSUFFIX>\.?,? <CITYNAME>,? <STATECODE> <ZIPCODE>,?
+;213 Providence NE, Stamford, FL 90210-6105
+537=<HOUSENUMBER> <STREETNAME> <DIRSUFFIX>\.?,? <CITYNAME>,? <STATECODE> <ZIPCODE>-<ZIP4CODE>,?
+;213 Main St
+540=<HOUSENUMBER> <STREETNAME> <STREETTYPE>\.?,?
+;213 Main St, 90210
+542=<HOUSENUMBER> <STREETNAME> <STREETTYPE>\.?,? <ZIPCODE>,?
+;213 Main St, 90210-6105
+543=<HOUSENUMBER> <STREETNAME> <STREETTYPE>\.?,? <ZIPCODE>-<ZIP4CODE>,?
+;213 Main St, FL
+544=<HOUSENUMBER> <STREETNAME> <STREETTYPE>\.?,? <STATECODE>,?
+;213 Main St, FL 90210
+546=<HOUSENUMBER> <STREETNAME> <STREETTYPE>\.?,? <STATECODE> <ZIPCODE>,?
+;213 Main St, FL 90210-6105
+547=<HOUSENUMBER> <STREETNAME> <STREETTYPE>\.?,? <STATECODE> <ZIPCODE>-<ZIP4CODE>,?
+;213 Main St, Stamford
+550=<HOUSENUMBER> <STREETNAME> <STREETTYPE>\.?,? <CITYNAME>,?
+;213 Main St, Stamford, 90210
+552=<HOUSENUMBER> <STREETNAME> <STREETTYPE>\.?,? <CITYNAME>,? <ZIPCODE>,?
+;213 Main St, Stamford, 90210-6105
+553=<HOUSENUMBER> <STREETNAME> <STREETTYPE>\.?,? <CITYNAME>,? <ZIPCODE>-<ZIP4CODE>,?
+;213 Main St, Stamford, FL
+554=<HOUSENUMBER> <STREETNAME> <STREETTYPE>\.?,? <CITYNAME>,? <STATECODE>,?
+;213 Main St, Stamford, FL 90210
+556=<HOUSENUMBER> <STREETNAME> <STREETTYPE>\.?,? <CITYNAME>,? <STATECODE> <ZIPCODE>,?
+;213 Main St, Stamford, FL 90210-6105
+557=<HOUSENUMBER> <STREETNAME> <STREETTYPE>\.?,? <CITYNAME>,? <STATECODE> <ZIPCODE>-<ZIP4CODE>,?
+;213 Providence St NE
+560=<HOUSENUMBER> <STREETNAME> <STREETTYPE>\.? <DIRSUFFIX>\.?,?
+;213 Providence St NE, 90210
+562=<HOUSENUMBER> <STREETNAME> <STREETTYPE>\.? <DIRSUFFIX>\.?,? <ZIPCODE>,?
+;213 Providence St NE, 90210-6105
+563=<HOUSENUMBER> <STREETNAME> <STREETTYPE>\.? <DIRSUFFIX>\.?,? <ZIPCODE>-<ZIP4CODE>,?
+;213 Providence St NE, FL
+564=<HOUSENUMBER> <STREETNAME> <STREETTYPE>\.? <DIRSUFFIX>\.?,? <STATECODE>,?
+;213 Providence St NE, FL 90210
+566=<HOUSENUMBER> <STREETNAME> <STREETTYPE>\.? <DIRSUFFIX>\.?,? <STATECODE> <ZIPCODE>,?
+;213 Providence St NE, FL 90210-6105
+567=<HOUSENUMBER> <STREETNAME> <STREETTYPE>\.? <DIRSUFFIX>\.?,? <STATECODE> <ZIPCODE>-<ZIP4CODE>,?
+;213 Providence St NE, Stamford
+570=<HOUSENUMBER> <STREETNAME> <STREETTYPE>\.? <DIRSUFFIX>\.?,? <CITYNAME>,?
+;213 Providence St NE, Stamford, 90210
+572=<HOUSENUMBER> <STREETNAME> <STREETTYPE>\.? <DIRSUFFIX>\.?,? <CITYNAME>,? <ZIPCODE>,?
+;213 Providence St NE, Stamford, 90210-6105
+573=<HOUSENUMBER> <STREETNAME> <STREETTYPE>\.? <DIRSUFFIX>\.?,? <CITYNAME>,? <ZIPCODE>-<ZIP4CODE>,?
+;213 Providence St NE, Stamford, FL
+574=<HOUSENUMBER> <STREETNAME> <STREETTYPE>\.? <DIRSUFFIX>\.?,? <CITYNAME>,? <STATECODE>,?
+;213 Providence St NE, Stamford, FL 90210
+576=<HOUSENUMBER> <STREETNAME> <STREETTYPE>\.? <DIRSUFFIX>\.?,? <CITYNAME>,? <STATECODE> <ZIPCODE>,?
+;213 Providence St NE, Stamford, FL 90210-6105
+577=<HOUSENUMBER> <STREETNAME> <STREETTYPE>\.? <DIRSUFFIX>\.?,? <CITYNAME>,? <STATECODE> <ZIPCODE>-<ZIP4CODE>,?
+;213 N (prefix)
+;600=<HOUSENUMBER> <DIRPREFIX>\.?,?
+;213 N (prefix), 90210
+;602=<HOUSENUMBER> <DIRPREFIX>\.?,? <ZIPCODE>,?
+;213 N (prefix), 90210-6105
+;603=<HOUSENUMBER> <DIRPREFIX>\.?,? <ZIPCODE>-<ZIP4CODE>,?
+;213 N (prefix), FL
+;604=<HOUSENUMBER> <DIRPREFIX>\.?,? <STATECODE>,?
+;213 N (prefix), FL 90210
+;606=<HOUSENUMBER> <DIRPREFIX>\.?,? <STATECODE> <ZIPCODE>,?
+;213 N (prefix), FL 90210-6105
+;607=<HOUSENUMBER> <DIRPREFIX>\.?,? <STATECODE> <ZIPCODE>-<ZIP4CODE>,?
+;213 N (prefix), Stamford
+;610=<HOUSENUMBER> <DIRPREFIX>\.?,? <CITYNAME>,?
+;213 N (prefix), Stamford, 90210
+;612=<HOUSENUMBER> <DIRPREFIX>\.?,? <CITYNAME>,? <ZIPCODE>,?
+;213 N (prefix), Stamford, 90210-6105
+;613=<HOUSENUMBER> <DIRPREFIX>\.?,? <CITYNAME>,? <ZIPCODE>-<ZIP4CODE>,?
+;213 N (prefix), Stamford, FL
+;614=<HOUSENUMBER> <DIRPREFIX>\.?,? <CITYNAME>,? <STATECODE>,?
+;213 N (prefix), Stamford, FL 90210
+;616=<HOUSENUMBER> <DIRPREFIX>\.?,? <CITYNAME>,? <STATECODE> <ZIPCODE>,?
+;213 N (prefix), Stamford, FL 90210-6105
+;617=<HOUSENUMBER> <DIRPREFIX>\.?,? <CITYNAME>,? <STATECODE> <ZIPCODE>-<ZIP4CODE>,?
+;213 N Rd
+;640=<HOUSENUMBER> <DIRPREFIX>\.? <STREETTYPE>\.?,?
+;213 N Rd, 90210
+;642=<HOUSENUMBER> <DIRPREFIX>\.? <STREETTYPE>\.?,? <ZIPCODE>,?
+;213 N Rd, 90210-6105
+;643=<HOUSENUMBER> <DIRPREFIX>\.? <STREETTYPE>\.?,? <ZIPCODE>-<ZIP4CODE>,?
+;213 N Rd, FL
+;644=<HOUSENUMBER> <DIRPREFIX>\.? <STREETTYPE>\.?,? <STATECODE>,?
+;213 N Rd, FL 90210
+;646=<HOUSENUMBER> <DIRPREFIX>\.? <STREETTYPE>\.?,? <STATECODE> <ZIPCODE>,?
+;213 N Rd, FL 90210-6105
+;647=<HOUSENUMBER> <DIRPREFIX>\.? <STREETTYPE>\.?,? <STATECODE> <ZIPCODE>-<ZIP4CODE>,?
+;213 N Rd, Stamford
+;650=<HOUSENUMBER> <DIRPREFIX>\.? <STREETTYPE>\.?,? <CITYNAME>,?
+;213 N Rd, Stamford, 90210
+;652=<HOUSENUMBER> <DIRPREFIX>\.? <STREETTYPE>\.?,? <CITYNAME>,? <ZIPCODE>,?
+;213 N Rd, Stamford, 90210-6105
+;653=<HOUSENUMBER> <DIRPREFIX>\.? <STREETTYPE>\.?,? <CITYNAME>,? <ZIPCODE>-<ZIP4CODE>,?
+;213 N Rd, Stamford, FL
+;654=<HOUSENUMBER> <DIRPREFIX>\.? <STREETTYPE>\.?,? <CITYNAME>,? <STATECODE>,?
+;213 N Rd, Stamford, FL 90210
+;656=<HOUSENUMBER> <DIRPREFIX>\.? <STREETTYPE>\.?,? <CITYNAME>,? <STATECODE> <ZIPCODE>,?
+;213 N Rd, Stamford, FL 90210-6105
+;657=<HOUSENUMBER> <DIRPREFIX>\.? <STREETTYPE>\.?,? <CITYNAME>,? <STATECODE> <ZIPCODE>-<ZIP4CODE>,?
+;213 N Adams
+700=<HOUSENUMBER> <DIRPREFIX>\.? <STREETNAME>,?
+;213 N Adams, 90210
+702=<HOUSENUMBER> <DIRPREFIX>\.? <STREETNAME>,? <ZIPCODE>,?
+;213 N Adams, 90210-6105
+703=<HOUSENUMBER> <DIRPREFIX>\.? <STREETNAME>,? <ZIPCODE>-<ZIP4CODE>,?
+;213 N Adams, FL
+704=<HOUSENUMBER> <DIRPREFIX>\.? <STREETNAME>,? <STATECODE>,?
+;213 N Adams, FL 90210
+706=<HOUSENUMBER> <DIRPREFIX>\.? <STREETNAME>,? <STATECODE> <ZIPCODE>,?
+;213 N Adams, FL 90210-6105
+707=<HOUSENUMBER> <DIRPREFIX>\.? <STREETNAME>,? <STATECODE> <ZIPCODE>-<ZIP4CODE>,?
+;213 N Adams, Stamford
+710=<HOUSENUMBER> <DIRPREFIX>\.? <STREETNAME>,? <CITYNAME>,?
+;213 N Adams, Stamford, 90210
+712=<HOUSENUMBER> <DIRPREFIX>\.? <STREETNAME>,? <CITYNAME>,? <ZIPCODE>,?
+;213 N Adams, Stamford, 90210-6105
+713=<HOUSENUMBER> <DIRPREFIX>\.? <STREETNAME>,? <CITYNAME>,? <ZIPCODE>-<ZIP4CODE>,?
+;213 N Adams, Stamford, FL
+714=<HOUSENUMBER> <DIRPREFIX>\.? <STREETNAME>,? <CITYNAME>,? <STATECODE>,?
+;213 N Adams, Stamford, FL 90210
+716=<HOUSENUMBER> <DIRPREFIX>\.? <STREETNAME>,? <CITYNAME>,? <STATECODE> <ZIPCODE>,?
+;213 N Adams, Stamford, FL 90210-6105
+717=<HOUSENUMBER> <DIRPREFIX>\.? <STREETNAME>,? <CITYNAME>,? <STATECODE> <ZIPCODE>-<ZIP4CODE>,?
+;213 N Adams Ave
+740=<HOUSENUMBER> <DIRPREFIX>\.? <STREETNAME> <STREETTYPE>\.?,?
+;213 N Adams Ave, 90210
+742=<HOUSENUMBER> <DIRPREFIX>\.? <STREETNAME> <STREETTYPE>\.?,? <ZIPCODE>,?
+;213 N Adams Ave, 90210-6105
+743=<HOUSENUMBER> <DIRPREFIX>\.? <STREETNAME> <STREETTYPE>\.?,? <ZIPCODE>-<ZIP4CODE>,?
+;213 N Adams Ave, FL
+744=<HOUSENUMBER> <DIRPREFIX>\.? <STREETNAME> <STREETTYPE>\.?,? <STATECODE>,?
+;213 N Adams Ave, FL 90210
+746=<HOUSENUMBER> <DIRPREFIX>\.? <STREETNAME> <STREETTYPE>\.?,? <STATECODE> <ZIPCODE>,?
+;213 N Adams Ave, FL 90210-6105
+747=<HOUSENUMBER> <DIRPREFIX>\.? <STREETNAME> <STREETTYPE>\.?,? <STATECODE> <ZIPCODE>-<ZIP4CODE>,?
+;213 N Adams Ave, Stamford
+750=<HOUSENUMBER> <DIRPREFIX>\.? <STREETNAME> <STREETTYPE>\.?,? <CITYNAME>,?
+;213 N Adams Ave, Stamford, 90210
+752=<HOUSENUMBER> <DIRPREFIX>\.? <STREETNAME> <STREETTYPE>\.?,? <CITYNAME>,? <ZIPCODE>,?
+;213 N Adams Ave, Stamford, 90210-6105
+753=<HOUSENUMBER> <DIRPREFIX>\.? <STREETNAME> <STREETTYPE>\.?,? <CITYNAME>,? <ZIPCODE>-<ZIP4CODE>,?
+;213 N Adams Ave, Stamford, FL
+754=<HOUSENUMBER> <DIRPREFIX>\.? <STREETNAME> <STREETTYPE>\.?,? <CITYNAME>,? <STATECODE>,?
+;213 N Adams Ave, Stamford, FL 90210
+756=<HOUSENUMBER> <DIRPREFIX>\.? <STREETNAME> <STREETTYPE>\.?,? <CITYNAME>,? <STATECODE> <ZIPCODE>,?
+;213 N Adams Ave, Stamford, FL 90210-6105
+757=<HOUSENUMBER> <DIRPREFIX>\.? <STREETNAME> <STREETTYPE>\.?,? <CITYNAME>,? <STATECODE> <ZIPCODE>-<ZIP4CODE>,?
+
+
+[STREETNAME]
+Format=\w[\w\. ]*
+
+[DIRPREFIX]
+Format=N|S|E|W|NE|NW|SE|SW|EX
+
+[DIRSUFFIX]
+Format=N|S|E|W|NE|NW|SE|SW|EX
+
+[HOUSENUMBER]
+Format=\d+
+
+[CITYNAME]
+Format=\w[\w\. ]*
+
+[STATECODE]
+Format=AL|AK|AS|AZ|AR|CA|CO|CT|DE|DC|FM|FL|GA|GU|HI|ID|IL|IN|IA|KS|KY|LA|ME|MH|MD|MA|MI|MN|MS|MO|MT|NE|NV|NH|NJ|NM|NY|NC|ND|MP|OH|OK|OR|PW|PA|PR|RI|SC|SD|TN|TX|UT|VT|VI|VA|WA|WV|WI|WY
+
+[ZIPCODE]
+Format=\d\d\d\d\d
+
+[ZIP4CODE]
+Format=\d\d\d\d
+
+[STREETTYPE]
+Format=Aly|Anx|Arc|Ave|Byu|Bch|Bnd|Blf|Blfs|Btm|Blvd|Br|Brg|Brk|Brks|Bg|Bgs|Byp|Cp|Cyn|Cpe|Cswy|Ctr|Ctrs|Cir|Cirs|Clf|Clfs|Clb|Cmn|Cmns|Cor|Cors|Crse|Ct|Cts|Cv|Cvs|Crk|Cres|Crst|Xing|Xrd|Xrds|Curv|Dl|Dm|Dv|Dr|Drs|Est|Ests|Expy|Ext|Exts|Fall|Fls|Fry|Fld|Flds|Flt|Flts|Frd|Frds|Frst|Frg|Frgs|Frk|Frks|Ft|Fwy|Gdn|Gdns|Gtwy|Gln|Glns|Grn|Grns|Grv|Grvs|Hbr|Hbrs|Hvn|Hts|Hwy|Hl|Hls|Holw|Inlt|Is|Iss|Isle|Jct|Jcts|Ky|Kys|Knl|Knls|Lk|Lks|Land|Lndg|Ln|Lgt|Lgts|Lf|Lck|Lcks|Ldg|Loop|Mall|Mnr|Mnrs|Mdw|Mdws|Mews|Ml|Mls|Msn|Mtwy|Mt|Mtn|Mtns|Nck|Orch|Oval|Opas|Park|Pkwy|Pass|Psge|Path|Pike|Pne|Pnes|Pl|Pln|Plns|Plz|Pt|Pts|Prt|Prts|Pr|Radl|Ramp|Rnch|Rpd|Rpds|Rst|Rdg|Rdgs|Riv|Rd|Rds|Rte|Row|Rue|Run|Shl|Shls|Shr|Shrs|Skwy|Spg|Spgs|Spur|Sq|Sqs|Sta|Stra|Strm|St|Sts|Smt|Ter|Trwy|Trce|Trak|Trfy|Trl|Trlr|Tunl|Tpke|Upas|Un|Uns|Vly|Vlys|Via|Vw|Vws|Vlg|Vlgs|Vl|Vis|Walk|Wall|Way|Ways|Wl|Wls
+Alley=Aly
+Allee=Aly
+Ally=Aly
+;
+Annex=Anx
+Anex=Anx
+Annx=Anx
+;
+Arcade=Arc
+;
+Avenue=Ave
+Av=Ave
+Aven=Ave
+Avenu=Ave
+Avn=Ave
+Avnue=Ave
+;
+Bayou=Byu
+Bayoo=Byu
+;
+Beach=Bch
+;
+Bend=Bnd
+;
+Bluff=Blf
+Bluf=Blf
+Bluffs=Blfs
+;
+Bottom=Btm
+Bot=Btm
+Bottm=Btm
+;
+Boulevard=Blvd
+Boul=Blvd
+Boulv=Blvd
+;
+Branch=Br
+Brnch=Br
+;
+Bridge=Brg
+Brdge=Brg
+;
+Brook=Brk
+Brooks=Brks
+;
+Burg=Bg
+Burgs=Bgs
+;
+Bypass=Byp
+Bypa=Byp
+Bypas=Byp
+Byps=Byp
+;
+Camp=Cp
+Cmp=Cp
+;
+Canyon=Cyn
+Canyn=Cyn
+Cnyn=Cyn
+;
+Cape=Cpe
+;
+Causeway=Cswy
+Causway=Cswy
+;
+Center=Ctr
+Cen=Ctr
+Cent=Ctr
+Centr=Ctr
+Centre=Ctr
+Cnter=Ctr
+Cntr=Ctr
+Centers=Ctrs
+;
+Circle=Cir
+Circ=Cir
+Circl=Cir
+Crcl=Cir
+Crcle=Cir
+Circles=Cirs
+;
+Cliff=Clf
+Cliffs=Clfs
+;
+Club=Clb
+;
+Common=Cmn
+Commons=Cmns
+;
+Corner=Cor
+Corners=Cors
+;
+Course=Crse
+;
+Court=Ct
+Courts=Cts
+;
+Cove=Cv
+Coves=Cvs
+;
+Creek=Crk
+;
+Crescent=Cres
+Crsent=Cres
+Crsnt=Cres
+;
+Crest=Crst
+;
+Crossing=Xing
+Crssng=Xing
+;
+Crossroad=Xrd
+Crossroads=Xrds
+;
+Curve=Curv
+;
+Dale=Dl
+;
+Dam=Dm
+;
+Divide=Dv
+Div=Dv
+Dvd=Dv
+;
+Drive=Dr
+Driv=Dr
+Drv=Dr
+Drives=Drs
+;
+Estate=Est
+Estates=Ests
+;
+Expressway=Expy
+Exp=Expy
+Expr=Expy
+Express=Expy
+Expw=Expy
+;
+Extension=Ext
+Extn=Ext
+Extnsn=Ext
+;
+Falls=Fls
+;
+Ferry=Fry
+Frry=Fry
+;
+Field=Fld
+Fields=Flds
+;
+Flat=Flt
+Flats=Flts
+;
+Ford=Frd
+Fords=Frds
+;
+Forest=Frst
+Forests=Frst
+;
+Forge=Frg
+Forg=Frg
+Forges=Frgs
+;
+Fork=Frk
+Forks=Frks
+;
+Fort=Ft
+Frt=Ft
+;
+Freeway=Fwy
+Freewy=Fwy
+Frway=Fwy
+Frwy=Fwy
+;
+Garden=Gdn
+Gardn=Gdn
+Grden=Gdn
+Grdn=Gdn
+Gardens=Gdns
+Grdns=Gdns
+;
+Gateway=Gtwy
+Gatewy=Gtwy
+Gatway=Gtwy
+Gtway=Gtwy
+;
+Glen=Gln
+Glens=Glns
+;
+Green=Grn
+Greens=Grns
+;
+Grove=Grv
+Grov=Grv
+Groves=Grvs
+;
+Harbor=Hbr
+Harb=Hbr
+Harbr=Hbr
+Hrbor=Hbr
+Harbors=Hbrs
+;
+Haven=Hvn
+;
+Ht=Hts
+;
+Highway=Hwy
+Highwy=Hwy
+Hiway=Hwy
+Hiwy=Hwy
+Hway=Hwy
+;
+Hill=Hl
+Hills=Hls
+;
+Hollow=Holw
+Hllw=Holw
+Hollows=Holw
+Holws=Holw
+;
+Inlet=Inlt
+;
+Island=Is
+Islnd=Is
+Islands=Iss
+Islnds=Iss
+;
+Isles=Isle
+;
+Junction=Jct
+Jction=Jct
+Jctn=Jct
+Junctn=Jct
+Juncton=Jct
+Junctions=Jcts
+Jctns=Jcts
+;
+Key=Ky
+Keys=Kys
+;
+Knoll=Knl
+Knol=Knl
+Knolls=Knls
+;
+Lake=Lk
+Lakes=Lks
+;
+Landing=Lndg
+Lndng=Lndg
+;
+Lane=Ln
+;
+Light=Lgt
+Lights=Lgts
+;
+Loaf=Lf
+;
+Lock=Lck
+Locks=Lcks
+;
+Lodge=Ldg
+Ldge=Ldg
+Lodg=Ldg
+;
+Loops=Loop
+;
+Manor=Mnr
+Manors=Mnrs
+;
+Meadow=Mdw
+Meadows=Mdws
+;Mdw=Mdws
+Medows=Mdws
+;
+Mill=Ml
+Mills=Mls
+;
+Missn=Msn
+Mssn=Msn
+;
+Motorway=Mtwy
+;
+Mount=Mt
+Mnt=Mt
+;
+Mountain=Mtn
+Mntain=Mtn
+Mntn=Mtn
+Mountin=Mtn
+Mtin=Mtn
+Mountains=Mtns
+Mntns=Mtns
+;
+Neck=Nck
+;
+Orchard=Orch
+Orchrd=Orch
+;
+Ovl=Oval
+;
+Overpass=Opas
+;
+Prk=Park
+Parks=Park
+;
+Parkway=Pkwy
+Parkwy=Pkwy
+Pkway=Pkwy
+Pky=Pkwy
+Parkways=Pkwy
+Pkwys=Pkwy
+;
+Passage=Psge
+;
+Paths=Path
+;
+Pikes=Pike
+;
+Pine=Pne
+Pines=Pnes
+;
+Place=Pl
+;
+Plain=Pln
+Plains=Plns
+;
+Plaza=Plz
+Plza=Plz
+;
+Point=Pt
+Points=Pts
+;
+Port=Prt
+Ports=Prts
+;
+Prairie=Pr
+Prr=Pr
+;
+Radial=Radl
+Rad=Radl
+Radiel=Radl
+;
+Ranch=Rnch
+Ranches=Rnch
+Rnchs=Rnch
+;
+Rapid=Rpd
+Rapids=Rpds
+;
+Rest=Rst
+;
+Ridge=Rdg
+Rdge=Rdg
+Ridges=Rdgs
+;
+River=Riv
+Rvr=Riv
+Rivr=Riv
+;
+Road=Rd
+Roads=Rds
+;
+Route=Rte
+;
+Shoal=Shl
+Shoals=Shls
+;
+Shore=Shr
+Shoar=Shr
+Shores=Shrs
+Shoars=Shrs
+;
+Skyway=Skwy
+;
+Spring=Spg
+Spng=Spg
+Sprng=Spg
+Springs=Spgs
+Spngs=Spgs
+Sprngs=Spgs
+;
+Spurs=Spur
+;
+Square=Sq
+Sqr=Sq
+Sqre=Sq
+Squ=Sq
+Squares=Sqs
+Sqrs=Sqs
+;
+Station=Sta
+Statn=Sta
+Stn=Sta
+;
+Stravenue=Stra
+Strav=Stra
+Straven=Stra
+Stravn=Stra
+Strvn=Stra
+Strvnue=Stra
+;
+Stream=Strm
+Streme=Strm
+;
+Street=St
+Strt=St
+Str=St
+Streets=Sts
+;
+Summit=Smt
+Sumit=Smt
+Sumitt=Smt
+;
+Terrace=Ter
+Terr=Ter
+;
+Throughway=Trwy
+;
+Trace=Trce
+Traces=Trce
+;
+Track=Trak
+Trk=Trak
+Tracks=Trak
+Trks=Trak
+;
+Trafficway=Trfy
+;
+Trail=Trl
+Trails=Trl
+Trls=Trl
+;
+Trailer=Trlr
+Trlrs=Trlr
+;
+Tunnel=Tunl
+Tunel=Tunl
+Tunnl=Tunl
+Tunnels=Tunl
+Tunls=Tunl
+;
+Turnpike=Tpke
+Trnpk=Tpke
+Turnpk=Tpke
+;
+Underpass=Upas
+;
+Union=Un
+Unions=Uns
+;
+Valley=Vly
+Vally=Vly
+Vlly=Vly
+Valleys=Vlys
+;
+Viaduct=Via
+Vdct=Via
+Viadct=Via
+;
+View=Vw
+Views=Vws
+;
+Village=Vlg
+Vill=Vlg
+Villag=Vlg
+Villg=Vlg
+Villiage=Vlg
+Villages=Vlgs
+;
+Ville=Vl
+;
+Vista=Vis
+Vist=Vis
+Vst=Vis
+Vsta=Vis
+;
+Walks=Walk
+;
+Wy=Way
+;
+Well=Wl
+Wells=Wls
+
+[OUTPUT]
+; How normalized addres will be presented
+StandardAddress=<HOUSENUMBER>< ><DIRPREFIX>< ><STREETNAME>< ><STREETTYPE>< ><DIRSUFFIX><,>< ><CITYNAME><,>< ><ZIPCODE><-><ZIP4CODE>
+

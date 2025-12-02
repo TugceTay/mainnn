@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<object class="TForm1" name="Form1">
+  <property name="Left">0</property>
+  <property name="Top">0</property>
+  <property name="Caption">Form1</property>
+  <property name="ClientHeight">480</property>
+  <property name="ClientWidth">640</property>
+  <property name="FormFactor">
+    <object class="TFormFactor">
+      <property name="Width">320</property>
+      <property name="Height">480</property>
+      <property name="Devices">[Desktop,iPhone,iPad]</property>
+    </object>
+  </property>
+  <property name="DesignerMasterStyle">0</property>
+
+  <object class="TViewport3D" name="Viewport3D1">
+    <property name="Align">Client</property>
+    <object class="TCamera" name="Camera1">
+      <property name="Position">
+        <a:Vector3D X="0" Y="0" Z="-150"/>
+      </property>
+    </object>
+    <object class="TLight" name="Light1">
+      <property name="LightType">Directional</property>
+      <property name="Position">
+        <a:Vector3D X="0" Y="0" Z="-100"/>
+      </property>
+      <property name="Direction">
+        <a:Vector3D X="0" Y="0" Z="1"/>
+      </property>
+    </object>
+  </object>
+
+  <object class="TLightMaterialSource" name="LightMaterialSource1"/>
+
+  <object class="TButton" name="btnLoadModel">
+    <property name="Position">
+      <a:Vector2D X="8" Y="8"/>
+    </property>
+    <property name="TabOrder">1</property>
+    <property name="Text">Load DAE...</property>
+    <property name="OnClick">btnLoadModelClick</property>
+  </object>
+
+  <object class="TOpenDialog" name="OpenDAEDialog">
+    <property name="Filter">Collada files (*.dae)|*.dae</property>
+  </object>
+</object>

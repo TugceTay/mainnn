@@ -1,0 +1,6 @@
+[TatukGIS Layer1]
+Path=..\..\World\VisibleEarth\world_8km.jpg
+
+; convert to gray scale
+Pixel.GrayScale=true
+

@@ -1,0 +1,10 @@
+[TatukGIS Layer]
+Storage=WEBTILES
+Type=TMS
+name=osm_bright
+Caption=Stadia OSMBright Tiles
+Url1=https://tiles.stadiamaps.com/tiles/osm_bright/
+Format=png
+EndLevel=20
+Copyright=(c) OpenStreetMap contributors, Stadia Maps, OpenMapTiles.
+Referer=http://leaflet-extras.github.io/

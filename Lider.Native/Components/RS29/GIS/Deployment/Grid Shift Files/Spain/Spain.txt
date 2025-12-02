@@ -1,0 +1,15 @@
+Malla NTv2 100800401
+  Original source:
+    http://www.icgc.cat/en/content/download/48766/337967/version/1/file/Malla_NTv2_11_03.zip
+    Transformation files dated 2010.11.09 
+  License:
+    http://www.icgc.cat/en/Help/Legal-notice
+  Available forms:
+    TTKGS
+      Slim down version with same precision as original.
+
+sped2et
+  Unknown availability
+
+SPED2ETV2
+  Unknown availability

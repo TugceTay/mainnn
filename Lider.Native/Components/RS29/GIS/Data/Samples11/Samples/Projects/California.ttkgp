@@ -1,0 +1,93 @@
+[TatukGIS]
+CodePage=1250
+CS.EPSG=4269
+OutCodePage=1250
+VisibleExtent.XMax=-116.905218703156
+VisibleExtent.XMin=-117.164488570413
+VisibleExtent.YMax=34.1546585983329
+VisibleExtent.YMin=33.973133019419
+
+[TatukGIS Layer1]
+Active=YES
+Caption=Counties
+CodePage=1250
+CS.EPSG=4269
+MaxScale=1.7E308
+MaxZoom=1.7E308
+MinScale=0
+MinZoom=0
+Name=Counties
+OutCodePage=1250
+Path=..\\..\\World\\Countries\\USA\\States\\California\\tl_2008_06_county.shp
+Visible=YES
+
+[TatukGIS Layer2]
+Name=DEM
+Path=..\\..\\World\\Countries\\USA\\States\\California\\San Bernardino\\NED\\w001001.adf
+
+[TatukGIS Layer3]
+Active=YES
+Caption=DOQ
+CodePage=1250
+CS.EPSG=26911
+CurrentPage=1
+MaxScale=1.7E308
+MaxZoom=1.7E308
+MinScale=0
+MinZoom=0
+Name=DOQ
+OutCodePage=1250
+Path=..\\..\\World\\Countries\\USA\\States\\California\\San Bernardino\\DOQ\\37134877.jpg
+Visible=YES
+
+[TatukGIS Layer4]
+Active=YES
+Caption=Streets
+CodePage=1250
+CS.EPSG=4269
+IgnoreShapeParams=YES
+Label.Alignment=FOLLOW
+Label.Color=WHITE
+Label.Duplicates=NO
+Label.Field=FULLNAME
+Label.OutlineWidth=2
+Legend=Highways
+Line.ShowLegend=YES
+Line.SmartSize=16
+Line.Width=40
+MaxScale=1.7E308
+MaxZoom=1.7E308
+MinScale=0
+MinZoom=0
+Name=Streets
+OutCodePage=1250
+Path=..\\..\\World\\Countries\\USA\\States\\California\\San Bernardino\\TIGER\\tl_2008_06071_edges_trunc.shp
+Query=MTFCC < 'S1400'
+Visible=YES
+
+[TatukGIS Hierarchy]
+Other=Counties;DEM;DOQ;Streets
+
+[TatukGIS Group1]
+Active=YES
+Caption=Other
+CodePage=1250
+MaxScale=1.7E308
+MaxZoom=1.7E308
+MinScale=0
+MinZoom=0
+Name=Other
+OutCodePage=1250
+Visible=YES
+
+[TatukGIS Layer4 1]
+Legend=Locla roads
+Line.SmartSize=15
+Line.Width=2
+MaxScale=1.7E308
+MaxZoom=1.7E308
+MinScale=0
+MinZoom=0
+Query=MTFCC = 'S1400'
+Visible=YES
+

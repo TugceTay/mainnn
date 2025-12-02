@@ -1,0 +1,12 @@
+[TatukGIS Layer1]
+Path=..\..\World\VisibleEarth\world_8km.jpg
+
+; convert to gray scale
+Pixel.GrayScale=true
+
+;color all scale to black->green
+Pixel.GrayMapZone1= $00, $ff, $0000, $00ff00
+
+;color restricted scale to user colors
+Pixel.GrayMapZone2= $7F, $af, $ff0000, $ff0000
+

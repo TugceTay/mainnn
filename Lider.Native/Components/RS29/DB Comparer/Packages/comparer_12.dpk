@@ -1,0 +1,107 @@
+package comparer_12;
+{$R *.res}
+{$R 'comparer_ver.res'}
+{$IFDEF IMPLICITBUILDING This IFDEF should not be used by users}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO OFF}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS OFF}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION OFF}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO OFF}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES OFF}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$DEFINE RELEASE}
+{$ENDIF IMPLICITBUILDING}
+{$DESCRIPTION 'Database Comparer VCL Runtime'}
+{$RUNONLY}
+{$IMPLICITBUILD OFF}
+
+requires
+  vcl,
+  dbrtl,
+  vcldb,
+  adortl;
+
+contains
+  dbcClasses in '..\..\common\dbcClasses.pas',
+  dbcMSSQLExec in '..\..\common\dbcMSSQLExec.pas',
+  dbcTableDataComparer in '..\..\common\dbcTableDataComparer.pas',
+  dbcMySQLDatabaseExtract in '..\..\common\dbcMySQLDatabaseExtract.pas',
+  dbcASEDatabaseExtract in '..\..\common\dbcASEDatabaseExtract.pas',
+  dbcMSSQLScriptExtract in '..\..\common\dbcMSSQLScriptExtract.pas',
+  dbcMSSQLParser in '..\..\common\dbcMSSQLParser.pas',
+  dbcOracleScriptExtract in '..\..\common\dbcOracleScriptExtract.pas',
+  dbcOracleParser in '..\..\common\dbcOracleParser.pas',
+  dbcMySQLScriptExtract in '..\..\common\dbcMySQLScriptExtract.pas',
+  dbcMySQLParser in '..\..\common\dbcMySQLParser.pas',
+  dbcASAScriptExtract in '..\..\common\dbcASAScriptExtract.pas',
+  dbcIBScriptExtract in '..\..\common\dbcIBScriptExtract.pas',
+  dbcCustomScriptExtract in '..\..\common\dbcCustomScriptExtract.pas',
+  dbcIBDatabaseExtract in '..\..\common\dbcIBDatabaseExtract.pas',
+  dbcParser in '..\..\common\dbcParser.pas',
+  dbcCompObj in '..\..\common\dbcCompObj.pas',
+  dbcSQL_Exec in '..\..\common\dbcSQL_Exec.pas',
+  dbcDBComparer in '..\..\common\dbcDBComparer.pas',
+  dbcIBSQLExec in '..\..\common\dbcIBSQLExec.pas',
+  dbcDBEngine in '..\..\common\dbcDBEngine.pas',
+  dbcIbExParser in '..\..\common\dbcIbExParser.pas',
+  dbcComp_Pkg in '..\..\common\dbcComp_Pkg.pas',
+  dbcComp_Def in '..\..\common\dbcComp_Def.pas',
+  dbcComp_Rul in '..\..\common\dbcComp_Rul.pas',
+  dbcDBStructure in '..\..\common\dbcDBStructure.pas',
+  dbcASAParser in '..\..\common\dbcASAParser.pas',
+  dbcComp_Tbl in '..\..\common\dbcComp_Tbl.pas',
+  dbcCompColumn in '..\..\common\dbcCompColumn.pas',
+  dbcComp_Dmn in '..\..\common\dbcComp_Dmn.pas',
+  dbcComp_Viw in '..\..\common\dbcComp_Viw.pas',
+  dbcComp_Prc in '..\..\common\dbcComp_Prc.pas',
+  dbcIBParser in '..\..\common\dbcIBParser.pas',
+  dbcComp_Gnr in '..\..\common\dbcComp_Gnr.pas',
+  dbcComp_Rol in '..\..\common\dbcComp_Rol.pas',
+  dbcComp_Fnc in '..\..\common\dbcComp_Fnc.pas',
+  dbcComp_Ctr in '..\..\common\dbcComp_Ctr.pas',
+  dbcComp_Exc in '..\..\common\dbcComp_Exc.pas',
+  dbcComp_Idx in '..\..\common\dbcComp_Idx.pas',
+  dbcComp_Trg in '..\..\common\dbcComp_Trg.pas',
+  dbcMsg in '..\..\common\dbcMsg.pas',
+  dbcMsgMngr in '..\..\common\dbcMsgMngr.pas',
+  dbcDBOptions in '..\..\common\dbcDBOptions.pas',
+  dbcTypes in '..\..\common\dbcTypes.pas',
+  dbcASESQLExec in '..\..\common\dbcASESQLExec.pas',
+  dbcLocalSQLParser in '..\..\common\dbcLocalSQLParser.pas',
+  dbcASADatabaseExtract in '..\..\common\dbcASADatabaseExtract.pas',
+  dbcASASQLExec in '..\..\common\dbcASASQLExec.pas',
+  dbcOracleSQLExec in '..\..\common\dbcOracleSQLExec.pas',
+  dbcOracleDatabaseExtract in '..\..\common\dbcOracleDatabaseExtract.pas',
+  dbcPGSQLParser in '..\..\common\dbcPGSQLParser.pas',
+  dbcPGSQLExec in '..\..\common\dbcPGSQLExec.pas',
+  dbcPGScriptExtract in '..\..\common\dbcPGScriptExtract.pas',
+  dbcPGDatabaseExtract in '..\..\common\dbcPGDatabaseExtract.pas',
+  dbcASEScriptExtract in '..\..\common\dbcASEScriptExtract.pas',
+  dbcDB2Parser in '..\..\common\dbcDB2Parser.pas',
+  dbcMSSQLDatabaseExtract in '..\..\common\dbcMSSQLDatabaseExtract.pas',
+  dbcMySQLExec in '..\..\common\dbcMySQLExec.pas',
+  dbcDB2DatabaseExtract in '..\..\common\dbcDB2DatabaseExtract.pas',
+  dbcDB2ScriptExtract in '..\..\common\dbcDB2ScriptExtract.pas',
+  dbcDB2SQLExec in '..\..\common\dbcDB2SQLExec.pas',
+  dbcASEParser in '..\..\common\dbcASEParser.pas',
+  dbcOLEDBDatabaseExtract in '..\..\common\dbcOLEDBDatabaseExtract.pas',
+  dbcMSAccessDatabaseExtract in '..\..\common\dbcMSAccessDatabaseExtract.pas',
+  dbcConnection_ADO in '..\..\common\dbcConnection_ADO.pas',
+  ADOX_TLB in '..\..\common\ADOX_TLB.pas',
+  dbcDB_ADO in '..\..\common\dbcDB_ADO.pas';
+
+end.

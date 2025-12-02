@@ -1,0 +1,17 @@
+﻿program View3D;
+
+uses
+  System.StartUpCopy,
+  FMX.Forms,
+  Unit1 in 'Unit1.pas' {Form1};
+
+{$R *.res}
+{$IFDEF MSWINDOWS}
+{$R *.fmx MSWINDOWS}    // ← burada BRCC32 ile Unit1.fmx derlenip linklenecek
+{$ENDIF}
+
+begin
+  Application.Initialize;
+  Application.CreateForm(TForm1, Form1);
+  Application.Run;
+end.

@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899.12.30 00:00:00.000.018,C:\Lider.Native\Components\RS29\GIS\Source\Lider.CG.GIS.VCL.GeoControlLegendForm.pas=</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.099,C:\Lider.Native\Components\RS29\GIS\Source\Lider.CG.GIS.VCL.GeoPvlControl3D.pas=</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.085,C:\Lider.Native\Components\RS29\GIS\Source\Lider.CG.GIS.VCL.GeoPvl.pas=</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.071,C:\Lider.Native\Components\RS29\GIS\Source\Lider.CG.GIS.VCL.AllPvl.pas=</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.957,C:\Lider.Native\Components\RS29\GIS\Source\Lider.CG.GIS.VCL.GeoControlAttributes.pas=</Transaction>
+  </Transactions>
+</BorlandProject>

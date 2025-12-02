@@ -1,0 +1,11 @@
+[TatukGIS Layer]
+Storage=WEBTILES
+Type=TMS
+name=cycl_osm_map
+Caption=CyclOSM Tiles
+Url1=https://a.tile-cyclosm.openstreetmap.fr/cyclosm/
+Url2=https://b.tile-cyclosm.openstreetmap.fr/cyclosm/
+Url3=https://c.tile-cyclosm.openstreetmap.fr/cyclosm/
+Format=png
+EndLevel=20
+Copyright=(c) OpenStreetMap contributors, CyclOSM. 

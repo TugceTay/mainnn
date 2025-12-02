@@ -1,0 +1,9 @@
+[TatukGIS Layer]
+Storage=WEBTILES
+Type=CUSTOM
+name=World Hillshade
+Caption=World Hillshade
+Url1=https://services.arcgisonline.com/arcgis/rest/services/Elevation/World_Hillshade/MapServer/tile/{level}/{row}/{col}
+Format=jpg
+EndLevel=23
+Copyright=(c) Esri, Source: Esri, Airbus DS, USGS, NGA, NASA, CGIAR, N Robinson, NCEAS, NLS, OS, NMA, Geodatastyrelsen, Rijkswaterstaat, GSA, Geoland, FEMA, Intermap and the GIS user community

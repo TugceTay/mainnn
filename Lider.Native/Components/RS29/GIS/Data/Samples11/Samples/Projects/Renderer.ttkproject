@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<TatukGIS>
+  <Viewer>
+    <VisibleExtent>
+      <XMin>-126.307390599537</XMin>
+      <XMax>-112.34957829796</XMax>
+      <YMin>32.0771552681568</YMin>
+      <YMax>42.5345757699653</YMax>
+    </VisibleExtent>
+    <CS>
+      <EPSG>4269</EPSG>
+    </CS>
+  </Viewer>
+  <Layers>
+    <Layer Name="counties" Path="..\\..\\World\\Countries\\USA\\States\\California\\counties.shp">
+      <Sections>
+        <Section>
+          <Visible>YES</Visible>
+          <Ground>OnDem</Ground>
+          <Line>
+            <Color>ARGB:FF0000FF</Color>
+            <OutlineWidth>SIZE:0 twips</OutlineWidth>
+          </Line>
+          <Area>
+            <Color>ARGB:FF808080</Color>
+          </Area>
+          <Active>YES</Active>
+          <Caption>counties</Caption>
+          <CodePage>1252</CodePage>
+          <CS>
+            <EPSG>4269</EPSG>
+          </CS>
+        </Section>
+        <Section>
+          <Visible>YES</Visible>
+          <Query>population &lt;50000</Query>
+          <Ground>OnDem</Ground>
+          <Line>
+            <OutlineWidth>SIZE:0 twips</OutlineWidth>
+          </Line>
+          <Area>
+            <Color>ARGB:FF008000</Color>
+          </Area>
+        </Section>
+        <Section>
+          <Visible>YES</Visible>
+          <Query>population between 50000 and 500000</Query>
+          <Ground>OnDem</Ground>
+          <Line>
+            <OutlineWidth>SIZE:0 twips</OutlineWidth>
+          </Line>
+          <Area>
+            <Color>ARGB:FFFFFF00</Color>
+          </Area>
+        </Section>
+        <Section>
+          <Visible>YES</Visible>
+          <Query>population&gt;=500000</Query>
+          <Ground>OnDem</Ground>
+          <Line>
+            <OutlineWidth>SIZE:0 twips</OutlineWidth>
+          </Line>
+          <Area>
+            <Color>ARGB:FFFF0000</Color>
+          </Area>
+        </Section>
+      </Sections>
+    </Layer>
+  </Layers>
+  <Hierarchy>
+    <Groups>
+      <Group Name="Other" Caption="Other" Collapsed="False" Active="True">
+        <Layers>
+          <Layer Name="counties"/>
+        </Layers>
+      </Group>
+    </Groups>
+  </Hierarchy>
+</TatukGIS>

@@ -1,0 +1,18 @@
+BETA2007
+  Original source:
+    http://crs.bkg.bund.de/crseu/crs/descrtrans/BeTA/de_dhdn2etrs_beta.php
+  License:
+    UNSPECIFIED
+  Available forms:
+    TTKGS
+      Slim down version with same precision as original.
+
+NTv2_SN - Saxony Anhalt
+  Original source:
+    http://www.landesvermessung.sachsen.de/inhalt/etrs/method/method.html#ntv2
+  License:
+    FREEE
+  Available forms:
+    TTKGS
+      Slim down version with same precision as original.
+   

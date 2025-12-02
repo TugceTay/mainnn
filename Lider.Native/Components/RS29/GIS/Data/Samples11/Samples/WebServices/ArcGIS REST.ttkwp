@@ -1,0 +1,16 @@
+[TatukGIS Layer]
+Storage=WEBTILES
+Type=CUSTOM
+Name=arcgis_rest_sample
+Caption=ArcGIS SampleServer REST
+Url1=http://sampleserver1.arcgisonline.com/ArcGIS/rest/services/Specialty/ESRI_StateCityHighway_USA/MapServer/export?bbox={XMIN}%2C{YMIN}%2C{XMAX}%2C{YMAX}&bboxSR={epsg}&layers=&layerdefs=&size={WIDTH}%2C{HEIGHT}&imageSR={epsg}&format={ext}&transparent=true&dpi=&time=&layerTimeOptions=&f=image
+Format=png
+Epsg=4326
+XMin=-127.8
+YMin=15.4
+XMax=-63.5
+YMax=60.5
+TilesColumns=0
+TilesRows=0
+Copyright=See: http://www.esri.com/legal/licensing/termsofuse.html
+

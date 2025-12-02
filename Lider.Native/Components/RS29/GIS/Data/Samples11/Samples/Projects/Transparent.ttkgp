@@ -1,0 +1,6 @@
+[TatukGIS Layer1]
+Path=..\..\World\VisibleEarth\world_8km.jpg
+
+; set a several transparent zones
+Pixel.TransparentZone1= $000000, $5F5f5f
+Pixel.TransparentZone2= $aFafaf , $FFFFFF

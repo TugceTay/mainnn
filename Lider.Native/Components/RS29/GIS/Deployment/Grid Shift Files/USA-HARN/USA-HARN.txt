@@ -1,0 +1,440 @@
+alhpgn
+  Original source:
+    https://vdatum.noaa.gov/download/data/vdatum_NADCON.zip
+  License:
+    https://vdatum.noaa.gov/download_agreement.php
+  Available forms:
+    TTKGS
+      Slim down version with same precision as original.
+
+arhpgn
+  Original source:
+    https://vdatum.noaa.gov/download/data/vdatum_NADCON.zip
+  License:
+    https://vdatum.noaa.gov/download_agreement.php
+  Available forms:
+    TTKGS
+      Slim down version with same precision as original.
+
+azhpgn
+  Original source:
+    https://vdatum.noaa.gov/download/data/vdatum_NADCON.zip
+  License:
+    https://vdatum.noaa.gov/download_agreement.php
+  Available forms:
+    TTKGS
+      Slim down version with same precision as original.
+
+cnhpgn
+  Original source:
+    https://vdatum.noaa.gov/download/data/vdatum_NADCON.zip
+  License:
+    https://vdatum.noaa.gov/download_agreement.php
+  Available forms:
+    TTKGS
+      Slim down version with same precision as original.
+
+cohpgn
+  Original source:
+    https://vdatum.noaa.gov/download/data/vdatum_NADCON.zip
+  License:
+    https://vdatum.noaa.gov/download_agreement.php
+  Available forms:
+    TTKGS
+      Slim down version with same precision as original.
+
+cshpgn
+  Original source:
+    https://vdatum.noaa.gov/download/data/vdatum_NADCON.zip
+  License:
+    https://vdatum.noaa.gov/download_agreement.php
+  Available forms:
+    TTKGS
+      Slim down version with same precision as original.
+
+emhpgn
+  Original source:
+    https://vdatum.noaa.gov/download/data/vdatum_NADCON.zip
+  License:
+    https://vdatum.noaa.gov/download_agreement.php
+  Available forms:
+    TTKGS
+      Slim down version with same precision as original.
+
+eshpgn
+  Original source:
+    https://vdatum.noaa.gov/download/data/vdatum_NADCON.zip
+  License:
+    https://vdatum.noaa.gov/download_agreement.php
+  Available forms:
+    TTKGS
+      Slim down version with same precision as original.
+
+ethpgn
+  Original source:
+    https://vdatum.noaa.gov/download/data/vdatum_NADCON.zip
+  License:
+    https://vdatum.noaa.gov/download_agreement.php
+  Available forms:
+    TTKGS
+      Slim down version with same precision as original.
+
+flhpgn
+  Original source:
+    https://vdatum.noaa.gov/download/data/vdatum_NADCON.zip
+  License:
+    https://vdatum.noaa.gov/download_agreement.php
+  Available forms:
+    TTKGS
+      Slim down version with same precision as original.
+
+gahpgn
+  Original source:
+    https://vdatum.noaa.gov/download/data/vdatum_NADCON.zip
+  License:
+    https://vdatum.noaa.gov/download_agreement.php
+  Available forms:
+    TTKGS
+      Slim down version with same precision as original.
+
+guhpgn
+  Original source:
+    https://vdatum.noaa.gov/download/data/vdatum_NADCON.zip
+  License:
+    https://vdatum.noaa.gov/download_agreement.php
+  Available forms:
+    TTKGS
+      Slim down version with same precision as original.
+
+hihpgn
+  Original source:
+    https://vdatum.noaa.gov/download/data/vdatum_NADCON.zip
+  License:
+    https://vdatum.noaa.gov/download_agreement.php
+  Available forms:
+    TTKGS
+      Slim down version with same precision as original.
+
+iahpgn
+  Original source:
+    https://vdatum.noaa.gov/download/data/vdatum_NADCON.zip
+  License:
+    https://vdatum.noaa.gov/download_agreement.php
+  Available forms:
+    TTKGS
+      Slim down version with same precision as original.
+
+ilhpgn
+  Original source:
+    https://vdatum.noaa.gov/download/data/vdatum_NADCON.zip
+  License:
+    https://vdatum.noaa.gov/download_agreement.php
+  Available forms:
+    TTKGS
+      Slim down version with same precision as original.
+
+inhpgn
+  Original source:
+    https://vdatum.noaa.gov/download/data/vdatum_NADCON.zip
+  License:
+    https://vdatum.noaa.gov/download_agreement.php
+  Available forms:
+    TTKGS
+      Slim down version with same precision as original.
+
+kshpgn
+  Original source:
+    https://vdatum.noaa.gov/download/data/vdatum_NADCON.zip
+  License:
+    https://vdatum.noaa.gov/download_agreement.php
+  Available forms:
+    TTKGS
+      Slim down version with same precision as original.
+
+kyhpgn
+  Original source:
+    https://vdatum.noaa.gov/download/data/vdatum_NADCON.zip
+  License:
+    https://vdatum.noaa.gov/download_agreement.php
+  Available forms:
+    TTKGS
+      Slim down version with same precision as original.
+
+lahpgn
+  Original source:
+    https://vdatum.noaa.gov/download/data/vdatum_NADCON.zip
+  License:
+    https://vdatum.noaa.gov/download_agreement.php
+  Available forms:
+    TTKGS
+      Slim down version with same precision as original.
+
+mdhpgn
+  Original source:
+    https://vdatum.noaa.gov/download/data/vdatum_NADCON.zip
+  License:
+    https://vdatum.noaa.gov/download_agreement.php
+  Available forms:
+    TTKGS
+      Slim down version with same precision as original.
+
+mehpgn
+  Original source:
+    https://vdatum.noaa.gov/download/data/vdatum_NADCON.zip
+  License:
+    https://vdatum.noaa.gov/download_agreement.php
+  Available forms:
+    TTKGS
+      Slim down version with same precision as original.
+
+mihpgn
+  Original source:
+    https://vdatum.noaa.gov/download/data/vdatum_NADCON.zip
+  License:
+    https://vdatum.noaa.gov/download_agreement.php
+  Available forms:
+    TTKGS
+      Slim down version with same precision as original.
+
+mnhpgn
+  Original source:
+    https://vdatum.noaa.gov/download/data/vdatum_NADCON.zip
+  License:
+    https://vdatum.noaa.gov/download_agreement.php
+  Available forms:
+    TTKGS
+      Slim down version with same precision as original.
+
+mohpgn
+  Original source:
+    https://vdatum.noaa.gov/download/data/vdatum_NADCON.zip
+  License:
+    https://vdatum.noaa.gov/download_agreement.php
+  Available forms:
+    TTKGS
+      Slim down version with same precision as original.
+
+mshpgn
+  Original source:
+    https://vdatum.noaa.gov/download/data/vdatum_NADCON.zip
+  License:
+    https://vdatum.noaa.gov/download_agreement.php
+  Available forms:
+    TTKGS
+      Slim down version with same precision as original.
+
+nbhpgn
+  Original source:
+    https://vdatum.noaa.gov/download/data/vdatum_NADCON.zip
+  License:
+    https://vdatum.noaa.gov/download_agreement.php
+  Available forms:
+    TTKGS
+      Slim down version with same precision as original.
+
+nchpgn
+  Original source:
+    https://vdatum.noaa.gov/download/data/vdatum_NADCON.zip
+  License:
+    https://vdatum.noaa.gov/download_agreement.php
+  Available forms:
+    TTKGS
+      Slim down version with same precision as original.
+
+ndhpgn
+  Original source:
+    https://vdatum.noaa.gov/download/data/vdatum_NADCON.zip
+  License:
+    https://vdatum.noaa.gov/download_agreement.php
+  Available forms:
+    TTKGS
+      Slim down version with same precision as original.
+
+nehpgn
+  Original source:
+    https://vdatum.noaa.gov/download/data/vdatum_NADCON.zip
+  License:
+    https://vdatum.noaa.gov/download_agreement.php
+  Available forms:
+    TTKGS
+      Slim down version with same precision as original.
+
+njhpgn
+  Original source:
+    https://vdatum.noaa.gov/download/data/vdatum_NADCON.zip
+  License:
+    https://vdatum.noaa.gov/download_agreement.php
+  Available forms:
+    TTKGS
+      Slim down version with same precision as original.
+
+nmhpgn
+  Original source:
+    https://vdatum.noaa.gov/download/data/vdatum_NADCON.zip
+  License:
+    https://vdatum.noaa.gov/download_agreement.php
+  Available forms:
+    TTKGS
+      Slim down version with same precision as original.
+
+nvhpgn
+  Original source:
+    https://vdatum.noaa.gov/download/data/vdatum_NADCON.zip
+  License:
+    https://vdatum.noaa.gov/download_agreement.php
+  Available forms:
+    TTKGS
+      Slim down version with same precision as original.
+
+nyhpgn
+  Original source:
+    https://vdatum.noaa.gov/download/data/vdatum_NADCON.zip
+  License:
+    https://vdatum.noaa.gov/download_agreement.php
+  Available forms:
+    TTKGS
+      Slim down version with same precision as original.
+
+ohhpgn
+  Original source:
+    https://vdatum.noaa.gov/download/data/vdatum_NADCON.zip
+  License:
+    https://vdatum.noaa.gov/download_agreement.php
+  Available forms:
+    TTKGS
+      Slim down version with same precision as original.
+
+okhpgn
+  Original source:
+    https://vdatum.noaa.gov/download/data/vdatum_NADCON.zip
+  License:
+    https://vdatum.noaa.gov/download_agreement.php
+  Available forms:
+    TTKGS
+      Slim down version with same precision as original.
+
+pahpgn
+  Original source:
+    https://vdatum.noaa.gov/download/data/vdatum_NADCON.zip
+  License:
+    https://vdatum.noaa.gov/download_agreement.php
+  Available forms:
+    TTKGS
+      Slim down version with same precision as original.
+
+pvhpgn
+  Original source:
+    https://vdatum.noaa.gov/download/data/vdatum_NADCON.zip
+  License:
+    https://vdatum.noaa.gov/download_agreement.php
+  Available forms:
+    TTKGS
+      Slim down version with same precision as original.
+
+schpgn
+  Original source:
+    https://vdatum.noaa.gov/download/data/vdatum_NADCON.zip
+  License:
+    https://vdatum.noaa.gov/download_agreement.php
+  Available forms:
+    TTKGS
+      Slim down version with same precision as original.
+
+sdhpgn
+  Original source:
+    https://vdatum.noaa.gov/download/data/vdatum_NADCON.zip
+  License:
+    https://vdatum.noaa.gov/download_agreement.php
+  Available forms:
+    TTKGS
+      Slim down version with same precision as original.
+
+tnhpgn
+  Original source:
+    https://vdatum.noaa.gov/download/data/vdatum_NADCON.zip
+  License:
+    https://vdatum.noaa.gov/download_agreement.php
+  Available forms:
+    TTKGS
+      Slim down version with same precision as original.
+
+uthpgn
+  Original source:
+    https://vdatum.noaa.gov/download/data/vdatum_NADCON.zip
+  License:
+    https://vdatum.noaa.gov/download_agreement.php
+  Available forms:
+    TTKGS
+      Slim down version with same precision as original.
+
+vahpgn
+  Original source:
+    https://vdatum.noaa.gov/download/data/vdatum_NADCON.zip
+  License:
+    https://vdatum.noaa.gov/download_agreement.php
+  Available forms:
+    TTKGS
+      Slim down version with same precision as original.
+
+wihpgn
+  Original source:
+    https://vdatum.noaa.gov/download/data/vdatum_NADCON.zip
+  License:
+    https://vdatum.noaa.gov/download_agreement.php
+  Available forms:
+    TTKGS
+      Slim down version with same precision as original.
+
+wmhpgn
+  Original source:
+    https://vdatum.noaa.gov/download/data/vdatum_NADCON.zip
+  License:
+    https://vdatum.noaa.gov/download_agreement.php
+  Available forms:
+    TTKGS
+      Slim down version with same precision as original.
+
+wohpgn
+  Original source:
+    https://vdatum.noaa.gov/download/data/vdatum_NADCON.zip
+  License:
+    https://vdatum.noaa.gov/download_agreement.php
+  Available forms:
+    TTKGS
+      Slim down version with same precision as original.
+
+wshpgn
+  Original source:
+    https://vdatum.noaa.gov/download/data/vdatum_NADCON.zip
+  License:
+    https://vdatum.noaa.gov/download_agreement.php
+  Available forms:
+    TTKGS
+      Slim down version with same precision as original.
+
+wthpgn
+  Original source:
+    https://vdatum.noaa.gov/download/data/vdatum_NADCON.zip
+  License:
+    https://vdatum.noaa.gov/download_agreement.php
+  Available forms:
+    TTKGS
+      Slim down version with same precision as original.
+
+wvhpgn
+  Original source:
+    https://vdatum.noaa.gov/download/data/vdatum_NADCON.zip
+  License:
+    https://vdatum.noaa.gov/download_agreement.php
+  Available forms:
+    TTKGS
+      Slim down version with same precision as original.
+
+wyhpgn
+  Original source:
+    https://vdatum.noaa.gov/download/data/vdatum_NADCON.zip
+  License:
+    https://vdatum.noaa.gov/download_agreement.php
+  Available forms:
+    TTKGS
+      Slim down version with same precision as original.

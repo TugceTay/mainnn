@@ -1,0 +1,1 @@
+Catalog contans 1-Arc Second National Elevation Dataset from U.S. Geological Survey (USGS

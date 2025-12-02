@@ -1,0 +1,9 @@
+[TatukGIS Layer]
+Storage=WEBTILES
+Type=TMS
+name=cartodb_voyager
+Caption=CartoDB Voyager Tiles
+Url1=https://basemaps.cartocdn.com/rastertiles/voyager/
+Format=png
+EndLevel=19
+Copyright=(c) OpenStreetMap contributors, CARTO

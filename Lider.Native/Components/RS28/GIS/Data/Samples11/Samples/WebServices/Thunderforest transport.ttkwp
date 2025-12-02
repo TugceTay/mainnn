@@ -1,0 +1,9 @@
+[TatukGIS Layer]
+Storage=WEBTILES
+Type=TMS
+name=tf_transport_osm
+Caption=Thunderforest transport Tiles
+Url1=http://tile.thunderforest.com/transport/
+Format=png
+EndLevel=20
+Copyright=(c) OpenStreetMap contributors, Provided by Thunderforest.com

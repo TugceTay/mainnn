@@ -1,0 +1,151 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 754
+  ClientWidth = 671
+  WindowState = wsMaximized
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnClose = FormClose
+  OnShow = FormShow
+  DesignerMasterStyle = 0
+  object Panel1: TPanel
+    Position.Y = 40.000000000000000000
+    Size.Width = 153.000000000000000000
+    Size.Height = 217.000000000000000000
+    Size.PlatformDefault = False
+    Visible = False
+    TabOrder = 4
+    object btnNavigation: TButton
+      Align = Top
+      Position.Y = 41.000000000000000000
+      Size.Width = 153.000000000000000000
+      Size.Height = 40.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 2
+      Text = 'Adv. Navigation'
+      OnClick = btnNavigationClick
+    end
+    object btnFullExtent: TButton
+      Align = Top
+      Position.Y = 81.000000000000000000
+      Size.Width = 153.000000000000000000
+      Size.Height = 40.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 3
+      Text = 'Full Extent'
+      OnClick = btnFullExtentClick
+    end
+    object cbx3DMode: TComboBox
+      Align = Top
+      Items.Strings = (
+        'Camera Position'
+        'Camera XYZ'
+        'Camera XY'
+        'Camera Rotation'
+        'Sun Position'
+        'Zoom'
+        'Select 3D')
+      Position.Y = 194.000000000000000000
+      Size.Width = 153.000000000000000000
+      Size.Height = 40.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 4
+      OnChange = cbx3DModeChange
+    end
+    object btn2D3D: TButton
+      Align = Top
+      Size.Width = 153.000000000000000000
+      Size.Height = 41.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      Text = '3D'
+      OnClick = btn2D3DClick
+    end
+    object Button2: TButton
+      Align = Top
+      Position.Y = 121.000000000000000000
+      Size.Width = 153.000000000000000000
+      Size.Height = 40.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 5
+      Text = 'Show Legend'
+      OnClick = Button2Click
+    end
+    object btnShowOpt: TButton
+      Align = Top
+      Position.Y = 161.000000000000000000
+      Size.Width = 153.000000000000000000
+      Size.Height = 33.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 6
+      Text = 'Show Options'
+      OnClick = btnShowOptClick
+    end
+    object Button3: TButton
+      Position.X = 80.000000000000000000
+      Position.Y = 160.000000000000000000
+      TabOrder = 7
+      Text = 'Button3'
+    end
+  end
+  object ScrollBox1: TScrollBox
+    Align = Right
+    Position.X = 543.000000000000000000
+    Position.Y = 40.000000000000000000
+    Size.Width = 128.000000000000000000
+    Size.Height = 714.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 5
+    Viewport.Width = 128.000000000000000000
+    Viewport.Height = 714.000000000000000000
+  end
+  object ToolBar1: TToolBar
+    Size.Width = 671.000000000000000000
+    Size.Height = 40.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 7
+    object btnWalls: TButton
+      Position.X = 152.000000000000000000
+      Size.Width = 105.000000000000000000
+      Size.Height = 41.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      Text = 'Hide walls'
+      Visible = False
+      OnClick = btnWallsClick
+    end
+    object btnRoof: TButton
+      Position.X = 256.000000000000000000
+      Size.Width = 113.000000000000000000
+      Size.Height = 41.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 2
+      Text = 'Hide roof'
+      Visible = False
+      OnClick = btnRoofClick
+    end
+    object Button1: TButton
+      Size.Width = 153.000000000000000000
+      Size.Height = 41.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 3
+      Text = 'Menu'
+      OnClick = Button1Click
+    end
+  end
+  object btnLoadModel: TButton
+    Position.X = 152.000000000000000000
+    Position.Y = 128.000000000000000000
+    TabOrder = 9
+    Text = 'Load DAE'#8230
+    OnClick = btnLoadModelClick
+  end
+  object OpenDAEDialog: TOpenDialog
+    Filter = 'Collada files (*.dae)|*.dae'
+    Left = 72
+    Top = 120
+  end
+end

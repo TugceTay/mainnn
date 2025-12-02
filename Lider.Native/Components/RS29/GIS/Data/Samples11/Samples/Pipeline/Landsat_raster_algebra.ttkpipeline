@@ -1,0 +1,38 @@
+GIS.Close
+
+; Open Landsat-8 bands
+Layer.Open Result=$b1 Path="C:\TatukGIS\Data\Samples11\World\Countries\USA\States\New York\Landsat 8\LC08_L1TP_014032_20191024_20191030_01_T1_B1_cut.tif"
+Layer.Open Result=$b2 Path="C:\TatukGIS\Data\Samples11\World\Countries\USA\States\New York\Landsat 8\LC08_L1TP_014032_20191024_20191030_01_T1_B2_cut.tif"
+Layer.Open Result=$b3 Path="C:\TatukGIS\Data\Samples11\World\Countries\USA\States\New York\Landsat 8\LC08_L1TP_014032_20191024_20191030_01_T1_B3_cut.tif"
+Layer.Open Result=$b4 Path="C:\TatukGIS\Data\Samples11\World\Countries\USA\States\New York\Landsat 8\LC08_L1TP_014032_20191024_20191030_01_T1_B4_cut.tif"
+Layer.Open Result=$b5 Path="C:\TatukGIS\Data\Samples11\World\Countries\USA\States\New York\Landsat 8\LC08_L1TP_014032_20191024_20191030_01_T1_B5_cut.tif"
+Layer.Open Result=$b6 Path="C:\TatukGIS\Data\Samples11\World\Countries\USA\States\New York\Landsat 8\LC08_L1TP_014032_20191024_20191030_01_T1_B6_cut.tif"
+
+; Create output pixel layers
+Layer.CreateGrid Result=$ndvi Name=NDVI CS=$b1 Extent=$b1 Width=$b1 Height=$b1
+Layer.CreateGrid Result=$ndmi Name=NDMI CS=$b1 Extent=$b1 Width=$b1 Height=$b1
+Layer.CreatePixel Result=$rgb Name=RGB CS=$b1 Extent=$b1 Width=$b1 Height=$b1
+
+; Use raster algebra to prepare output layers
+; Prepare Normalized Difference Vegetation Index (NDVI) grid layer
+Algebra Result=$ndvi Layer4=$b4 Layer5=$b5 Formula="Result=(Layer5.1-Layer4.1)/(Layer5.1+Layer4.1)"
+
+; Prepare Normalized Difference Moisture Index (NDMI) grid layer
+Algebra Result=$ndmi Layer5=$b5 Layer6=$b6 Formula="Result=(Layer5.1 - Layer6.1) / (Layer5.1 + Layer6.1)"
+
+; Prepare true color RGB pixel layer
+Algebra Result=$rgb Layer2=$b2 Layer3=$b3 Layer4=$b4 Formula="Result=RGB(2.5*Layer4.1/(2^8), 2.5*Layer3.1/(2^8), 2.5*Layer2.1/(2^8))"
+
+; Generate color ramps
+Grid.GenerateRamp Layer=$ndvi StartColor=ARGB:FFCCCCCC EndColor=ARGB:FF006D2C MinValue=-0.55 MaxValue=0.55 UseMiddle=False
+Grid.GenerateRamp Layer=$ndmi StartColor=ARGB:FF000080 MidColor=Blue MinValue=-0.4 MidValue=0 MaxValue=0.4
+
+; Close source layers
+Layer.Close $b1 
+Layer.Close $b2
+Layer.Close $b3
+Layer.Close $b4
+Layer.Close $b5 
+Layer.Close $b6
+
+GIS.FullExtent

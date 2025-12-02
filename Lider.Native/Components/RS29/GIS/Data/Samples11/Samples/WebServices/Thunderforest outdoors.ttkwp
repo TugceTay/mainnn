@@ -1,0 +1,9 @@
+[TatukGIS Layer]
+Storage=WEBTILES
+Type=TMS
+name=tf_outdoors_osm
+Caption=Thunderforest outdoors Tiles
+Url1=http://tile.thunderforest.com/outdoors/
+Format=png
+EndLevel=20
+Copyright=(c) OpenStreetMap contributors, Provided by Thunderforest.com

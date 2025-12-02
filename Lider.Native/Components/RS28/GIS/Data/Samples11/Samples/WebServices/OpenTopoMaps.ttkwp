@@ -1,0 +1,10 @@
+﻿[TatukGIS Layer]
+Storage=WEBTILES
+Type=TMS
+name=OpenTopoMaps
+Caption=OpenTopoMaps Tiles
+Url1=https://a.tile.opentopomap.org/
+Url2=https://b.tile.opentopomap.org/
+Url3=https://c.tile.opentopomap.org/
+Format=png
+Copyright=Kartendaten: © OpenStreetMap-Mitwirkende, SRTM | Kartendarstellung: © OpenTopoMap (CC-BY-SA)

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<TatukGIS>
+  <Viewer>
+    <VisibleExtent>
+      <XMin>-21551537.756689183</XMin>
+      <XMax>20467376.382274963</XMax>
+      <YMin>-13517180.09400642</YMin>
+      <YMax>17997005.51021669</YMax>
+    </VisibleExtent>
+  </Viewer>
+  <Layers>
+    <Layer Name="lines" Path="lines.shp">
+      <Sections>
+        <Section>
+          <Visible>YES</Visible>
+          <Ground>OnDem</Ground>
+          <Line>
+            <Style>STOCK:DASH</Style>
+            <Width>SIZE:60 twips</Width>
+            <OutlineWidth>SIZE:0 twips</OutlineWidth>
+            <SmartSize>SIZE:16 twips</SmartSize>
+          </Line>
+          <Label>
+            <Value>LINES {GIS_UID}</Value>
+            <FontSize>SIZE::8 pt</FontSize>
+            <OutlineWidth>SIZE:2 twips</OutlineWidth>
+            <SmartSize>SIZE:16 twips</SmartSize>
+          </Label>
+          <Active>YES</Active>
+          <Caption>lines</Caption>
+          <CodePage>65001</CodePage>
+          <IgnoreShapeParams>YES</IgnoreShapeParams>
+        </Section>
+      </Sections>
+    </Layer>
+    <Layer Name="polygons" Path="polygons.shp">
+      <Sections>
+        <Section>
+          <Visible>YES</Visible>
+          <Ground>OnDem</Ground>
+          <Line>
+            <OutlineWidth>SIZE:0 twips</OutlineWidth>
+          </Line>
+          <Area>
+            <Color>ARGB:FFFFFF00</Color>
+            <OutlineWidth>SIZE:40 twips</OutlineWidth>
+            <OutlineColor>ARGB:FF0000A0</OutlineColor>
+            <SmartSize>SIZE:16 twips</SmartSize>
+          </Area>
+          <Label>
+            <Value>POLYGON {GIS_UID}</Value>
+            <FontSize>SIZE::8 pt</FontSize>
+            <Position>STOCK:DOWNCENTER</Position>
+            <Alignment>CENTER</Alignment>
+            <OutlineWidth>SIZE:2 twips</OutlineWidth>
+            <SmartSize>SIZE:20 twips</SmartSize>
+          </Label>
+          <Active>YES</Active>
+          <Caption>polygons</Caption>
+          <CodePage>65001</CodePage>
+          <IgnoreShapeParams>YES</IgnoreShapeParams>
+        </Section>
+      </Sections>
+    </Layer>
+    <Layer Name="points" Path="points.shp">
+      <Sections>
+        <Section>
+          <Visible>YES</Visible>
+          <Ground>OnDem</Ground>
+          <Line>
+            <OutlineWidth>SIZE:0 twips</OutlineWidth>
+          </Line>
+          <Label>
+            <Value>POINT {GIS_UID}</Value>
+            <FontSize>SIZE::8 pt</FontSize>
+            <OutlineWidth>SIZE:2 twips</OutlineWidth>
+            <SmartSize>SIZE:16 twips</SmartSize>
+          </Label>
+          <Active>YES</Active>
+          <Caption>points</Caption>
+          <CodePage>65001</CodePage>
+          <IgnoreShapeParams>YES</IgnoreShapeParams>
+        </Section>
+      </Sections>
+    </Layer>
+    <Layer Name="multipoint" Path="multipoint.shp">
+      <Sections>
+        <Section>
+          <Visible>YES</Visible>
+          <Ground>OnDem</Ground>
+          <Line>
+            <OutlineWidth>SIZE:0 twips</OutlineWidth>
+          </Line>
+          <Marker>
+            <Style>STOCK:TRIANGLEUP</Style>
+            <Size>SIZE:400 twips</Size>
+            <Color>ARGB:FF008040</Color>
+            <SmartSize>SIZE:16 twips</SmartSize>
+          </Marker>
+          <Label>
+            <Value>MPOINT {GIS_UID}</Value>
+            <FontSize>SIZE::8 pt</FontSize>
+            <Position>STOCK:DOWNRIGHT</Position>
+            <Alignment>CENTER</Alignment>
+            <OutlineWidth>SIZE:2 twips</OutlineWidth>
+            <SmartSize>SIZE:16 twips</SmartSize>
+          </Label>
+          <Active>YES</Active>
+          <Caption>multipoint</Caption>
+          <CodePage>65001</CodePage>
+          <IgnoreShapeParams>YES</IgnoreShapeParams>
+        </Section>
+      </Sections>
+    </Layer>
+  </Layers>
+  <Hierarchy>
+    <Groups>
+      <Group Name="Other" Caption="Other" Collapsed="false" Active="true">
+        <Layers>
+          <Layer Name="points"/>
+          <Layer Name="lines"/>
+          <Layer Name="polygons"/>
+          <Layer Name="multipoint"/>
+        </Layers>
+      </Group>
+    </Groups>
+  </Hierarchy>
+</TatukGIS>

@@ -1,0 +1,9 @@
+[TatukGIS Layer]
+Storage=WEBTILES
+Name=nasa_modis
+Caption=Terra CorrectedReflectance Tiles
+Url1=http://map1a.vis.earthdata.nasa.gov/wmts-webmerc/MODIS_Terra_CorrectedReflectance_TrueColor/default/2013-06-15/GoogleMapsCompatible_Level9/{level}/{row}/{col}.jpg
+Format=jpg
+StartLevel=1
+EndLevel=9
+Copyright=NASA

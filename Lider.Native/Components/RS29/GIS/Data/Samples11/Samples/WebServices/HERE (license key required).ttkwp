@@ -1,0 +1,14 @@
+[TatukGIS Layer]
+Storage=WEBTILES
+Name=Here_tiles_hybrid
+Caption=HERE Maps Tile Sample tiles
+;Url1=https://1.base.maps.ls.hereapi.com/maptile/2.1/maptile/newest/normal.day/{level}/{col}/{row}/256/png?apiKey=INSERT_API_KEY_HERE
+;Url1=https://1.base.maps.ls.hereapi.com/maptile/2.1/maptile/newest/reduced.day/{level}/{col}/{row}/256/png?apiKey=INSERT_API_KEY_HERE
+;Url1=https://1.base.maps.ls.hereapi.com/maptile/2.1/basetile/newest/normal.day/{level}/{col}/{row}/256/png?apiKey=INSERT_API_KEY_HERE
+;Url1=https://1.aerial.maps.ls.hereapi.com/maptile/2.1/maptile/newest/satellite.day/{level}/{col}/{row}/256/jpg?apiKey=INSERT_API_KEY_HERE
+Url1=https://1.aerial.maps.ls.hereapi.com/maptile/2.1/maptile/newest/hybrid.day/{level}/{col}/{row}/256/jpg?apiKey=INSERT_API_KEY_HERE
+Format=jpg
+Copyright=HERE Maps Evaluation
+EPSG=900913
+Space=WORLDMERCATOR
+EndLevel=20

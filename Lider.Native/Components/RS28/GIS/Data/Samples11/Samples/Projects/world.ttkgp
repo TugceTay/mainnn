@@ -1,0 +1,65 @@
+[TatukGIS]
+CodePage=1250
+CS.EPSG=4326
+OutCodePage=1250
+VisibleExtent.XMax=200.060244363908
+VisibleExtent.XMin=-200.060305381064
+VisibleExtent.YMax=169.698823943343
+VisibleExtent.YMin=-169.698823943313
+
+[TatukGIS Layer1]
+Active=YES
+Caption=world_8km
+CodePage=1250
+CS.EPSG=4326
+CurrentPage=1
+Name=world_8km
+OutCodePage=1250
+Path=..\\..\\World\\VisibleEarth\\world_8km.jpg
+Visible=YES
+
+[TatukGIS Layer2]
+Active=YES
+Area.OutlineColor=$10101
+Area.OutlineWidth=12
+Area.Pattern=TRANSPARENT
+Area.SmartSize=16
+Caption=world
+CodePage=1250
+CS.EPSG=4326
+Ground=OnDem
+IgnoreShapeParams=YES
+Name=world
+OutCodePage=1250
+Path=..\\..\\World\\WorldDCW\\world.shp
+Visible=YES
+
+[TatukGIS Layer3]
+Active=YES
+Caption=graticules_30
+CodePage=1250
+CS.EPSG=4326
+Ground=OnDem
+IgnoreShapeParams=YES
+Line.Color=SILVER
+Line.SmartSize=16
+Line.Width=2
+Name=graticules_30
+OutCodePage=1250
+Path=..\\..\\World\\Graticules\\graticules_30.shp
+Visible=YES
+
+[TatukGIS Hierarchy]
+Other=world_8km;world;graticules_30
+
+[TatukGIS Group1]
+Active=YES
+Caption=Other
+CodePage=1250
+Name=Other
+OutCodePage=1250
+Visible=YES
+
+[EDT_VWR]
+Scale.Units.EPSG=904201
+

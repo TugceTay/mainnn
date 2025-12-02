@@ -1,0 +1,69 @@
+[TatukGIS]
+CodePage=1250
+CS.EPSG=26911
+OutCodePage=1250
+VisibleExtent.XMax=499692.948649237
+VisibleExtent.XMin=496405.771350763
+VisibleExtent.YMax=3767364.35082068
+VisibleExtent.YMin=3764923.34917932
+
+[TatukGIS Layer1]
+Name=w001001
+Path=..\..\World\\Countries\\USA\\States\\California\\San Bernardino\\NED\\w001001.adf
+
+[TatukGIS Layer2]
+Active=YES
+Caption=DOQ
+CodePage=1250
+CS.EPSG=26911
+CurrentPage=1
+Name=DOQ
+OutCodePage=1250
+Path=..\\..\\World\\Countries\\USA\\States\\California\\San Bernardino\\DOQ\\37134877.jpg
+Visible=YES
+
+[TatukGIS Layer3]
+Active=YES
+Area.OutlineColor=LIME
+Area.OutlineWidth=2
+Area.Pattern=TRANSPARENT
+Area.SmartSize=0
+Area.SmartSizeField=
+Caption=TIGER
+CodePage=1250
+CS.EPSG=4269
+IgnoreShapeParams=YES
+IncrementalPaint=YES
+Label.Alignment=FOLLOW
+Label.Allocator=NO
+Label.Color=$FF8000
+Label.Field=FULLNAME
+Label.Font.Color=WHITE
+Label.Height=500
+Label.OutlineStyle=SOLID
+Label.OutlineWidth=2
+Label.SmartSizeField=
+Label.Width=1000
+Line.Color=RED
+Line.SmartSize=0
+Line.Width=24
+Marker.OutlineStyle=SOLID
+Marker.Size=150
+Marker.SmartSize=0
+Marker.SmartSizeField=
+Name=route
+OutCodePage=1250
+Path=..\\..\\World\\Countries\\USA\\States\\California\\San Bernardino\\TIGER\\tl_2008_06071_edges_trunc.shp
+Visible=YES
+
+[TatukGIS Hierarchy]
+San Bernardino=route;w001001;DOQ
+
+[TatukGIS Group1]
+Active=YES
+Caption=San Bernardino
+CodePage=1250
+Name=San Bernardino
+OutCodePage=1250
+Visible=YES
+

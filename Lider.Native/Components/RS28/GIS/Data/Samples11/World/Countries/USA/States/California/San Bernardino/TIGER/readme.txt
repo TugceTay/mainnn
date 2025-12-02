@@ -1,0 +1,1 @@
+Catalog contains selected TIGER 2008 data truncated to smaller area.

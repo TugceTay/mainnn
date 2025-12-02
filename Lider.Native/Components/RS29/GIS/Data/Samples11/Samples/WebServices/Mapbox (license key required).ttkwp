@@ -1,0 +1,10 @@
+[TatukGIS Layer]
+Storage=WEBTILES
+Nname=MapBox_Tiles
+Caption=MapBox Tiles
+Url1=https://a.tiles.mapbox.com/v4/mapbox.satellite/{level}/{col}/{row}.{ext}?access_token=INSERT_LICENCE_TOKEN_HERE
+Url2=https://b.tiles.mapbox.com/v4/mapbox.satellite/{level}/{col}/{row}.{ext}?access_token=INSERT_LICENCE_TOKEN_HERE
+Url3=https://c.tiles.mapbox.com/v4/mapbox.satellite/{level}/{col}/{row}.{ext}?access_token=INSERT_LICENCE_TOKEN_HERE
+Url4=https://d.tiles.mapbox.com/v4/mapbox.satellite/{level}/{col}/{row}.{ext}?access_token=INSERT_LICENCE_TOKEN_HERE
+Format=png
+Copyright=Mapbox.com

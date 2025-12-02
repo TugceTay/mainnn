@@ -1,0 +1,160 @@
+[TatukGIS Layer]
+
+;=======================
+; SQLite
+;=======================
+Dialect=SQLITE
+Layer=lwaters
+Sqlite=gistest.db
+Storage=Native
+
+
+;=======================
+; ADO MSJET 
+;=======================
+;Storage=Native
+;LAYER=lwaters
+;DIALECT=MSJET
+;ADO=Provider=Microsoft.Jet.OLEDB.4.0;Data Source=gistest.mdb
+
+;=======================
+; ADO MSSQL
+;=======================
+;Storage=Native
+;LAYER=pwaters
+;DIALECT=MSSQL
+;ADO=DSN=gistest
+
+;=======================
+; ADO ADVANTAGE
+;=======================
+;Storage=Native
+;LAYER=PWATERS
+;DIALECT=ADVANTAGE
+;ADO=Provider=MSDASQL.1;Persist Security Info=False;Data Source=GISTEST
+
+;=======================
+; ADO DB2
+;=======================
+;Storage=Native
+;LAYER=PWATERS
+;DIALECT=DB2
+;ADO=Provider=MSDASQL.1;User ID=test;Password=pass;Persist Security Info=True;Data Source=gistest
+
+;=======================
+; ADO ORACLE
+;=======================
+;Storage=Native
+;LAYER=PWATERS
+;DIALECT=ORACLE
+;ADO=Provider=OraOLEDB.Oracle.1;User ID=test;Password=test;Persist Security Info=False;Data Source=GISTEST;Initial Catalog=test
+
+
+;=======================
+; ADO POSTGRESQL
+;=======================
+;[TatukGIS Layer]
+;Storage=Native
+;LAYER=test
+;DIALECT=POSTGRESQL
+;ADO=Provider=MSDASQL.1;Persist Security Info=False;Data Source=PostgreSQL30
+
+
+;=======================
+; DBX Interbase
+;=======================
+;Storage=Native
+;LAYER=pwaters
+;DIALECT=INTERBASE
+;DriverName=INTERBASE
+;GetDriverFunc=getSQLDriverINTERBASE
+;VendorLib=GDS32.DLL
+;LibraryName=dbexpint.dll
+;DATABASE=c:\temp\gistest.gdb
+;USER_NAME=test
+;PASSWORD=pass
+
+;=======================
+; DBX MySQL
+;=======================
+;Storage=Native
+;LAYER=pwaters
+;DIALECT=MYSQL
+;DriverName=MySQL
+;GetDriverFunc=getSQLDriverMYSQL
+;VendorLib=LIBMYSQL.dll
+;LibraryName=dbexpmysql.dll
+;Hostname=localhost
+;DATABASE=gistest
+;USER_NAME=test
+
+
+;=======================
+; DBX Oracle
+;=======================
+;Storage=Native
+;LAYER=PWATERS
+;DIALECT=ORACLE
+;DriverName=Oracle
+;GetDriverFunc=getSQLDriverORACLE
+;LibraryName=dbexpora.dll
+;VendorLib=oci.dll
+;DataBase=gistest
+;RowsetSize=200
+;BlobSize=-1
+;LocaleCode=0000
+;Oracle TransIsolation=ReadCommited
+;OS Authentication=False
+;Multiple Transaction=False
+;Trim Char=False
+;User_Name=test
+;Password=pass
+
+
+;=======================
+; DBX BLACKFISH SQL
+;=======================
+;[TatukGIS Layer]
+;Storage=Native
+;LAYER=XXX
+;DIALECT=BLACKFISHSQL
+;DriverName=BlackfishSQL
+;HostName=localhost
+;GetDriverFunc=
+;LibraryName=
+;VendorLib=
+;DataBase=SPATIAL
+;BlobSize=-1
+;User_Name=sysdba
+;Password=masterkey
+;port=2508
+;create=true
+;TransIsolation=ReadCommited
+
+
+;=======================
+; DBX POSTGRESQL
+;=======================
+;[TatukGIS Layer]
+;Storage=Native
+;LAYER=test
+;DIALECT=POSTGRESQL
+;DriverName=PostgreSQL
+;GetDriverFunc=getSQLDriverPOSTGRESQL
+;LibraryName=dbexppge30.dll
+;VendorLib=LIBPQ.DLL
+;DATABASE=test-db/postgis,Int8Mode=AsString,MapUnknownAsString=True
+;USER_NAME=postgres
+;PASSWORD=postgres
+;DBX4Compatible=True
+
+
+;=======================
+; SQLITE
+;=======================
+;[TatukGIS Layer]
+;Storage=Native
+;LAYER=GISTEST
+;DIALECT=SQLITE
+;Sqlite=gistest.sqlite
+;ENGINEOPTIONS=16

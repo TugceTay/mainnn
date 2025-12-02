@@ -1,0 +1,5 @@
+[TatukGIS Layer1]
+Path=..\..\World\VisibleEarth\world_8km.jpg
+
+; make inversion at one step
+Pixel.Inversion=true

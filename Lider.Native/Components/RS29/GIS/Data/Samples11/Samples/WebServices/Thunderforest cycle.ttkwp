@@ -1,0 +1,9 @@
+[TatukGIS Layer]
+Storage=WEBTILES
+Type=TMS
+name=tf_cycle_osm
+Caption=Thunderforest cycle Tiles
+Url1=http://tile.thunderforest.com/cycle/
+Format=png
+EndLevel=20
+Copyright=(c) OpenStreetMap contributors, Provided by Thunderforest.com

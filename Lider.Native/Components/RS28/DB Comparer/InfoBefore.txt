@@ -1,0 +1,31 @@
+﻿Before you install
+---------------------------------------------------------
+If you have a prior product version installed, please uninstall it before installing this version.
+If you manually installed packages for this product, you must remove them from the IDE and delete all 
+corresponding files and references to them before proceeding with this installation.
+
+Installation directories
+----------------------------------------------------------
+By default, this suite installs into the following directory:
+ 
+ \Program Files\Clever Components\Database Comparer\RAD Studio
+ 
+If you install to a different location, be certain that you do not overwrite any other product files.
+ 
+Installation procedure
+----------------------------------------------------------
+Once all files are copied, this installation routine automatically registers the packages and
+help files for Delphi and C++Builder.
+ 
+This script creates shortcuts for its help files and all demos included in the suite
+within the Start menu - \Programs\Clever Components\Database Comparer.
+ 
+Maintenance and uninstallation
+----------------------------------------------------------
+To modify or uninstall this product, simply use the Add/Remove Programs applet
+from your Control Panel.
+
+==========================================================
+Copyright (C) 2018, by Boris Loboda
+www.CleverComponents.com
+All rights reserved.

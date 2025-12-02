@@ -1,0 +1,1 @@
+Catalog contains Digital Orthophoto Quarter-Quadrangles from U.S. Geological Survey (USGS) converted to JPEG to lomit the size

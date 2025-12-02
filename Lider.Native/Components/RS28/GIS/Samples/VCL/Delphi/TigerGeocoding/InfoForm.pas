@@ -1,0 +1,58 @@
+//=============================================================================
+// This source code is a part of TatukGIS Developer Kernel.
+// DK11.78.0.31836-Unstable2
+// (c)2000-2023 TatukGIS. ALL RIGHTS RESERVED.
+//=============================================================================
+{
+  How to provide Geocoding using name standardization
+}
+unit InfoForm;
+
+interface
+
+uses
+  System.SysUtils,
+  System.Classes,
+
+  Winapi.Windows,
+  Winapi.Messages,
+
+  Vcl.Graphics,
+  Vcl.Controls,
+  Vcl.Forms,
+  Vcl.Dialogs,
+  Vcl.Grids;
+
+type
+  TFormInfo = class(TForm)
+    sgrdInfo: TStringGrid;
+    procedure FormShow(Sender: TObject);
+    procedure FormClose(Sender: TObject; var Action: TCloseAction);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  FormInfo: TFormInfo;
+
+implementation
+
+uses MainForm;
+
+{$R *.DFM}
+
+procedure TFormInfo.FormShow(Sender: TObject);
+begin
+  Form1.sgrdMemo.Hint := '';
+end;
+
+procedure TFormInfo.FormClose(Sender: TObject; var Action: TCloseAction);
+begin
+  Form1.sgrdMemo.Hint := 'Double click for info';
+end;
+
+//==================================== END =====================================
+end.
+

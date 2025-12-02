@@ -1,0 +1,1 @@
+Please vist Visible Earth (http://visibleearth.nasa.gov/)

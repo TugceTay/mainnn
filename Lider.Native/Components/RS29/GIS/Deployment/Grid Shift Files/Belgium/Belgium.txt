@@ -1,0 +1,9 @@
+AT_GIS_GRID
+  Original source:
+    http://www.ngi.be/Common/Lambert2008/NTv2.zip
+  License:
+    ©2014-2016 Nicolas SIMON under Creative Commons attribution license (CC BY)
+  Available forms:
+    TTKGS
+      Slim down version with same precision as original.
+

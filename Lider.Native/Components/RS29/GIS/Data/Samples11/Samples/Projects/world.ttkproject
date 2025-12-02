@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<TatukGIS>
+  <Viewer>
+    <VisibleExtent>
+      <XMin>-226.265129099682</XMin>
+      <XMax>224.850911216331</XMax>
+      <YMin>-168.284667077119</YMin>
+      <YMax>169.698823943343</YMax>
+    </VisibleExtent>
+    <CS>
+      <EPSG>4326</EPSG>
+    </CS>
+  </Viewer>
+  <Layers>
+    <Layer Name="world_8km" Path="..\\..\\World\\VisibleEarth\\world_8km.jpg">
+      <Sections>
+        <Section>
+          <Visible>YES</Visible>
+          <Active>YES</Active>
+          <Caption>world_8km</Caption>
+          <CodePage>1250</CodePage>
+          <CS>
+            <EPSG>4326</EPSG>
+          </CS>
+        </Section>
+      </Sections>
+    </Layer>
+    <Layer Name="world" Path="..\\..\\World\\WorldDCW\\world.shp">
+      <Sections>
+        <Section>
+          <Visible>YES</Visible>
+          <Ground>OnDem</Ground>
+          <Line>
+            <OutlineWidth>SIZE:0 twips</OutlineWidth>
+          </Line>
+          <Area>
+            <Pattern>STOCK:TRANSPARENT</Pattern>
+            <OutlineWidth>SIZE:12 twips</OutlineWidth>
+            <OutlineColor>ARGB:FF000000</OutlineColor>
+            <SmartSize>SIZE:16 twips</SmartSize>
+          </Area>
+          <Active>YES</Active>
+          <Caption>world</Caption>
+          <CodePage>1250</CodePage>
+          <CS>
+            <EPSG>4326</EPSG>
+          </CS>
+          <IgnoreShapeParams>YES</IgnoreShapeParams>
+        </Section>
+      </Sections>
+    </Layer>
+    <Layer Name="graticules_30" Path="..\\..\\World\\Graticules\\graticules_30.shp">
+      <Sections>
+        <Section>
+          <Visible>YES</Visible>
+          <Ground>OnDem</Ground>
+          <Line>
+            <Width>SIZE:2 twips</Width>
+            <Color>ARGB:FFC0C0C0</Color>
+            <OutlineWidth>SIZE:0 twips</OutlineWidth>
+            <SmartSize>SIZE:16 twips</SmartSize>
+          </Line>
+          <Active>YES</Active>
+          <Caption>graticules_30</Caption>
+          <CodePage>1250</CodePage>
+          <CS>
+            <EPSG>4326</EPSG>
+          </CS>
+          <IgnoreShapeParams>YES</IgnoreShapeParams>
+        </Section>
+      </Sections>
+    </Layer>
+  </Layers>
+  <Hierarchy>
+    <Groups>
+      <Group Name="Other" Caption="Other" Collapsed="False" Active="True">
+        <Layers>
+          <Layer Name="world_8km"/>
+          <Layer Name="world"/>
+          <Layer Name="graticules_30"/>
+        </Layers>
+      </Group>
+    </Groups>
+  </Hierarchy>
+</TatukGIS>

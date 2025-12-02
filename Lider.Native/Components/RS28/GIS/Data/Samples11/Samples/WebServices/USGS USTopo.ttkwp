@@ -1,0 +1,9 @@
+[TatukGIS Layer]
+Storage=WEBTILES
+Type=CUSTOM
+name=usgstopo_map
+Caption=USGSTopo Tiles
+Url1=https://basemap.nationalmap.gov/arcgis/rest/services/USGSTopo/MapServer/tile/{level}/{row}/{col}
+Format=png
+EndLevel=20
+Copyright=(c) U.S. Geological Surve. 

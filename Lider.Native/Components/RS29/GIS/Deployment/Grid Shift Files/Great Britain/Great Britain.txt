@@ -1,0 +1,10 @@
+OSTN02_NTv2
+  Original source:
+    https://www.ordnancesurvey.co.uk/business-and-government/help-and-support/navigation-technology/os-net/ostn02-ntv2-format.html
+  License:
+    http://opensource.org/licenses/bsd-license.php
+    © Crown copyright, Ordnance Survey and the Ministry of Defense (MOD) 2002. All rights reserved.  
+  Available forms:
+    TTKGS
+      Slim down version with same precision as original.
+   

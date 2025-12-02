@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<TatukGIS>
+  <Viewer>
+    <VisibleExtent>
+      <XMin>496405.771350763</XMin>
+      <XMax>499682.676220179</XMax>
+      <YMin>3764921.43094213</YMin>
+      <YMax>3767376.54148693</YMax>
+    </VisibleExtent>
+    <CS>
+      <EPSG>26911</EPSG>
+    </CS>
+  </Viewer>
+  <Layers>
+    <Layer Name="w001001" Path="..\\..\\World\\Countries\\USA\\States\\California\\San Bernardino\\NED\\w001001.adf"/>
+    <Layer Name="DOQ" Path="..\\..\\World\\Countries\\USA\\States\\California\\San Bernardino\\DOQ\\37134877.jpg">
+      <Sections>
+        <Section>
+          <Visible>YES</Visible>
+          <Active>YES</Active>
+          <Caption>DOQ</Caption>
+          <CodePage>1250</CodePage>
+          <CS>
+            <EPSG>26911</EPSG>
+          </CS>
+        </Section>
+      </Sections>
+    </Layer>
+    <Layer Name="route" Path="..\\..\\World\\Countries\\USA\\States\\California\\San Bernardino\\TIGER\\tl_2008_06071_edges_trunc.shp">
+      <Sections>
+        <Section>
+          <Visible>YES</Visible>
+          <Ground>OnDem</Ground>
+          <Line>
+            <Width>SIZE:24 twips</Width>
+            <Color>ARGB:FFFF0000</Color>
+            <OutlineWidth>SIZE:0 twips</OutlineWidth>
+            <SmartSize>SIZE:0 twips</SmartSize>
+          </Line>
+          <Area>
+            <Pattern>STOCK:TRANSPARENT</Pattern>
+            <OutlineWidth>SIZE:2 twips</OutlineWidth>
+            <OutlineColor>ARGB:FF00FF00</OutlineColor>
+            <SmartSize>SIZE:0 twips</SmartSize>
+          </Area>
+          <Marker>
+            <Size>SIZE:150 twips</Size>
+            <SmartSize>SIZE:0 twips</SmartSize>
+          </Marker>
+          <Label>
+            <Allocator>NO</Allocator>
+            <Value>{FULLNAME}</Value>
+            <Font>
+              <Color>ARGB:FFFFFFFF</Color>
+            </Font>
+            <Width>SIZE:1000 twips</Width>
+            <Height>SIZE:500 twips</Height>
+            <Alignment>FOLLOW</Alignment>
+            <Color>ARGB:FF0080FF</Color>
+            <OutlineStyle>STOCK:SOLID</OutlineStyle>
+            <OutlineWidth>SIZE:2 twips</OutlineWidth>
+          </Label>
+          <Active>YES</Active>
+          <Caption>TIGER</Caption>
+          <IncrementalPaint>YES</IncrementalPaint>
+          <CodePage>1250</CodePage>
+          <CS>
+            <EPSG>4269</EPSG>
+          </CS>
+          <IgnoreShapeParams>YES</IgnoreShapeParams>
+        </Section>
+      </Sections>
+    </Layer>
+  </Layers>
+  <Hierarchy>
+    <Groups>
+      <Group Name="San Bernardino" Caption="San Bernardino" Collapsed="False" Active="True">
+        <Layers>
+          <Layer Name="route"/>
+          <Layer Name="w001001"/>
+          <Layer Name="DOQ"/>
+        </Layers>
+      </Group>
+    </Groups>
+  </Hierarchy>
+</TatukGIS>

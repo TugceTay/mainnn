@@ -1,0 +1,196 @@
+package TatukGIS_DK12_PRV;
+
+{$INCLUDE Lider.CG.GIS.GeoInclude.inc}
+
+{$R *.res}
+{$IFDEF IMPLICITBUILDING This IFDEF should not be used by users}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO OFF}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION OFF}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES ON}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$DEFINE DEBUG}
+{$ENDIF IMPLICITBUILDING}
+{$DESCRIPTION 'TatukGIS Developer Kernel 12 for Delphi Private Build - Run Time'}
+{$RUNONLY}
+{$IMPLICITBUILD ON}
+
+requires
+  rtl
+  ,xmlrtl
+  ,dbrtl
+  ,IndySystem
+  ,IndyProtocols
+  ,IndyCore
+  {$IFNDEF GIS_NODB}
+    ,dbexpress
+    ,DbxCommonDriver
+    {$IFDEF LEVEL_XE5_RTL}
+      ,FireDAC
+      ,FireDACCommonDriver
+      ,FireDACCommon
+    {$ENDIF}
+  {$ENDIF}
+  {$IFNDEF MSWINDOWS}
+    {$IFNDEF LINUX}
+      ,fmx
+    {$ENDIF}
+  {$ENDIF}
+  ;
+
+contains
+  Lider.CG.GIS.GeoAllLayers
+
+  ,Lider.CG.GIS.Geo3DFlyOver
+  ,Lider.CG.GIS.GeoTypes3D
+  ,Lider.CG.GIS.GeoViewer3DBase
+  ,Lider.CG.GIS.GeoAddressMatching
+  ,Lider.CG.GIS.GeoAllPipelineOperations
+  ,Lider.CG.GIS.GeoClassification
+  ,Lider.CG.GIS.GeoContour
+  ,Lider.CG.GIS.GeoDem
+  ,Lider.CG.GIS.GeoFourierTransform
+  ,Lider.CG.GIS.GeoHillshade
+  ,Lider.CG.GIS.GeoHydrology
+  ,Lider.CG.GIS.GeoInterpolation
+  ,Lider.CG.GIS.GeoMatrix
+  ,Lider.CG.GIS.GeoNetwork
+  ,Lider.CG.GIS.GeoOSMServices
+  ,Lider.CG.GIS.GeoPipeline
+  ,Lider.CG.GIS.GeoPipelineOperations
+  ,Lider.CG.GIS.GeoPixelFilter
+  ,Lider.CG.GIS.GeoQuadTree
+  ,Lider.CG.GIS.GeoRasterAlgebra
+  ,Lider.CG.GIS.GeoRestServices
+  ,Lider.CG.GIS.GeoSlopeMap
+  ,Lider.CG.GIS.GeoVectorization
+  ,Lider.CG.GIS.GeoViewshed
+  ,Lider.CG.GIS.GeoArcLabel
+  ,Lider.CG.GIS.GeoBasemapHelper
+  ,Lider.CG.GIS.GeoChart
+  ,Lider.CG.GIS.GeoClasses
+  ,Lider.CG.GIS.GeoCompression
+  ,Lider.CG.GIS.GeoConfig
+  ,Lider.CG.GIS.GeoConfigIni
+  ,Lider.CG.GIS.GeoConfigXml
+  ,Lider.CG.GIS.GeoCsBase
+  ,Lider.CG.GIS.GeoCsEsri
+  ,Lider.CG.GIS.GeoCsFactory
+  ,Lider.CG.GIS.GeoCsMapinfo
+  ,Lider.CG.GIS.GeoCsProjections
+  ,Lider.CG.GIS.GeoCsSystems
+  ,Lider.CG.GIS.GeoEditor
+  ,Lider.CG.GIS.GeoFieldRules
+  ,Lider.CG.GIS.GeoFilePixel
+  ,Lider.CG.GIS.GeoFileSVG
+  ,Lider.CG.GIS.GeoFunctions
+  ,Lider.CG.GIS.GeoGeometryFactory
+  ,Lider.CG.GIS.GeoGestureHelper
+  ,Lider.CG.GIS.GeoGraticuleHelper
+  ,Lider.CG.GIS.GeoHierarchy
+  ,Lider.CG.GIS.GeoHtmlLabel
+  ,Lider.CG.GIS.GeoIniFiles
+  ,Lider.CG.GIS.GeoInterfaces
+  ,Lider.CG.GIS.GeoInternals
+  ,Lider.CG.GIS.GeoLabelsArea
+  ,Lider.CG.GIS.GeoLayer
+  ,Lider.CG.GIS.GeoLayerCompound
+  ,Lider.CG.GIS.GeoLayerPixel
+  ,Lider.CG.GIS.GeoLayerProject
+  ,Lider.CG.GIS.GeoLayerSublayer
+  ,Lider.CG.GIS.GeoLayerVector
+  ,Lider.CG.GIS.GeoLegend
+  ,Lider.CG.GIS.GeoLegendUtils
+  ,Lider.CG.GIS.GeoLibrarySVG
+  ,Lider.CG.GIS.GeoLineSymbolEditorUtils
+  ,Lider.CG.GIS.GeoLogger
+  ,Lider.CG.GIS.GeoParams
+  ,Lider.CG.GIS.GeoPixelExportManager
+  ,Lider.CG.GIS.GeoRegistredLayers
+  ,Lider.CG.GIS.GeoRendererAbstract
+  ,Lider.CG.GIS.GeoResource
+  ,Lider.CG.GIS.GeoResourceEx
+  ,Lider.CG.GIS.GeoRTree
+  ,Lider.CG.GIS.GeoShapes3D
+  ,Lider.CG.GIS.GeoSldFiles
+  ,Lider.CG.GIS.GeoSqlQuery
+  ,Lider.CG.GIS.GeoStatistics
+  ,Lider.CG.GIS.GeoStreams
+  ,Lider.CG.GIS.GeoStringFormat
+  ,Lider.CG.GIS.GeoSymbol
+  ,Lider.CG.GIS.GeoTessellation
+  ,Lider.CG.GIS.GeoTopology
+  ,Lider.CG.GIS.GeoTransform
+  ,Lider.CG.GIS.GeoTypes
+  ,Lider.CG.GIS.GeoTypesUI
+  ,Lider.CG.GIS.GeoUtils
+  ,Lider.CG.GIS.GeoViewer
+  ,Lider.CG.GIS.GeoViewerWndHelper
+  ,Lider.CG.GIS.GeoXmlDoc
+  ,Lider.CG.GIS.GeoXmlFiles
+  ,Lider.CG.GIS.GeoXmlSax
+  ,Lider.CG.GIS.GeoFileJSON
+  ,Lider.CG.GIS.GeoDataSet
+  ,Lider.CG.GIS.PVL.GeoControlBitmap
+  ,Lider.CG.GIS.PVL.GeoControlColor
+  ,Lider.CG.GIS.PVL.GeoControlFieldFactor
+  ,Lider.CG.GIS.PVL.GeoControlLegendGridWiz
+  ,Lider.CG.GIS.PVL.GeoControlLegendVectorWiz
+  ,Lider.CG.GIS.PVL.GeoControlSizeForm
+  ,Lider.CG.GIS.PVL.GeoControlStatistics
+  ,Lider.CG.GIS.PVL.GeoControlSymbology
+  ,Lider.CG.GIS.PVL.GeoControlSymbologyLibrary
+  ,Lider.CG.GIS.PVL.GeoValueValidatorHelper
+  ,Lider.CG.GIS.PVL.GeoPvl
+  ,Lider.CG.GIS.PVL.GeoPvlForms
+  ,Lider.CG.GIS.PVL.GeoPvlWidgets
+  ,Lider.CG.GIS.GeoRtl
+  ,Lider.CG.GIS.GeoBaseObject
+
+  {$IFDEF MSWINDOWS}
+    ,Lider.CG.GIS.GeoRenderer3DAbstract
+    ,Lider.CG.GIS.GeoRenderer3DDirectX9
+    ,Lider.CG.GIS.GeoRenderer3DDirectXAbstract
+    ,Lider.CG.GIS.GeoViewer3DDirectX
+  {$ENDIF} 
+
+  {$IFDEF GIS_MOBILE}
+  {$ELSE}
+    ,Lider.CG.GIS.GeoCUDA
+    ,Lider.CG.GIS.GeoGeocoding
+    ,Lider.CG.GIS.GeoIsochroneMap
+    ,Lider.CG.GIS.GeoOpenCL
+    ,Lider.CG.GIS.GeoShortestPath
+    ,Lider.CG.GIS.GeoTriangulation
+    ,Lider.CG.GIS.GeoImportProject
+    ,Lider.CG.GIS.GeoPrintBuilder
+    ,Lider.CG.GIS.GeoPrintManagerAbstract
+    ,Lider.CG.GIS.GeoPrintUtils
+    ,Lider.CG.GIS.GeoProjectQgis
+    ,Lider.CG.GIS.GeoTemplatePrint
+    ,Lider.CG.GIS.GeoControlLegendFormControler
+    ,Lider.CG.GIS.GeoControlPrintPreviewSimple
+    ,Lider.CG.GIS.GeoPrintPreviewHelperAbstract
+  {$ENDIF}
+  ;
+
+end.
+
+
+

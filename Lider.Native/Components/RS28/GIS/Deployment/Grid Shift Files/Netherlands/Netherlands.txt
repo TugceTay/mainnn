@@ -1,0 +1,27 @@
+rdtrans2008
+  Original source:
+    https://formulieren.kadaster.nl/aanvragen_rdnaptrans2008
+  License
+    RDNAP makes the rdtrans2008.gsb and naptrans.gtx grid correction files freely available.
+    Implementation and distribution of the rdtrans2008 NTv2-grid and naptrans2008 VDatum-grid in
+    combination with other tools/software that require these grids for transformation between ETRS89 and
+    RD/NAP is allowed, under the following conditions:
+    1. It is not allowed to modify the correction values of the grid correction files. (It is allowed to
+       convert the grid data to a different file format or data structure as long as this does not affect
+       the results of the calculations.)
+    2. It should be clear from the documentation of the software using the grid correction files that
+       the transformation procedure using the grid correction files is not identical to
+       RDNAPTRANSTM2008.
+    3. The correct implementation of the grid corrections has to be tested as specified in Appendix 2
+  Disclaimer
+    The correction grids for RD and NAP in NTv2 and VDatum format are provided ‘as is’ and any express
+    or implied warranties, including, but not limited to, the implied warranties of merchantability and fitness
+    for a particular purpose are disclaimed. In no event shall Kadaster or Rijkswaterstaat be liable for any
+    direct, indirect, incidental, special, exemplary or consequential damages (including but not limited to
+    procurement of substitute goods or services, loss of use, data or profits, or business interruption)
+    however caused and on any theory of liability, whether in contract, strict liability, or tort (including
+    negligence or otherwise) arising in any way out of the use of the correction grids for RD and NAP in
+    NTv2 and Vdatum format.”
+  Available forms:
+    TTKGS
+      Slim down version with same precision as original.

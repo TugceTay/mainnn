@@ -1,0 +1,362 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<TatukGIS>
+  <Viewer>
+    <VisibleExtent>
+      <XMin>13.419126380377</XMin>
+      <XMax>24.818871833173</XMax>
+      <YMin>47.6701827445461</YMin>
+      <YMax>56.2110578643526</YMax>
+    </VisibleExtent>
+    <CS>
+      <EPSG>4326</EPSG>
+    </CS>
+  </Viewer>
+  <Layers>
+    <Layer Name="Country area" Path="country.shp">
+      <Sections>
+        <Section>
+          <Visible>YES</Visible>
+          <Ground>OnDem</Ground>
+          <Line>
+            <OutlineWidth>SIZE:0 twips</OutlineWidth>
+          </Line>
+          <Area>
+            <Color>ARGB:FFF7EFEF</Color>
+            <OutlineWidth>SIZE:24 twips</OutlineWidth>
+            <SmartSize>SIZE:16 twips</SmartSize>
+            <ShowLegend>YES</ShowLegend>
+          </Area>
+          <Active>YES</Active>
+          <Caption>Country area</Caption>
+          <CodePage>1250</CodePage>
+          <CS>
+            <EPSG>4326</EPSG>
+          </CS>
+          <IgnoreShapeParams>YES</IgnoreShapeParams>
+        </Section>
+      </Sections>
+    </Layer>
+    <Layer Name="city" Path="cityarea.shp">
+      <Sections>
+        <Section>
+          <Visible>YES</Visible>
+          <Ground>OnDem</Ground>
+          <Line>
+            <OutlineWidth>SIZE:0 twips</OutlineWidth>
+          </Line>
+          <Area>
+            <Color>ARGB:FFD6D3CE</Color>
+            <OutlineWidth>SIZE:2 twips</OutlineWidth>
+            <SmartSize>SIZE:16 twips</SmartSize>
+            <ShowLegend>YES</ShowLegend>
+          </Area>
+          <Active>YES</Active>
+          <Caption>City Area</Caption>
+          <CodePage>1250</CodePage>
+          <CS>
+            <EPSG>4326</EPSG>
+          </CS>
+          <IgnoreShapeParams>YES</IgnoreShapeParams>
+        </Section>
+      </Sections>
+    </Layer>
+    <Layer Name="Lakes" Path="pwaters.shp">
+      <Sections>
+        <Section>
+          <Visible>YES</Visible>
+          <Ground>OnDem</Ground>
+          <Line>
+            <OutlineWidth>SIZE:0 twips</OutlineWidth>
+          </Line>
+          <Area>
+            <Color>ARGB:FF94B2CE</Color>
+            <OutlineWidth>SIZE:2 twips</OutlineWidth>
+            <OutlineColor>ARGB:FF0080FF</OutlineColor>
+            <SmartSize>SIZE:16 twips</SmartSize>
+            <ShowLegend>YES</ShowLegend>
+          </Area>
+          <Active>YES</Active>
+          <Caption>Lakes</Caption>
+          <CodePage>1250</CodePage>
+          <CS>
+            <EPSG>4326</EPSG>
+          </CS>
+          <IgnoreShapeParams>YES</IgnoreShapeParams>
+        </Section>
+      </Sections>
+    </Layer>
+    <Layer Name="Rivers" Path="lwaters.shp">
+      <Sections>
+        <Section>
+          <Visible>YES</Visible>
+          <Legend>Other</Legend>
+          <Ground>OnDem</Ground>
+          <Line>
+            <Width>SIZE:2 twips</Width>
+            <Color>ARGB:FF9CB2CE</Color>
+            <OutlineWidth>SIZE:0 twips</OutlineWidth>
+            <SmartSize>SIZE:16 twips</SmartSize>
+          </Line>
+          <Active>YES</Active>
+          <Caption>Rivers</Caption>
+          <CodePage>1250</CodePage>
+          <CS>
+            <EPSG>4326</EPSG>
+          </CS>
+          <IgnoreShapeParams>YES</IgnoreShapeParams>
+        </Section>
+        <Section>
+          <Visible>YES</Visible>
+          <Legend>0</Legend>
+          <Query>DNLNTYPE=0</Query>
+          <Ground>OnDem</Ground>
+          <Line>
+            <Width>SIZE:1 twips</Width>
+            <OutlineWidth>SIZE:0 twips</OutlineWidth>
+          </Line>
+        </Section>
+        <Section>
+          <Visible>YES</Visible>
+          <Legend>1</Legend>
+          <Query>DNLNTYPE=1</Query>
+          <Ground>OnDem</Ground>
+          <Line>
+            <OutlineWidth>SIZE:0 twips</OutlineWidth>
+          </Line>
+        </Section>
+        <Section>
+          <Visible>YES</Visible>
+          <Legend>2</Legend>
+          <Query>DNLNTYPE=2</Query>
+          <Ground>OnDem</Ground>
+          <Line>
+            <Width>SIZE:44 twips</Width>
+            <OutlineWidth>SIZE:0 twips</OutlineWidth>
+          </Line>
+        </Section>
+        <Section>
+          <Visible>YES</Visible>
+          <Legend>4</Legend>
+          <Query>DNLNTYPE=4</Query>
+          <Ground>OnDem</Ground>
+          <Line>
+            <Width>SIZE:46 twips</Width>
+            <OutlineWidth>SIZE:0 twips</OutlineWidth>
+          </Line>
+        </Section>
+        <Section>
+          <Visible>YES</Visible>
+          <Legend>8</Legend>
+          <Query>DNLNTYPE=8</Query>
+          <Ground>OnDem</Ground>
+          <Line>
+            <Width>SIZE:46 twips</Width>
+            <OutlineWidth>SIZE:0 twips</OutlineWidth>
+          </Line>
+        </Section>
+        <Section>
+          <Visible>YES</Visible>
+          <Legend>9</Legend>
+          <Query>DNLNTYPE=9</Query>
+          <Ground>OnDem</Ground>
+          <Line>
+            <Width>SIZE:48 twips</Width>
+            <OutlineWidth>SIZE:0 twips</OutlineWidth>
+          </Line>
+        </Section>
+      </Sections>
+    </Layer>
+    <Layer Name="rdline" Path="rdline.shp">
+      <Sections>
+        <Section>
+          <Visible>NO</Visible>
+          <Legend>Other</Legend>
+          <Ground>OnDem</Ground>
+          <Line>
+            <OutlineWidth>SIZE:0 twips</OutlineWidth>
+          </Line>
+          <Active>YES</Active>
+          <Caption>Roads</Caption>
+          <CodePage>1250</CodePage>
+          <CS>
+            <EPSG>4326</EPSG>
+          </CS>
+          <IgnoreShapeParams>YES</IgnoreShapeParams>
+        </Section>
+        <Section>
+          <Visible>YES</Visible>
+          <MinScale>6.07363677222647E-6</MinScale>
+          <MaxScale>1.7E308</MaxScale>
+          <Legend>site road</Legend>
+          <Query>RDLNTYPE=1</Query>
+          <Ground>OnDem</Ground>
+          <Line>
+            <Width>SIZE:2 twips</Width>
+            <Color>ARGB:FFFFFB73</Color>
+            <OutlineWidth>SIZE:0 twips</OutlineWidth>
+            <SmartSize>SIZE:15 twips</SmartSize>
+            <ShowLegend>YES</ShowLegend>
+          </Line>
+          <Label>
+            <Pattern>STOCK:SOLID</Pattern>
+            <OutlineStyle>STOCK:SOLID</OutlineStyle>
+            <OutlineWidth>SIZE:2 twips</OutlineWidth>
+            <OutlineColor>ARGB:FF808080</OutlineColor>
+          </Label>
+        </Section>
+        <Section>
+          <Visible>YES</Visible>
+          <MinScale>1.42629750283833E-6</MinScale>
+          <MaxScale>1.7E308</MaxScale>
+          <Legend>access road</Legend>
+          <Query>(RDLNTYPE=2) OR (RDLNTYPE=8)</Query>
+          <Ground>OnDem</Ground>
+          <Line>
+            <Width>SIZE:42 twips</Width>
+            <Color>ARGB:FFFFFB73</Color>
+            <OutlineWidth>SIZE:0 twips</OutlineWidth>
+            <OutlineColor>ARGB:FFC0C0C0</OutlineColor>
+            <SmartSize>SIZE:15 twips</SmartSize>
+            <ShowLegend>YES</ShowLegend>
+          </Line>
+          <Label>
+            <Font>
+              <Style></Style>
+              <Color>ARGB:FFFFFFFF</Color>
+            </Font>
+            <Color>ARGB:FFFF0000</Color>
+            <Pattern>STOCK:SOLID</Pattern>
+            <OutlineStyle>STOCK:SOLID</OutlineStyle>
+            <OutlineWidth>SIZE:4 twips</OutlineWidth>
+            <OutlineColor>ARGB:FF808080</OutlineColor>
+          </Label>
+        </Section>
+        <Section>
+          <Visible>YES</Visible>
+          <MinScale>9.47768479115922E-7</MinScale>
+          <MaxScale>1.7E308</MaxScale>
+          <Legend>main road</Legend>
+          <Query>RDLNTYPE=3</Query>
+          <Ground>OnDem</Ground>
+          <Line>
+            <Width>SIZE:24 twips</Width>
+            <Color>ARGB:FFFFFF00</Color>
+            <OutlineWidth>SIZE:2 twips</OutlineWidth>
+            <OutlineColor>ARGB:FFC0C0C0</OutlineColor>
+            <SmartSize>SIZE:16 twips</SmartSize>
+            <ShowLegend>YES</ShowLegend>
+          </Line>
+          <Label>
+            <Font>
+              <Color>ARGB:FFFFFFFF</Color>
+            </Font>
+            <Color>ARGB:FF00FF00</Color>
+            <Pattern>STOCK:SOLID</Pattern>
+            <OutlineStyle>STOCK:SOLID</OutlineStyle>
+            <OutlineWidth>SIZE:2 twips</OutlineWidth>
+            <OutlineColor>ARGB:FF808080</OutlineColor>
+          </Label>
+        </Section>
+      </Sections>
+    </Layer>
+    <Layer Name="city1" Path="city.shp">
+      <Sections>
+        <Section>
+          <Visible>YES</Visible>
+          <Legend>PERIMETER=1</Legend>
+          <Query>PERIMETER=1</Query>
+          <Ground>OnDem</Ground>
+          <Line>
+            <OutlineWidth>SIZE:0 twips</OutlineWidth>
+          </Line>
+          <Marker>
+            <Style>STOCK:CIRCLE</Style>
+            <Color>ARGB:FFFF8040</Color>
+            <OutlineWidth>SIZE:2 twips</OutlineWidth>
+            <SmartSize>SIZE:16 twips</SmartSize>
+          </Marker>
+          <Label>
+            <Value>{PPPTNAME}</Value>
+            <FontSize>SIZE:180 twips</FontSize>
+            <Color>ARGB:FFFFFFFF</Color>
+            <OutlineWidth>SIZE:2 twips</OutlineWidth>
+          </Label>
+          <Active>YES</Active>
+          <Caption>City</Caption>
+          <CodePage>1250</CodePage>
+          <CS>
+            <EPSG>4326</EPSG>
+          </CS>
+          <IgnoreShapeParams>YES</IgnoreShapeParams>
+        </Section>
+        <Section>
+          <Visible>YES</Visible>
+          <MinScale>1.0989010989011E-6</MinScale>
+          <MaxScale>1.7E308</MaxScale>
+          <Legend>PERIMETER=0</Legend>
+          <Query>PERIMETER=0</Query>
+          <Ground>OnDem</Ground>
+          <Line>
+            <OutlineWidth>SIZE:0 twips</OutlineWidth>
+          </Line>
+          <Marker>
+            <Size>SIZE:80 twips</Size>
+            <Color>ARGB:FFC0C0C0</Color>
+          </Marker>
+          <Label>
+            <FontSize>SIZE:160 twips</FontSize>
+          </Label>
+        </Section>
+        <Section>
+          <Visible>YES</Visible>
+          <MinScale>1.11111111111111E-6</MinScale>
+          <MaxScale>1.7E308</MaxScale>
+          <Legend>PERIMETER=2</Legend>
+          <Query>PERIMETER=2</Query>
+          <Ground>OnDem</Ground>
+          <Line>
+            <OutlineWidth>SIZE:0 twips</OutlineWidth>
+          </Line>
+          <Marker>
+            <Size>SIZE:80 twips</Size>
+            <Color>ARGB:FFC0C0C0</Color>
+          </Marker>
+          <Label>
+            <FontSize>SIZE:160 twips</FontSize>
+            <Font>
+              <Color>ARGB:FF808080</Color>
+            </Font>
+          </Label>
+        </Section>
+      </Sections>
+    </Layer>
+  </Layers>
+  <Hierarchy>
+    <Groups>
+      <Group Name="Group1" Caption="Poland" Collapsed="False" Active="True">
+        <Group Name="Group2" Caption="Urban" Collapsed="False" Active="True">
+          <Layers>
+            <Layer Name="city1"/>
+            <Layer Name="city"/>
+          </Layers>
+        </Group>
+        <Group Name="Group4" Caption="Infrastructure" Collapsed="True" Active="True">
+          <Layers>
+            <Layer Name="rdline"/>
+          </Layers>
+        </Group>
+        <Group Name="Group3" Caption="Waters" Collapsed="True" Active="True">
+          <Layers>
+            <Layer Name="Rivers"/>
+            <Layer Name="Lakes"/>
+          </Layers>
+        </Group>
+        <Group Name="Group5" Caption="Borders" Collapsed="False" Active="True">
+          <Layers>
+            <Layer Name="Country area"/>
+          </Layers>
+        </Group>
+      </Group>
+    </Groups>
+  </Hierarchy>
+</TatukGIS>

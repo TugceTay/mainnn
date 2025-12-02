@@ -1,0 +1,8 @@
+nzgd2kgrid0005
+  Original source:
+    https://www.linz.govt.nz/data/geodetic-system/download-geodetic-software/gd2000it-download
+  License:
+    UNSPECIFIED
+  Available forms:
+    TTKGS
+      Slim down version with same precision as original.

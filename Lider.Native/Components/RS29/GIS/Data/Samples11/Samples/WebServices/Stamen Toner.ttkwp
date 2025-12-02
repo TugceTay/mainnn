@@ -1,0 +1,9 @@
+[TatukGIS Layer]
+Storage=WEBTILES
+Type=TMS
+name=tstame_toner_osm
+Caption=Stamen Toner Tiles
+Url1=http://tile.stamen.com/toner/
+Format=png
+EndLevel=20
+Copyright=(c) OpenStreetMap contributors, CC-BY-SA. Provided by Stamen.com

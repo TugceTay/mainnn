@@ -1,0 +1,90 @@
+package TatukGIS_DK12_PRV_VCL;
+
+{$INCLUDE Lider.CG.GIS.GeoInclude.inc}
+
+{$R *.res}
+{$IFDEF IMPLICITBUILDING This IFDEF should not be used by users}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO OFF}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION OFF}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES ON}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$DEFINE DEBUG}
+{$ENDIF IMPLICITBUILDING}
+{$DESCRIPTION 'TatukGIS Developer Kernel 12 for Delphi Private Build - Run Time'}
+{$RUNONLY}
+{$IMPLICITBUILD ON}
+
+requires
+  rtl,
+  xmlrtl,
+  dbrtl,
+  IndySystem,
+  IndyProtocols,
+  IndyCore,
+  vcl,
+  vclx,
+  vclimg,
+  TatukGIS_DK12_PRV;
+
+contains
+  Lider.CG.GIS.VCL.GeoComboBoxHelper in '..\Source\Lider.CG.GIS.VCL.GeoComboBoxHelper.pas',
+  Lider.CG.GIS.VCL.GeoControl3D in '..\Source\Lider.CG.GIS.VCL.GeoControl3D.pas',
+  Lider.CG.GIS.VCL.GeoControlAttributes in '..\Source\Lider.CG.GIS.VCL.GeoControlAttributes.pas',
+  Lider.CG.GIS.VCL.GeoControlAttributesForm in '..\Source\Lider.CG.GIS.VCL.GeoControlAttributesForm.pas',
+  Lider.CG.GIS.VCL.GeoControlColor in '..\Source\Lider.CG.GIS.VCL.GeoControlColor.pas',
+  Lider.CG.GIS.VCL.GeoControlCsHelper in '..\Source\Lider.CG.GIS.VCL.GeoControlCsHelper.pas',
+  Lider.CG.GIS.VCL.GeoControlCsSystem in '..\Source\Lider.CG.GIS.VCL.GeoControlCsSystem.pas',
+  Lider.CG.GIS.VCL.GeoControlCsSystemSetup in '..\Source\Lider.CG.GIS.VCL.GeoControlCsSystemSetup.pas',
+  Lider.CG.GIS.VCL.GeoControlFontStyleForm in '..\Source\Lider.CG.GIS.VCL.GeoControlFontStyleForm.pas',
+  Lider.CG.GIS.VCL.GeoControlHelper,
+  Lider.CG.GIS.VCL.GeoControlLegend in '..\Source\Lider.CG.GIS.VCL.GeoControlLegend.pas',
+  Lider.CG.GIS.VCL.GeoControlLegendForm in '..\Source\Lider.CG.GIS.VCL.GeoControlLegendForm.pas',
+  Lider.CG.GIS.VCL.GeoControlLegendGridWiz in '..\Source\Lider.CG.GIS.VCL.GeoControlLegendGridWiz.pas',
+  Lider.CG.GIS.VCL.GeoControlLegendVectorWiz in '..\Source\Lider.CG.GIS.VCL.GeoControlLegendVectorWiz.pas',
+  Lider.CG.GIS.VCL.GeoControlNorthArrow in '..\Source\Lider.CG.GIS.VCL.GeoControlNorthArrow.pas',
+  Lider.CG.GIS.VCL.GeoControlPrintPositionForm in '..\Source\Lider.CG.GIS.VCL.GeoControlPrintPositionForm.pas',
+  Lider.CG.GIS.VCL.GeoControlPrintPreview in '..\Source\Lider.CG.GIS.VCL.GeoControlPrintPreview.pas',
+  Lider.CG.GIS.VCL.GeoControlScale in '..\Source\Lider.CG.GIS.VCL.GeoControlScale.pas',
+  Lider.CG.GIS.VCL.GeoControlStatistics in '..\Source\Lider.CG.GIS.VCL.GeoControlStatistics.pas',
+  Lider.CG.GIS.VCL.GeoControlVarious in '..\Source\Lider.CG.GIS.VCL.GeoControlVarious.pas',
+  Lider.CG.GIS.VCL.GeoGdiPlus,
+  Lider.CG.GIS.VCL.GeoGps in '..\Source\Lider.CG.GIS.VCL.GeoGps.pas',
+  Lider.CG.GIS.VCL.GeoLegendUtilsFactory in '..\Source\Lider.CG.GIS.VCL.GeoLegendUtilsFactory.pas',
+  Lider.CG.GIS.VCL.GeoLineSymbolEditor in '..\Source\Lider.CG.GIS.VCL.GeoLineSymbolEditor.pas',
+  Lider.CG.GIS.VCL.GeoModalForm in '..\Source\Lider.CG.GIS.VCL.GeoModalForm.pas',
+  Lider.CG.GIS.VCL.GeoPipelineParamsEditor in '..\Source\Lider.CG.GIS.VCL.GeoPipelineParamsEditor.pas',
+  Lider.CG.GIS.VCL.GeoPrinters in '..\Source\Lider.CG.GIS.VCL.GeoPrinters.pas',
+  Lider.CG.GIS.VCL.GeoPrintLegend in '..\Source\Lider.CG.GIS.VCL.GeoPrintLegend.pas',
+  Lider.CG.GIS.VCL.GeoPrintManager in '..\Source\Lider.CG.GIS.VCL.GeoPrintManager.pas',
+  Lider.CG.GIS.VCL.GeoPrintTemplateDesigner in '..\Source\Lider.CG.GIS.VCL.GeoPrintTemplateDesigner.pas',
+  Lider.CG.GIS.VCL.GeoRenderer,
+  Lider.CG.GIS.VCL.GeoRendererDirect2D,
+  Lider.CG.GIS.VCL.GeoRendererGdi32,
+  Lider.CG.GIS.VCL.GeoRendererGdiPlus,
+  Lider.CG.GIS.VCL.GeoValueValidatorHelper in '..\Source\Lider.CG.GIS.VCL.GeoValueValidatorHelper.pas',
+  Lider.CG.GIS.VCL.GeoViewerBmp in '..\Source\Lider.CG.GIS.VCL.GeoViewerBmp.pas',
+  Lider.CG.GIS.VCL.GeoViewerWnd in '..\Source\Lider.CG.GIS.VCL.GeoViewerWnd.pas',
+  Lider.CG.GIS.VCL.GeoPvl in '..\Source\Lider.CG.GIS.VCL.GeoPvl.pas',
+  Lider.CG.GIS.VCL.GeoFramework in '..\Source\Lider.CG.GIS.VCL.GeoFramework.pas';
+  //Lider.CG.GIS.VCL.GeoSystemForms in '..\Source\Lider.CG.GIS.VCL.GeoSystemForms';
+end.
+
+
+

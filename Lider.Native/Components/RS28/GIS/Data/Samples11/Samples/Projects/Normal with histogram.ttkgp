@@ -1,0 +1,9 @@
+[TatukGIS Layer1]
+Path=..\..\World\VisibleEarth\world_8km.jpg
+
+; if parameter omited the default nam will be used ( path + .his )
+Pixel.HistogramPath=histogram.his
+
+; use histogram or create if not exist
+Pixel.Histogram=true
+

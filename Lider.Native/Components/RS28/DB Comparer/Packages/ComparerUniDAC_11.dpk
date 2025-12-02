@@ -1,0 +1,47 @@
+package ComparerUniDAC_11;
+{$R *.res}
+{$R 'comparer_ver.res'}
+{$IFDEF IMPLICITBUILDING This IFDEF should not be used by users}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO OFF}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION OFF}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES ON}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$DEFINE DEBUG}
+{$ENDIF IMPLICITBUILDING}
+{$DESCRIPTION 'Database Comparer VCL UNIDAC Runtime'}
+{$RUNONLY}
+{$IMPLICITBUILD OFF}
+
+requires
+  comparer_11,
+  rtl,
+  dbrtl,
+  vcl,
+  vcldb,
+  dac280,
+  unidac280,
+  ibprovider280;
+
+contains
+  dbcConnection_UniDAC in '..\..\common\dbcConnection_UniDAC.pas',
+  dbcConnection_UniDACDB in '..\..\common\dbcConnection_UniDACDB.pas',
+  dbcDB_UniDAC in '..\..\common\dbcDB_UniDAC.pas';
+
+end.

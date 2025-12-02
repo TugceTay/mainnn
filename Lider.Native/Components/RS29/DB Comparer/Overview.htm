@@ -1,0 +1,165 @@
+<html>
+<head>
+<title>Overview</title>
+<style>
+p, .clsText
+{
+	font-family:Arial;
+	font-size:10pt;
+}
+ul
+{
+	font-family:Arial;
+	font-size:10pt;
+}
+h1
+{
+	font-family:Times new Roman;
+	font-weight:bold;
+	font-size:18pt;
+	color:#cc0000;
+}
+h2
+{
+	font-family:Times new Roman;
+	font-weight:bold;
+	font-size:14pt;
+	color:#cc0000;
+}
+b
+{
+	color:#cc0000;
+}
+a
+{
+	color:#cc0000;
+	font-size:10pt;
+	cursor:hand;
+}
+a:visited
+{
+	color:#990000;
+	font-size:10pt;
+	cursor:hand;
+}
+a:hover
+{
+	color:#ff3333;
+	font-size:10pt;
+	cursor:hand;
+}
+.copyHrefStyle
+{
+	font-weight:normal;
+}
+</style>
+</head>
+<body>
+	<h1>Database Comparer VCL version 7.0</h1>
+	<p>Database Comparer VCL compares and synchronizes databases structure (metadata)
+	and table data for many popular databases.</p>
+	<p>Currently supported databases: Oracle, MSSQL, MySQL, InterBase (FireBird, Yaffil), Sybase, Postgre SQL.<br/>
+	This list is constantly updated and support for other databases will be added soon.</p>
+	<p>Most popular database engines such as ADO, BDE supported directly.<br/>
+	Also database specific libraries such as FireDAC, IBX, FIB, IBO, ZEOS, AnyDAC etc supported as well.</p>
+	<p>The library includes more than 25 components for Database development and its code is
+	constantly being refined and improved.</p>
+	<h2>What's new</h2>
+	<ul>
+        <li>RAD Studio 10.2, 10.2.2 and 10.2.3 Tokyo support;</li>
+        <li>Minimum IDE versions: Delphi 7.0, C++Builder XE;</li>
+        <li>FireDAC support;</li>
+        <li>Common Table Expressions (CTE) support;</li>
+        <li>Full Firebird 3.0 support;</li>
+        <li>64-bit platform support;</li>
+        <li>Design-time and runtime packages. The components can be used by RAD Studio form designer in 64-bit projects;</li>
+        <li>New demo projects;</li>
+        <li>FB: Procedure params: NOT NULL support added.</li>
+	</ul>
+	<h2>Implemented features</h2>
+	<ul>
+        <li>The TableDataComparer component for comparing and synchronizing table data;</li>
+		<li>The following SQL servers support are supported: Firebird, Interbase, MSSQL, Oracle, MySQL, Sybase, Postgre SQL;</li>
+		<li>The Database Comparer VCL can be independently compiled with any version of supported database engines;</li>
+		<li>The following database engines are supported: ADO, BDE, DBX, IBX, FIB, IBO, ZEOS, MyDAC, ODAC and IBDAC.</li>
+		<li>The SQLExec component can be used independently from the DBComparer component for executing any SQL scripts;</li>
+		<li>Sybase: Extract and compare PUBLICATIONs;</li>
+		<li>Sybase(ASA): Extract metadata from DB, compare DB-structures, update DB-structure, execute external script;</li>
+		<li>IB/FB: Option &quot;Ignore IBE$... objects&quot; added (ignore objects created by IBExpert);</li>
+		<li>Dependencies of grants with objects;</li>
+		<li>MSSQL2000 keywords. Quoting of identifiers performed only if necessary;</li>
+		<li>Support of CharSet-prefix for strings (e.g.: select _unicode_fss 'ABCD' from rdb$database);</li>
+		<li>Support of Interbase v 4.0 (extract metadata);</li>
+		<li>Domains CHECK altering via ALTER DOMAIN DROP CONSTRAINT / ADD CHECK (IB6.0 and up);</li>
+        <li>TableDataComparer: the "Update Immediately" option;</li>
+		<li>DBStructure: Extract metadata into a script;</li>
+		<li>TableDataComparer: comparing of tables with different structures;</li>
+	</ul>
+	<h2>Fixed Bugs</h2>
+	<ul>
+        <li>MSSQL (Transact-SQL) script syntax fixes - <a href="http://barry.exp-host.ru/tracker/view.php?id=1189">http://barry.exp-host.ru/tracker/view.php?id=1189</a></li>
+        <li>TIME datatype with scale: time [ (fractional second scale) ];</li>
+        <li>Derived_table parsing, like this: SELECT * FROM (VALUES (1, 2), (3, 4) ) AS MyTable(a, b);</li>
+        <li>SET-statement, options sequence fix: SET ANSI_PADDING, ANSI_WARNINGS, ANSI_NULLS, CONCAT_NULL_YIELDS_NULL, ARITHABORT, QUOTED_IDENTIFIER ON;</li>
+        <li>CREATE INDEX with WHERE-clause;</li>
+        <li>FB3: Disabling of the system table updates for Firebird 3.0 - <a href="http://barry.exp-host.ru/tracker/view.php?id=1063">http://barry.exp-host.ru/tracker/view.php?id=1063</a></li>
+        <li>FB3: Added support for the Generator increments (START WITH... INCREMENT BY...) - <a href="http://barry.exp-host.ru/tracker/view.php?id=996">http://barry.exp-host.ru/tracker/view.php?id=996</a></li>
+        <li>Minor fixes and improvements.</li>
+	</ul>
+
+	<p><b>TDBComparer</b> is the key component which performs most of the work comparing Master and Target
+	databases and produces final update SQL script. The final update SQL script will be applied to Target
+	database and contains all necessary SQL operators and statements required to make Target database
+	structure identical to Master database structure. You can execute final update SQL script using
+	standard SQL console for your database or by using TxxxSQLExec component (where xxx will be different
+	for different databases).</p>
+	<p>To extract database structure definitions (metadata) DBC VCL uses set of classes called metadata
+	extractors. There are two different metadata extractors, one to extract metadata from SQL scripts
+	(TxxxScriptExtract classes) and another to extract metadata using live database connection
+	(TxxxDBExtract classes). Each database has own TxxxScriptExtract and TxxxDBExtract classes which
+	knows how to work with this specific database. For example for MS SQL there is a <b>TMSSQLScriptExtract</b>
+	and <b>TMSSQLDBExtract</b> clasess, <b>TIBSctiptExtract</b> and <b>TIBDBExtract</b> for Interbase and so on.</p>
+	<p>Metadata extractor saves all information about underlying database structure in to special storage
+	class TDBStructure. This class is unified for all types of databases. Such approach makes possible to
+	compare and synchronize databases structure of different types of databases. For example you can
+	compare and synchronize Oracle and MS SQL databases, MS SQL and dBases databases and so on.</p>
+	<p>When comparing databases the TDBComparer component uses two <b>TDBStructure</b> storages to store
+	Master and Targets database metadata. To customize process as much as possible component has set of
+	properties and options to control various aspects of comparison process. In most cases you will
+	call ExtractAndCompareDatabases method of TDBComparer component.</p>
+	<p><b>TDBCConnection</b> class (with underlying TDBCConnectionXXX classes customized for different
+	database engines) implements generic live database connection. Simply set ConnectionType property to
+	desired database engine. Please use TDBCConnection if you want to work with different database types
+	otherwise you can always use database specific connection class e.g.
+	TDBCConnectionADO / TDBCConnectionIBX / TDBCConnectionBDE etc. TDBCConnectionXXX connection components
+	are used by all DBC VCL which requires access to database. The TxxxSQLExec (executes script) and
+	TxxxDBExtract (extracts metadata from database) components are probably most notable among them.</p>
+	<p>To compare and synchronize data between database tables we created TTableDataComparer component.
+	It can synchronize records within the tables between two different databases. This component works
+	with all databases supported by DBC VCL and capable of synchronizing of data between databases of
+	different type (f.e. MS SQL and Oracle). TTableDataComparer uses TDBCConnectionXXX connection
+	components to connect to databases.</p>
+	<p><b>TTableDataComparer</b> creates resulting update script which contains INSERT, UPDATE and DELETE
+	statements which will alter Target database table to make it identical to Master database tables.
+	This resulting update script can be saved into the file and later executed against Target database
+	using standard SQL console for given database or executed via TxxxSQLExec component
+	(where xxx will be different for given databases).</p>
+	<p>TTableDataComparer has wide set of options, properties and events which make possible comparing
+	of data between tables with different structures. E.g. if tables have different fields you can
+	manually setup list fields used for comparison and fields mapping.</p>
+	<p>Any SQL-statement which returns set of records can be used for data comparison and synchronization.
+	It can be complex SQL statement with multiple joins and sub-selects or view or just a recordset
+	returned by stored procedure and so on. Use SelectSQL property or OnGetSelectSQL event to set desired
+	SQL statements.</p>
+	<p>TTableDataComparer also gives you control over Insert/Update/Delete operations so e.g. you can
+	create script which will add or update records without deleting old records.</p>
+	<p>Please visit our site <a href="http://www.clevercomponents.com">Clever Components</a> to learn more about 
+	Clever Internet Suite and our products. Feel free to join our <a href="http://www.clevercomponents.com/home/maillist.asp">Mail List Subscription</a> 
+	and stay tuned.</p>
+	<h2>Demo version information</h2>
+	<p>Free and restrict functional beta version of Database Comparer VCL is available for evaluation and testing purposes only.
+	Beta version can operate inside Delphi or C++Buidler IDE only, all other features are completely available.</p>
+	<p>For more details please visit our <a class="copyHrefStyle" href="http://portal.clevercomponents.com">Customer Portal</a></p>
+	<p>Copyright &copy; 1999-2018 <a class="copyHrefStyle" href="http://www.clevercomponents.com">http://www.clevercomponents.com</a></p>
+</body>
+</html>

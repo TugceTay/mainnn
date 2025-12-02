@@ -1,0 +1,72 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{C4FB96CC-C965-4F0B-B4F5-0A0BFA12E8D2}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="TatukGIS_DK11_PRV.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="TatukGIS_DK11_PRV_Common_DesignTime.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="TatukGIS_DK11_PRV_VCL.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="TatukGIS_DK11_PRV_VCL_DesignTime.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="TatukGIS_DK11_PRV">
+        <MSBuild Projects="TatukGIS_DK11_PRV.dproj"/>
+    </Target>
+    <Target Name="TatukGIS_DK11_PRV:Clean">
+        <MSBuild Projects="TatukGIS_DK11_PRV.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="TatukGIS_DK11_PRV:Make">
+        <MSBuild Projects="TatukGIS_DK11_PRV.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="TatukGIS_DK11_PRV_Common_DesignTime">
+        <MSBuild Projects="TatukGIS_DK11_PRV_Common_DesignTime.dproj"/>
+    </Target>
+    <Target Name="TatukGIS_DK11_PRV_Common_DesignTime:Clean">
+        <MSBuild Projects="TatukGIS_DK11_PRV_Common_DesignTime.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="TatukGIS_DK11_PRV_Common_DesignTime:Make">
+        <MSBuild Projects="TatukGIS_DK11_PRV_Common_DesignTime.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="TatukGIS_DK11_PRV_VCL">
+        <MSBuild Projects="TatukGIS_DK11_PRV_VCL.dproj"/>
+    </Target>
+    <Target Name="TatukGIS_DK11_PRV_VCL:Clean">
+        <MSBuild Projects="TatukGIS_DK11_PRV_VCL.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="TatukGIS_DK11_PRV_VCL:Make">
+        <MSBuild Projects="TatukGIS_DK11_PRV_VCL.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="TatukGIS_DK11_PRV_VCL_DesignTime">
+        <MSBuild Projects="TatukGIS_DK11_PRV_VCL_DesignTime.dproj"/>
+    </Target>
+    <Target Name="TatukGIS_DK11_PRV_VCL_DesignTime:Clean">
+        <MSBuild Projects="TatukGIS_DK11_PRV_VCL_DesignTime.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="TatukGIS_DK11_PRV_VCL_DesignTime:Make">
+        <MSBuild Projects="TatukGIS_DK11_PRV_VCL_DesignTime.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="TatukGIS_DK11_PRV;TatukGIS_DK11_PRV_Common_DesignTime;TatukGIS_DK11_PRV_VCL;TatukGIS_DK11_PRV_VCL_DesignTime"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="TatukGIS_DK11_PRV:Clean;TatukGIS_DK11_PRV_Common_DesignTime:Clean;TatukGIS_DK11_PRV_VCL:Clean;TatukGIS_DK11_PRV_VCL_DesignTime:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="TatukGIS_DK11_PRV:Make;TatukGIS_DK11_PRV_Common_DesignTime:Make;TatukGIS_DK11_PRV_VCL:Make;TatukGIS_DK11_PRV_VCL_DesignTime:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

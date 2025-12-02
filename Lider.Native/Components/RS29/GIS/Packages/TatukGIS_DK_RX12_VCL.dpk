@@ -1,0 +1,56 @@
+package TatukGIS_DK_RX12_VCL;
+
+{$R *.res}
+{$IFDEF IMPLICITBUILDING This IFDEF should not be used by users}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO OFF}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION OFF}
+{$OVERFLOWCHECKS ON}
+{$RANGECHECKS ON}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES ON}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$DEFINE DEBUG}
+{$ENDIF IMPLICITBUILDING}
+{$DESCRIPTION 'TatukGIS Developer Kernel for Delphi RX12 - Run Time'}
+{$RUNONLY}
+{$IMPLICITBUILD ON}
+
+requires
+  rtl,
+  xmlrtl,
+  dbrtl,
+  IndySystem,
+  IndyProtocols,
+  IndyCore,
+  vcl,
+  vclx,
+  vclimg,
+  TatukGIS_DK_RX12,
+  Skia.Package.VCL,
+  Skia.Package.RTL;
+
+contains
+  Lider.CG.GIS.VCL.GeoControlFontStyleForm,
+  Lider.CG.GIS.VCL.GeoControlPrintPositionForm,
+  Lider.CG.GIS.VCL.GeoGps,
+  Lider.CG.GIS.VCL.GeoPipelineParamsEditor in '..\Source\Lider.CG.GIS.VCL.GeoPipelineParamsEditor.pas',
+  Lider.CG.GIS.VCL.GeoPrintTemplateDesigner,
+  Lider.CG.GIS.VCL.GeoRendererSkia;
+
+end.
+
+

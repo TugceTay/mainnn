@@ -1,0 +1,91 @@
+package TatukGIS_DK12_PRV_FMX;
+
+{$INCLUDE GisInclude.inc}
+
+{$R *.res}
+{$IFDEF IMPLICITBUILDING This IFDEF should not be used by users}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO OFF}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION OFF}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES ON}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$DEFINE DEBUG}
+{$ENDIF IMPLICITBUILDING}
+{$DESCRIPTION 'TatukGIS Developer Kernel 12 for Delphi Private Build - Run Time'}
+{$RUNONLY}
+{$IMPLICITBUILD ON}
+
+requires
+  rtl,
+  xmlrtl,
+  dbrtl,
+  IndySystem,
+  IndyProtocols,
+  IndyCore,
+  fmx,
+  TatukGIS_DK12_PRV;
+
+contains
+   FMX.GisCanvasFix
+  ,FMX.GisComboBox
+  ,FMX.GisComboBoxHelper
+  ,FMX.GisControl3D
+  ,FMX.GisControlAttributes
+  ,FMX.GisControlAttributesForm
+  ,FMX.GisControlColor
+  ,FMX.GisControlCsHelper
+  ,FMX.GisControlCsSystemSetup
+  ,FMX.GisControlHelper
+  ,FMX.GisControlLegend
+  ,FMX.GisControlLegendForm
+  ,FMX.GisControlLegendGridWiz
+  ,FMX.GisControlLegendVectorWiz
+  ,FMX.GisControlNorthArrow
+  ,FMX.GisControlScale
+  ,FMX.GisControlStatistics
+  ,FMX.GisControlVarious
+  ,FMX.GisLegendUtilsFactory
+  ,FMX.GisLineSymbolEditor
+  ,FMX.GisModalForm
+  ,FMX.GisRenderer
+  ,FMX.GisRenderer3D
+  ,FMX.GisValueValidatorHelper
+  ,FMX.GisViewer3D
+  ,FMX.GisViewerBmp
+  ,FMX.GisViewerWnd
+  ,FMX.GisFormPvl
+  ,FMX.GisModalFormPvl
+  ,FMX.GisModalWizardPvl
+  ,FMX.GisPvl
+  ,FMX.GisFramework
+
+  {$IFDEF GIS_MOBILE}
+    ,FMX.Mobile.GisControlCsSystem
+  {$ELSE}
+    ,FMX.GisControlCsSystem
+    ,FMX.GisControlPrintPreview
+    ,FMX.GisPrinters
+    ,FMX.GisPrintLegend
+    ,FMX.GisPrintManager
+  {$ENDIF}
+  ;
+end.
+
+
+

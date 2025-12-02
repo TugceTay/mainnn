@@ -1,0 +1,63 @@
+A66National(13.09.01) 
+  Original source:
+    https://github.com/icsm-au/transformation_grids
+  License
+    Creative Commons Attribution 4.0 Licence
+    https://creativecommons.org/licenses/by/4.0/
+  Available forms:
+    TTKGS
+      Slim down version with same precision as original.
+
+COCOS_C_V1
+  Unknown availability
+
+GDA94_GDA2020_conformal
+  Original source:
+    https://github.com/icsm-au/transformation_grids
+  License
+    Creative Commons Attribution 4.0 License 
+    https://creativecommons.org/licenses/by/4.0/
+  Available forms:
+    TTKGS
+      Slim down version with same precision as original.
+
+GDA94_GDA2020_conformal_and_distortion
+  Original source:
+    https://open.canada.ca/en/suggested-datasets/ntv2-grid-shift-files-gsb
+  License
+    Creative Commons Attribution 4.0 License 
+    https://creativecommons.org/licenses/by/4.0/
+  Available forms:
+    TTKGS
+      Slim down version with same precision as original.
+
+National84(02.07.01)
+  Original source:
+    https://github.com/icsm-au/transformation_grids
+  License
+    Creative Commons Attribution 4.0 License 
+    https://creativecommons.org/licenses/by/4.0/
+  Available forms:
+    TTKGS
+      Slim down version with same precision as original.
+
+nt_0599
+  Unknown availability
+
+SEAust_21_06_00
+  Unknown availability
+
+tas_1098
+  Unknown availability
+
+vic_0799
+  Unknown availability
+
+wa_0400
+  Unknown availability
+
+wa_0700
+  Unknown availability
+
+XMAS_C_V1
+  Unknown availability

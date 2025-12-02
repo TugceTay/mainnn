@@ -1,0 +1,1 @@
+Data source: publicly available 100m Digital Elevation Model for the area around Bytów county, Poland; The Head Office of Geodesy and Cartography (GUGiK).

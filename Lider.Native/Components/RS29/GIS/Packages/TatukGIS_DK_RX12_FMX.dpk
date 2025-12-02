@@ -1,0 +1,101 @@
+package TatukGIS_DK_RX12_FMX;
+
+{$INCLUDE Lider.CG.GIS.GeoInclude.inc}
+
+{$R *.res}
+{$IFDEF IMPLICITBUILDING This IFDEF should not be used by users}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{ DEBUGINFO OFF}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION OFF}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES ON}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$DEFINE DEBUG}
+{$ENDIF IMPLICITBUILDING}
+{$DESCRIPTION 'TatukGIS Developer Kernel for Delphi RX12 - Run Time'}
+{$RUNONLY}
+{$IMPLICITBUILD ON}
+
+requires
+  rtl
+  ,xmlrtl
+  ,dbrtl
+  ,IndySystem
+  ,IndyProtocols
+  ,IndyCore
+  ,fmx
+  ,TatukGIS_DK_RX12
+  ;
+
+contains
+   Lider.CG.GIS.FMX.GeoCanvasFix
+  ,Lider.CG.GIS.FMX.GeoComboBox
+  ,Lider.CG.GIS.FMX.GeoComboBoxHelper
+  ,Lider.CG.GIS.FMX.GeoControl3D
+  ,Lider.CG.GIS.FMX.GeoControlAttributes
+  ,Lider.CG.GIS.FMX.GeoControlAttributesForm
+  ,Lider.CG.GIS.FMX.GeoControlColor
+  ,Lider.CG.GIS.FMX.GeoControlCsHelper
+  ,Lider.CG.GIS.FMX.GeoControlCsSystemSetup
+  ,Lider.CG.GIS.FMX.GeoControlHelper
+  ,Lider.CG.GIS.FMX.GeoControlLegend
+  ,Lider.CG.GIS.FMX.GeoControlLegendForm
+  ,Lider.CG.GIS.FMX.GeoControlNorthArrow
+  ,Lider.CG.GIS.FMX.GeoControlScale
+  ,Lider.CG.GIS.FMX.GeoControlStatistics
+  ,Lider.CG.GIS.FMX.GeoControlVarious
+  ,Lider.CG.GIS.FMX.GeoLegendUtilsFactory
+  ,Lider.CG.GIS.FMX.GeoLineSymbolEditor
+  ,Lider.CG.GIS.FMX.GeoModalForm
+  ,Lider.CG.GIS.FMX.GeoRenderer
+  ,Lider.CG.GIS.FMX.GeoRenderer3D
+  ,Lider.CG.GIS.FMX.GeoStyleRenderer
+  ,Lider.CG.GIS.FMX.GeoValueValidatorHelper
+  ,Lider.CG.GIS.FMX.GeoViewer3D
+  ,Lider.CG.GIS.FMX.GeoViewerBmp
+  ,Lider.CG.GIS.FMX.GeoViewerWnd
+  ,Lider.CG.GIS.Lider.CG.GIS.FMX.AllPvl
+  ,Lider.CG.GIS.FMX.GeoPvl
+  ,Lider.CG.GIS.FMX.GeoPvlControl3D
+  ,Lider.CG.GIS.FMX.GeoPvlControlAttributes
+  ,Lider.CG.GIS.FMX.GeoPvlControlLegend
+  ,Lider.CG.GIS.FMX.GeoPvlControlNorthArrow
+  ,Lider.CG.GIS.FMX.GeoPvlControlPrintPreview
+  ,Lider.CG.GIS.FMX.GeoPvlControlScale
+  ,Lider.CG.GIS.FMX.GeoPvlForms
+  ,Lider.CG.GIS.FMX.GeoPvlGrid
+  ,Lider.CG.GIS.FMX.GeoPvlViewerBmp
+  ,Lider.CG.GIS.FMX.GeoPvlViewerWnd
+  ,Lider.CG.GIS.FMX.GeoSystemForms
+  ,Lider.CG.GIS.FMX.GeoFramework
+
+  {$IFDEF GIS_MOBILE}
+    // only on mobiles
+    ,Lider.CG.GIS.FMX.Mobile.GeoControlCsSystem
+  {$ELSE}
+    // only on desktops
+    ,Lider.CG.GIS.FMX.GeoControlCsSystem
+    ,Lider.CG.GIS.FMX.GeoControlPrintPreview
+    ,Lider.CG.GIS.FMX.GeoPrinters
+    ,Lider.CG.GIS.FMX.GeoPrintLegend
+    ,Lider.CG.GIS.FMX.GeoPrintManager
+  {$ENDIF}
+  ;
+end.
+
+

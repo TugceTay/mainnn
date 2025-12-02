@@ -1,0 +1,13 @@
+[TatukGIS Layer]
+Storage=WEBTILES
+Type=TMS
+Name=tatukgis_osm_enu
+Caption=TatukGIS OpenStreetMap Tiles (English names)
+Url1=https://tilesrv1-services.tatukgis.com/osm-enu/
+Url2=https://tilesrv2-services.tatukgis.com/osm-enu/
+Url3=https://tilesrv3-services.tatukgis.com/osm-enu/
+Url4=https://tilesrv4-services.tatukgis.com/osm-enu/
+Format=png
+EndLevel=19
+Copyright=(c)OpenStreetMap contributors, CC-BY-SA.
+Comment=This style uses english names whenever possible.

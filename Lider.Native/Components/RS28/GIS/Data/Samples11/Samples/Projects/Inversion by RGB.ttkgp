@@ -1,0 +1,6 @@
+[TatukGIS Layer1]
+Path=..\..\World\VisibleEarth\world_8km.jpg
+
+; make inversion but reverse coloring each color separatly
+Pixel.RedMapZone1=   0, 255, 255, 0
+Pixel.GreenMapZone1= 0, 255, 255, 0

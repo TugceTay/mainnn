@@ -1,0 +1,23 @@
+[TatukGIS Layer]
+Storage=WEBTILES
+Name=TomTom
+Caption=TomTom Maps Tile Sample
+Url1=https://a.api.tomtom.com/map/1/tile/basic/main/{level}/{col}/{row}.png?key=INSERT_API_KEY_HERE
+Url2=https://b.api.tomtom.com/map/1/tile/basic/main/{level}/{col}/{row}.png?key=INSERT_API_KEY_HERE
+Url3=https://c.api.tomtom.com/map/1/tile/basic/main/{level}/{col}/{row}.png?key=INSERT_API_KEY_HERE
+Url4=https://d.api.tomtom.com/map/1/tile/basic/main/{level}/{col}/{row}.png?key=INSERT_API_KEY_HERE
+Format=png
+Copyright=TomTom Maps Evaluation
+EPSG=3857
+Space=WORLDMERCATOR
+EndLevel=22
+
+;More info at https://developer.tomtom.com/maps-api/maps-api-documentation
+;Layers : basic|hybrid|labels 
+;Url1=https://a.api.tomtom.com/map/1/tile/basic/main/{level}/{col}/{row}.png?key=INSERT_API_KEY_HERE
+;Url1=https://a.api.tomtom.com/map/1/tile/hybrid/main/{level}/{col}/{row}.png?key=INSERT_API_KEY_HERE
+;Url1=https://a.api.tomtom.com/map/1/tile/labels/main/{level}/{col}/{row}.png?key=INSERT_API_KEY_HERE
+
+;Styles : main|night 
+;Url1=https://a.api.tomtom.com/map/1/tile/labels/main/{level}/{col}/{row}.png?key=INSERT_API_KEY_HERE
+;Url1=https://a.api.tomtom.com/map/1/tile/labels/night/{level}/{col}/{row}.png?key=INSERT_API_KEY_HERE

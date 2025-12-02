@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<TatukGIS>
+  <Viewer>
+    <VisibleExtent>
+      <XMin>494722.799223739</XMin>
+      <XMax>500950.006629399</XMax>
+      <YMin>3763888.4231554</YMin>
+      <YMax>3768553.94845305</YMax>
+    </VisibleExtent>
+    <CS>
+      <EPSG>26911</EPSG>
+    </CS>
+  </Viewer>
+  <Layers>
+    <Layer Name="w001001" Path="..\\..\\World\\Countries\\USA\\States\\California\\San Bernardino\\NED\\w001001.adf"/>
+    <Layer Name="37134877" Path="..\\..\\World\\Countries\\USA\\States\\California\\San Bernardino\\DOQ\\37134877.jpg">
+      <Sections>
+        <Section>
+          <Visible>YES</Visible>
+          <Pixel>
+            <RedBand>1</RedBand>
+            <GreenBand>2</GreenBand>
+            <BlueBand>3</BlueBand>
+          </Pixel>
+          <Active>YES</Active>
+          <Caption>37134877</Caption>
+          <CodePage>1250</CodePage>
+          <CS>
+            <EPSG>26911</EPSG>
+          </CS>
+        </Section>
+      </Sections>
+    </Layer>
+    <Layer Name="tl_2008_06071_edges_trunc" Path="..\\..\\World\\Countries\\USA\\States\\California\\San Bernardino\\TIGER\\tl_2008_06071_edges_trunc.shp">
+      <Sections>
+        <Section>
+          <Visible>YES</Visible>
+          <Ground>OnDem</Ground>
+          <Line>
+            <OutlineWidth>SIZE:0 twips</OutlineWidth>
+          </Line>
+          <Label>
+            <Duplicates>NO</Duplicates>
+            <Value>{FULLNAME}</Value>
+            <Font>
+              <Color>ARGB:FFFFFFFF</Color>
+            </Font>
+            <Alignment>FOLLOW</Alignment>
+            <Color>ARGB:FFFFFFFF</Color>
+            <OutlineWidth>SIZE:2 twips</OutlineWidth>
+          </Label>
+          <Active>YES</Active>
+          <Caption>tl_2008_06071_edges_trunc</Caption>
+          <CodePage>1250</CodePage>
+          <CS>
+            <EPSG>4269</EPSG>
+          </CS>
+          <IgnoreShapeParams>YES</IgnoreShapeParams>
+        </Section>
+      </Sections>
+    </Layer>
+  </Layers>
+  <Hierarchy>
+    <Groups>
+      <Group Name="Other" Caption="Other" Collapsed="False" Active="True">
+        <Layers>
+          <Layer Name="w001001"/>
+          <Layer Name="37134877"/>
+          <Layer Name="tl_2008_06071_edges_trunc"/>
+        </Layers>
+      </Group>
+    </Groups>
+  </Hierarchy>
+</TatukGIS>

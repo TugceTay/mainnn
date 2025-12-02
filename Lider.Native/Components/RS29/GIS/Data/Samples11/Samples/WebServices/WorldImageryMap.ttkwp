@@ -1,0 +1,9 @@
+[TatukGIS Layer]
+Storage=WEBTILES
+Type=CUSTOM
+name=world_imagery_map
+Caption=WorldImageryMap Tiles
+Url1=https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{level}/{row}/{col}.{ext}
+Format=png
+EndLevel=20
+Copyright=(c) Esri, Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community. 

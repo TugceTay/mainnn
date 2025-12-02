@@ -1,0 +1,28 @@
+GIS.Close
+Base.Say "Hydrology tutorial"
+Layer.Open Result=$dem Name=DEM Path="C:\TatukGIS\Data\Samples11\World\Countries\Poland\DEM\Bytowski_County.tif"
+GIS.FullExtent
+
+; Create layers
+Layer.CreateGrid Result=$sink Name=Sink CS=$dem Extent=$dem Width=$dem Height=$dem
+Layer.CreateGrid Result=$fill_dem Name=Fill CS=$dem Extent=$dem Width=$dem Height=$dem
+Layer.CreateGrid Result=$flow_dir Name=FlowDirection CS=$dem Extent=$dem Width=$dem Height=$dem
+Layer.CreateGrid Result=$flow_acc Name=FlowAccumulation CS=$dem Extent=$dem Width=$dem Height=$dem
+Layer.CreateGrid Result=$basin Name=Basin CS=$dem Extent=$dem Width=$dem Height=$dem
+Layer.CreateGrid Result=$strahler Name=StrahlerOrder CS=$dem Extent=$dem Width=$dem Height=$dem
+Layer.CreateVector Result=$basins_vec Name=Basins CS=$dem ShapeType=Polygon
+Layer.AddField Layer=$basins_vec Name=BASIN_ID Type=Number Width=10
+Layer.CreateVector Result=$streams_vec Name=Streams CS=$dem ShapeType=Arc
+Layer.AddField Layer=$streams_vec Name=STREAM_ID Type=Number Width=10
+
+; Run hydrology tools
+Hydrology.Sink Destination=$sink SourceDEM=$dem
+Hydrology.Fill Destination=$fill_dem SourceDEM=$dem
+Hydrology.FlowDirection Destination=$flow_dir SourceDEM=$fill_dem
+Hydrology.FlowAccumulation Destination=$flow_acc SourceFlowDirection=$flow_dir
+Hydrology.Basin Destination=$basin SourceFlowDirection=$flow_dir Threshold=1000
+Hydrology.StreamOrder Destination=$strahler SourceFlowDirection=$flow_dir SourceFlowAccumulation=$flow_acc
+Hydrology.StreamToPolyline SourceFlowDirection=$flow_dir SourceStream=$strahler Destination=$streams_vec Field=STREAM_ID
+Vectorization.GridToPolygon Source=$basin Destination=$basins_vec Field=BASIN_ID
+
+GIS.Update

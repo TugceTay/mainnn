@@ -1,0 +1,48 @@
+AB_CSRS
+  Please contact the "Alberta Environment and Sustainable Resource Development"
+
+MAY76v20
+  Please contact the "Ontario Ministry of Natural Resources"
+
+CGQ77-83
+  Please contact the "Quebec Energie et Ressources naturelles"
+
+CGQ77-98
+  Please contact the "Quebec Energie et Ressources naturelles"
+
+NAD83-98		
+  Please contact the "Quebec Energie et Ressources naturelles"
+
+NB7783v2              - 
+  Please contact the "Nova Scotia Department of Natural Resources"
+
+NS778301		
+  Please contact the "New Brunswick Energy and Resource Development"
+
+NTV2_0
+  Original source:
+    https://open.canada.ca/en/suggested-datasets/ntv2-grid-shift-files-gsb
+  License:
+    Open Government Licence - Canada
+    https://open.canada.ca/en/open-government-licence-canada
+  Available forms:
+    GSB
+      Original form
+    TTKGS
+      Slim down version with same precision as original.
+
+PE7783V2		
+  Please contact the "Prince Edward Island Department of Communities, Land and Environment"
+
+SK27-98		
+  Please contact the "Saskatchewan Ministry of Energy and Resources"
+
+SK83-98		-
+  Please contact the "Saskatchewan Ministry of Energy and Resources"
+
+QUE27-83
+  Please contact the "Quebec Energie et Ressources naturelles"
+
+QUE27-98
+  Please contact the "Quebec Energie et Ressources naturelles"
+

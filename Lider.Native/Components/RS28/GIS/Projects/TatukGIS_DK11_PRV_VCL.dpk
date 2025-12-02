@@ -1,0 +1,92 @@
+package TatukGIS_DK11_PRV_VCL;
+
+{$INCLUDE GisInclude.inc}
+
+{$R *.res}
+{$IFDEF IMPLICITBUILDING This IFDEF should not be used by users}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO OFF}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION OFF}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES ON}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$DEFINE DEBUG}
+{$ENDIF IMPLICITBUILDING}
+{$DESCRIPTION 'TatukGIS Developer Kernel 11 for Delphi Private Build - Run Time'}
+{$RUNONLY}
+{$IMPLICITBUILD ON}
+
+requires
+  rtl,
+  xmlrtl,
+  dbrtl,
+  IndySystem,
+  IndyProtocols,
+  IndyCore,
+  vcl,
+  vclimg,
+  TatukGIS_DK11_PRV;
+
+contains
+   VCL.GisComboBoxHelper
+  ,VCL.GisControl3D
+  ,VCL.GisControlAttributes
+  ,VCL.GisControlAttributesForm
+  ,VCL.GisControlColor
+  ,VCL.GisControlCsHelper
+  ,VCL.GisControlCsSystem
+  ,VCL.GisControlCsSystemSetup
+  ,VCL.GisControlFontStyleForm
+  ,VCL.GisControlHelper
+  ,VCL.GisControlLegend
+  ,VCL.GisControlLegendForm
+  ,VCL.GisControlLegendGridWiz
+  ,VCL.GisControlLegendVectorWiz
+  ,VCL.GisControlNorthArrow
+  ,VCL.GisControlPrintPositionForm
+  ,VCL.GisControlPrintPreview
+  ,VCL.GisControlScale
+  ,VCL.GisControlStatistics
+  ,VCL.GisControlVarious
+  ,VCL.GisGdiPlus
+  ,VCL.GisGps
+  ,VCL.GisLegendUtilsFactory
+  ,VCL.GisLineSymbolEditor
+  ,VCL.GisModalForm
+  ,VCL.GisPipelineParamsEditor
+  ,VCL.GisPrinters
+  ,VCL.GisPrintLegend
+  ,VCL.GisPrintManager
+  ,VCL.GisPrintTemplateDesigner
+  ,VCL.GisRenderer
+  ,VCL.GisRendererDirect2D
+  ,VCL.GisRendererGdi32
+  ,VCL.GisRendererGdiPlus
+  ,VCL.GisValueValidatorHelper
+  ,VCL.GisViewerBmp
+  ,VCL.GisViewerWnd
+  ,VCL.GisFormPvl
+  ,VCL.GisModalFormPvl
+  ,VCL.GisModalWizardPvl
+  ,VCL.GisPvl
+  ,VCL.GisFramework
+  ;
+end.
+
+
+

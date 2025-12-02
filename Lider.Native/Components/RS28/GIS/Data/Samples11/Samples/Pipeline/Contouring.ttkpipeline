@@ -1,0 +1,15 @@
+;To disable line start with semicolon
+Base.Say "Start"
+GIS.Close
+Layer.Open Result=$src Name=source Path="C:\Lider.Native\Components\RS28\GIS\Data\Samples11\Samples\Interpolation\temperatures.shp"
+Layer.CreateGrid Result=$dst Name=grid CS=$src Extent=$src Width=1000 Height=1000
+Interpolation.Kriging Source=$src Destination=$dst Field=TEMP
+Layer.Close Layer=$src
+Grid.GenerateRamp Layer=$dst
+GIS.FullExtent
+Layer.CreateVector Result=$cntr Name=contours CS=$dst Extent=$dst ShapeType=Arc
+Layer.AddField Layer=$cntr Name=NewField Type=Float Width=3
+Contour Source=$dst Destination=$cntr Field="NEW FIELD" ContourBase=15 ContourInterval=1
+GIS.ZoomToLayer Layer=$cntr
+GIS.Update
+Base.Say "Done"

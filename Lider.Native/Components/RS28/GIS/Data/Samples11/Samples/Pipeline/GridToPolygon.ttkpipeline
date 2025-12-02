@@ -1,0 +1,7 @@
+; Vectorizing.GridToPolygon sample
+Layer.Open Result=$lp Path="C:\TatukGIS\Data\Samples11\\World\Countries\Luxembourg\CLC2018_CLC2018_V2018_20_Luxembourg.tif"
+GIS.FullExtent
+Layer.CreateVector Result=$lv CS=&lp.CS ShapeType=Polygon
+Layer.AddField Layer=$lv Name=VAL Type=Number
+Vectorization.GridToPolygon Source=$lp Destination=$lv Field=VAL
+GIS.Update

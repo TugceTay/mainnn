@@ -1,0 +1,1 @@
+Table CE2000t contains "Census 2000" data form www.nationalatlas.gov

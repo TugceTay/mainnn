@@ -1,0 +1,15 @@
+[TatukGIS Layer1]
+Path=..\..\World\Countries\USA\States\California\counties.shp
+Name=counties
+Area.Color=GRAY
+Line.Color=Blue
+[TatukGIS Layer1 1]
+query=population <50000
+Area.Color=Green
+[TatukGIS Layer1 2]
+query=population between 50000 and 500000
+Area.Color=Yellow
+[TatukGIS Layer1 3]
+query=population>=500000
+Area.Color=Red
+

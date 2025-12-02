@@ -1,0 +1,64 @@
+package TatukGIS_DK_RX12;
+
+{$R *.res}
+{$IFDEF IMPLICITBUILDING This IFDEF should not be used by users}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO OFF}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION OFF}
+{$OVERFLOWCHECKS ON}
+{$RANGECHECKS ON}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES ON}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$DEFINE DEBUG}
+{$ENDIF IMPLICITBUILDING}
+{$DESCRIPTION 'TatukGIS Developer Kernel for Delphi RX12 - Run Time'}
+{$RUNONLY}
+{$IMPLICITBUILD ON}
+
+requires
+  rtl,
+  xmlrtl,
+  dbrtl,
+  IndySystem,
+  IndyProtocols,
+  IndyCore,
+  dbexpress,
+  DbxCommonDriver,
+  vcl,
+  vclimg,
+  vclx,
+  FireDAC,
+  FireDACCommonDriver,
+  FireDACCommon;
+
+contains
+  Lider.CG.GIS.GeoEditorTools,
+  Lider.CG.GIS.GeoStyleRendererAbstract in '..\Source\Lider.CG.GIS.GeoStyleRendererAbstract.pas',
+  Lider.CG.GIS.GeoTilerHelper in '..\Source\Lider.CG.GIS.GeoTilerHelper.pas',
+  Lider.CG.GIS.PVL.GeoControl3D in '..\Source\Lider.CG.GIS.PVL.GeoControl3D.pas',
+  Lider.CG.GIS.PVL.GeoControlAttributes in '..\Source\Lider.CG.GIS.PVL.GeoControlAttributes.pas',
+  Lider.CG.GIS.PVL.GeoControlLegend in '..\Source\Lider.CG.GIS.PVL.GeoControlLegend.pas',
+  Lider.CG.GIS.PVL.GeoControlNorthArrow in '..\Source\Lider.CG.GIS.PVL.GeoControlNorthArrow.pas',
+  Lider.CG.GIS.PVL.GeoControlPrintPreview in '..\Source\Lider.CG.GIS.PVL.GeoControlPrintPreview.pas',
+  Lider.CG.GIS.PVL.GeoControlScale in '..\Source\Lider.CG.GIS.PVL.GeoControlScale.pas',
+  Lider.CG.GIS.PVL.GeoGrid in '..\Source\Lider.CG.GIS.PVL.GeoGrid.pas',
+  Lider.CG.GIS.PVL.GeoViewerBmp in '..\Source\Lider.CG.GIS.PVL.GeoViewerBmp.pas',
+  Lider.CG.GIS.PVL.GeoViewerWnd;
+
+end.
+
+

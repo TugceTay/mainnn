@@ -1,0 +1,12 @@
+[TatukGIS Layer]
+Storage=WEBTILES
+Name=WORLD_MAP
+Caption=World Map Tiles
+Url1=http://elocation.oracle.com/mapviewer/mcserver?request=gettile&format={ext}&zoomlevel={level}&mapcache=ELOCATION_MERCATOR.WORLD_MAP&mx={col}&my={row}
+Format=PNG
+TilesOrder=UPRIGHT
+Info=Test ORACLE MapViewer Tiles
+EPSG=900913
+Space=WORLDMERCATOR
+OffsetLevel=1
+Copyright=http://elocation.oracle.com/mapviewer/faces/home.jspx

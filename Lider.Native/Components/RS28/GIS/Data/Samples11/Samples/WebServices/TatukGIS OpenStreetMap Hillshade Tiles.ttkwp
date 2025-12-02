@@ -1,0 +1,12 @@
+[TatukGIS Layer]
+Storage=WEBTILES
+Type=TMS
+Name=tatukgis_osm_hillshade
+Caption=TatukGIS OpenStreetMap Hillshade Tiles
+Url1=https://tilesrv1-services.tatukgis.com/osm-hillshade/
+Url2=https://tilesrv2-services.tatukgis.com/osm-hillshade/
+Url3=https://tilesrv3-services.tatukgis.com/osm-hillshade/
+Url4=https://tilesrv4-services.tatukgis.com/osm-hillshade/
+Format=png
+EndLevel=19
+Copyright=(c)OpenStreetMap contributors, CC-BY-SA.

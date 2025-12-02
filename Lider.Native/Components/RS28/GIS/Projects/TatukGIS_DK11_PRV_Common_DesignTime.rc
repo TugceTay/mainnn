@@ -1,0 +1,29 @@
+1 VERSIONINFO
+ FILEVERSION 11,78,90,31836
+ PRODUCTVERSION 11,78,90,31836
+ FILEFLAGSMASK 0x3fL
+ FILEFLAGS 0x0L
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904e4"
+        BEGIN
+            VALUE "CompanyName", "TatukGIS\0"
+            VALUE "FileDescription", "Common design-time package for Delphi.RX11 Private Build\0"
+            VALUE "FileVersion", "11.78.90.31836\0"
+            VALUE "LegalCopyright", "©2000-2023 TatukGIS. All rights reserved.\0"
+            VALUE "OriginalFilename", "TatukGIS_DK11_XYZ_Common_DesignTime.bpl\0"
+            VALUE "ProductName", "TatukGIS Developer Kernel 11\0"
+            VALUE "ProductVersion", "11.78.90.31836\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1252
+    END
+END
+
+

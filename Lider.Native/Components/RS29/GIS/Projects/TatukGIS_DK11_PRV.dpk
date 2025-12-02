@@ -1,0 +1,194 @@
+package TatukGIS_DK11_PRV;
+
+{$INCLUDE GisInclude.inc}
+
+{$R *.res}
+{$IFDEF IMPLICITBUILDING This IFDEF should not be used by users}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO OFF}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION OFF}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES ON}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$DEFINE DEBUG}
+{$ENDIF IMPLICITBUILDING}
+{$DESCRIPTION 'TatukGIS Developer Kernel 11 for Delphi Private Build - Run Time'}
+{$RUNONLY}
+{$IMPLICITBUILD ON}
+
+requires
+  rtl
+  ,xmlrtl
+  ,dbrtl
+  ,IndySystem
+  ,IndyProtocols
+  ,IndyCore
+  {$IFNDEF GIS_NODB}
+    ,dbexpress
+    ,DbxCommonDriver
+    {$IFDEF LEVEL_XE5_RTL}
+      ,FireDAC
+      ,FireDACCommonDriver
+      ,FireDACCommon
+    {$ENDIF}
+  {$ENDIF}
+  {$IFNDEF MSWINDOWS}
+    {$IFNDEF LINUX}
+      ,fmx
+    {$ENDIF}
+  {$ENDIF}
+  ;
+
+contains
+  GisAllLayers
+
+  ,Gis3DFlyOver
+  ,GisTypes3D
+  ,GisViewer3DBase
+  ,GisAddressMatching
+  ,GisAllPipelineOperations
+  ,GisClassification
+  ,GisContour
+  ,GisDem
+  ,GisFourierTransform
+  ,GisHillshade
+  ,GisHydrology
+  ,GisInterpolation
+  ,GisMatrix
+  ,GisNetwork
+  ,GisOSMServices
+  ,GisPipeline
+  ,GisPipelineOperations
+  ,GisPixelFilter
+  ,GisQuadTree
+  ,GisRasterAlgebra
+  ,GisRestServices
+  ,GisSlopeMap
+  ,GisVectorization
+  ,GisViewshed
+  ,GisArcLabel
+  ,GisBasemapHelper
+  ,GisChart
+  ,GisClasses
+  ,GisCompression
+  ,GisConfig
+  ,GisConfigIni
+  ,GisConfigXml
+  ,GisCsBase
+  ,GisCsEsri
+  ,GisCsFactory
+  ,GisCsMapinfo
+  ,GisCsProjections
+  ,GisCsSystems
+  ,GisEditor
+  ,GisFieldRules
+  ,GisFilePixel
+  ,GisFileSVG
+  ,GisFunctions
+  ,GisGeometryFactory
+  ,GisGestureHelper
+  ,GisGraticuleHelper
+  ,GisHierarchy
+  ,GisHtmlLabel
+  ,GisIniFiles
+  ,GisInterfaces
+  ,GisInternals
+  ,GisLabelsArea
+  ,GisLayer
+  ,GisLayerCompound
+  ,GisLayerPixel
+  ,GisLayerProject
+  ,GisLayerSublayer
+  ,GisLayerVector
+  ,GisLegend
+  ,GisLegendUtils
+  ,GisLibrarySVG
+  ,GisLineSymbolEditorUtils
+  ,GisLogger
+  ,GisParams
+  ,GisPixelExportManager
+  ,GisRegistredLayers
+  ,GisRendererAbstract
+  ,GisResource
+  ,GisResourceEx
+  ,GisRTree
+  ,GisShapes3D
+  ,GisSldFiles
+  ,GisSqlQuery
+  ,GisStatistics
+  ,GisStreams
+  ,GisStringFormat
+  ,GisSymbol
+  ,GisTessellation
+  ,GisTopology
+  ,GisTransform
+  ,GisTypes
+  ,GisTypesUI
+  ,GisUtils
+  ,GisViewer
+  ,GisViewerWndHelper
+  ,GisXmlDoc
+  ,GisXmlFiles
+  ,GisXmlSax
+  ,GisFileJSON
+  ,GisDataSet
+  ,PVL.GisControlBitmap
+  ,PVL.GisControlColor
+  ,PVL.GisControlFieldFactor
+  ,PVL.GisControlLegendGridWiz
+  ,PVL.GisControlLegendVectorWiz
+  ,PVL.GisControlSizeForm
+  ,PVL.GisControlStatistics
+  ,PVL.GisControlSymbology
+  ,PVL.GisControlSymbologyLibrary
+  ,PVL.GisValueValidatorHelper
+  ,PVL.GisPvl
+  ,GisRtl
+  ,GisBaseObject
+
+  {$IFDEF MSWINDOWS}
+    ,GisRenderer3DAbstract
+    ,GisRenderer3DDirectX9
+    ,GisRenderer3DDirectXAbstract
+    ,GisViewer3DDirectX
+  {$ENDIF} 
+
+  {$IFDEF GIS_MOBILE}
+  {$ELSE}
+    ,GisCUDA
+    ,GisGeocoding
+    ,GisIsochroneMap
+    ,GisOpenCL
+    ,GisShortestPath
+    ,GisTriangulation
+    ,GisImportProject
+    ,GisPrintBuilder
+    ,GisPrintManagerAbstract
+    ,GisPrintUtils
+    ,GisProjectQgis
+    ,GisTemplatePrint
+    ,GisControlLegendFormControler
+    ,GisControlPrintPreviewSimple
+    ,GisPrintPreviewHelperAbstract
+  {$ENDIF}
+  ;
+
+end.
+
+
+

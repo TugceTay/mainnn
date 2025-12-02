@@ -130,6 +130,7 @@ type
     FDrawBox: TlicgBaseDrawBox;
     FInvalidStyle: TcxStyle;
      FRefreshingSummaries: Boolean;
+    FLoadingData: Boolean;
     procedure InitializeDatasets;
     procedure SetupMemData(AMemData: TdxMemData; ATag: Integer);
     function ExpectedGeometryType(ADataSet: TDataSet): string;
@@ -252,9 +253,10 @@ begin
 end;
 
 procedure TfmKatmanOznitelikTablosu.MemDataBeforePost(DataSet: TDataSet);
-var
-  GeomType: string;
-  Expected: string;
+  var
+    GeomType: string;
+    Expected: string;
+    GuidValue: TGUID;
 begin
   Expected := ExpectedGeometryType(DataSet);
   GeomType := NormalizeGeometryType(DataSet.FieldByName('GEOMETRYTYPE').AsString);
@@ -266,10 +268,18 @@ begin
   end;
 
   if Trim(DataSet.FieldByName('LAYERUID').AsString) = '' then
-    raise Exception.Create('LayerUid zorunlu.');
+  begin
+    if CreateGUID(GuidValue) = S_OK then
+      DataSet.FieldByName('LAYERUID').AsString := GUIDToString(GuidValue)
+    else
+      raise Exception.Create('LayerUid zorunlu.');
+  end;
 
   if Trim(DataSet.FieldByName('REVISION').AsString) = '' then
     DataSet.FieldByName('REVISION').AsString := '1';
+
+  if FLoadingData then
+    Exit;
 
   if not SameText(GeomType, Expected) then
     raise Exception.Create('Geometri tipi bu sekmeyle uyumlu deil.');
@@ -593,29 +603,34 @@ procedure TfmKatmanOznitelikTablosu.PopulateFromLayer;
     AMemData.FieldByName('ISCLOSED').AsBoolean := AClosed;
     AMemData.Post;
   end;
-var
-  SourceName: string;
-begin
-  InitializeDatasets;
+  var
+    SourceName: string;
+  begin
+    FLoadingData := True;
+    try
+      InitializeDatasets;
 
-  if (FLayer <> nil) then
-    SourceName := FLayer.DisplayName
-  else
-    SourceName := 'CAD Katmani';
+      if (FLayer <> nil) then
+        SourceName := FLayer.DisplayName
+      else
+        SourceName := 'CAD Katmani';
 
-  AddSampleRow(mdArea, SourceName + ' Alan 1', 'Area', 1250.5, 0, 0, 0, 5, True);
-  AddSampleRow(mdArea, SourceName + ' Alan 2', 'Area', 980.0, 0, 0, 0, 3, False);
+      AddSampleRow(mdArea, SourceName + ' Alan 1', 'Area', 1250.5, 0, 0, 0, 5, True);
+      AddSampleRow(mdArea, SourceName + ' Alan 2', 'Area', 980.0, 0, 0, 0, 3, False);
 
-  AddSampleRow(mdLine, SourceName + ' Cizgi 1', 'Line', 0, 120.4, 0, 0, 2, True);
-  AddSampleRow(mdLine, SourceName + ' Cizgi 2', 'Line', 0, 35.2, 0, 0, 1, True);
+      AddSampleRow(mdLine, SourceName + ' Cizgi 1', 'Line', 0, 120.4, 0, 0, 2, True);
+      AddSampleRow(mdLine, SourceName + ' Cizgi 2', 'Line', 0, 35.2, 0, 0, 1, True);
 
-  AddSampleRow(mdPoint, SourceName + ' Nokta 1', 'Point', 0, 0, 432100.123, 4543200.789, 0, True);
-  AddSampleRow(mdPoint, SourceName + ' Nokta 2', 'Point', 0, 0, 0, 0, 0, True);
+      AddSampleRow(mdPoint, SourceName + ' Nokta 1', 'Point', 0, 0, 432100.123, 4543200.789, 0, True);
+      AddSampleRow(mdPoint, SourceName + ' Nokta 2', 'Point', 0, 0, 0, 0, 0, True);
+    finally
+      FLoadingData := False;
+    end;
 
-  RefreshSummaries;
-  UpdateDetailBinding;
-  ApplyValidation(ActiveMemData);
-end;
+    RefreshSummaries;
+    UpdateDetailBinding;
+    ApplyValidation(ActiveMemData);
+  end;
 
 procedure TfmKatmanOznitelikTablosu.RefreshSummaries;
   function SumField(AMemData: TdxMemData; const AFieldName: string): Double;

@@ -213,6 +213,18 @@ begin
   end;
 end;
 
+function NormalizeGeometryType(const AValue: string): string;
+begin
+  if SameText(AValue, 'Polygon') or SameText(AValue, 'Area') then
+    Result := 'Area'
+  else if SameText(AValue, 'Polyline') or SameText(AValue, 'Line') then
+    Result := 'Line'
+  else if SameText(AValue, 'Point') then
+    Result := 'Point'
+  else
+    Result := Trim(AValue);
+end;
+
 procedure TfmKatmanOznitelikTablosu.FormClose(Sender: TObject; var Action: TCloseAction);
 begin
   Action := caHide;
@@ -241,9 +253,17 @@ end;
 
 procedure TfmKatmanOznitelikTablosu.MemDataBeforePost(DataSet: TDataSet);
 var
+  GeomType: string;
   Expected: string;
 begin
   Expected := ExpectedGeometryType(DataSet);
+  GeomType := NormalizeGeometryType(DataSet.FieldByName('GEOMETRYTYPE').AsString);
+
+  if GeomType = '' then
+  begin
+    DataSet.FieldByName('GEOMETRYTYPE').AsString := Expected;
+    GeomType := Expected;
+  end;
 
   if Trim(DataSet.FieldByName('LAYERUID').AsString) = '' then
     raise Exception.Create('LayerUid zorunlu.');
@@ -251,7 +271,7 @@ begin
   if Trim(DataSet.FieldByName('REVISION').AsString) = '' then
     DataSet.FieldByName('REVISION').AsString := '1';
 
-  if not SameText(DataSet.FieldByName('GEOMETRYTYPE').AsString, Expected) then
+  if not SameText(GeomType, Expected) then
     raise Exception.Create('Geometri tipi bu sekmeyle uyumlu deil.');
 
   case TComponent(DataSet).Tag of
@@ -290,7 +310,12 @@ var
   end;
 begin
   Expected := ExpectedGeometryType(DataSet);
-  GeomType := DataSet.FieldByName('GEOMETRYTYPE').AsString;
+  GeomType := NormalizeGeometryType(DataSet.FieldByName('GEOMETRYTYPE').AsString);
+  if GeomType = '' then
+  begin
+    GeomType := Expected;
+    DataSet.FieldByName('GEOMETRYTYPE').AsString := Expected;
+  end;
   Note := '';
 
   if not SameText(GeomType, Expected) then

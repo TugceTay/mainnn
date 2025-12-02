@@ -249,7 +249,7 @@ begin
     raise Exception.Create('LayerUid zorunlu.');
 
   if Trim(DataSet.FieldByName('REVISION').AsString) = '' then
-    raise Exception.Create('Revision zorunlu.');
+    DataSet.FieldByName('REVISION').AsString := '1';
 
   if not SameText(DataSet.FieldByName('GEOMETRYTYPE').AsString, Expected) then
     raise Exception.Create('Geometri tipi bu sekmeyle uyumlu deil.');
@@ -412,17 +412,8 @@ begin
     CreateField('ISCLOSED',      ftBoolean);
     CreateField('XCOORD',        ftFloat);
     CreateField('YCOORD',        ftFloat);
-<<<<<<< HEAD
-  
 
-   // Alanlar tanımlandıktan sonra dataset'i aç; CreateDataSet olan sürümler için
-    // reflection ile dene, yoksa Open çağrısına düş.
-    LMethod.Data := AMemData;
-    LMethod.Code := AMemData.MethodAddress('CreateDataSet');
-=======
-
-
-   // Hesaplanan alanlar dataset kapalıyken eklensin
+    // Hesaplanan alanlar dataset kapalıyken eklensin
     with TBooleanField.Create(AMemData) do
     begin
       FieldName := 'ISGEOMETRYMATCH';
@@ -436,11 +427,12 @@ begin
       Size      := 255;
       DataSet   := AMemData;
     end;
+
+    // Alanlar tanımlandıktan sonra dataset'i aç; CreateDataSet olan sürümler için
     // reflection ile dene, yoksa Open çağrısına düş.
     LMethod.Data := AMemData;
     LMethod.Code := AMemData.MethodAddress('CreateDataSet');
 
->>>>>>> a65df2c ('7')
     if Assigned(LMethod.Code) then
       TDataSetInitProc(LMethod)()
     else
@@ -449,25 +441,7 @@ begin
     AMemData.EnableControls;
   end;
 
-<<<<<<< HEAD
-  // Hesaplanan alan (owner mutlaka dataset olsun)
-  with TBooleanField.Create(AMemData) do
-  begin
-    FieldName := 'ISGEOMETRYMATCH';
-    FieldKind := fkCalculated;
-    DataSet   := AMemData;
-  end;
-  with TStringField.Create(AMemData) do
-  begin
-    FieldName := 'VALIDATIONNOTE';
-    FieldKind := fkCalculated;
-    Size      := 255;
-    DataSet   := AMemData;
-  end;
-  AMemData.Tag         := ATag;
-=======
   AMemData.Tag          := ATag;
->>>>>>> a65df2c ('7')
   AMemData.OnCalcFields := MemDataCalcFields;
   AMemData.BeforePost   := MemDataBeforePost;  // BURAYA DİKKAT
   AMemData.OnNewRecord  := MemDataNewRecord;
@@ -646,26 +620,19 @@ procedure TfmKatmanOznitelikTablosu.RefreshSummaries;
       Result := Format('%s: %d kayit', [Title, ACount]);
   end;
 
-begin
-  if FRefreshingSummaries then
-    Exit;
+  begin
+    if FRefreshingSummaries then
+      Exit;
 
-  FRefreshingSummaries := True;
-  try
-  lblAreaSummary.Caption := FormatCountAndMetric('Alan', mdArea.RecordCount, 'Toplam Alan', SumField(mdArea, 'AREA'));
-  lblLineSummary.Caption := FormatCountAndMetric('Cizgi', mdLine.RecordCount, 'Toplam Uzunluk', SumField(mdLine, 'LENGTH'));
-  lblPointSummary.Caption := FormatCountAndMetric('Nokta', mdPoint.RecordCount, '', 0);
-<<<<<<< HEAD
-finally
-    FRefreshingSummaries := False;
-  end;
-end;
-=======
+    FRefreshingSummaries := True;
+    try
+      lblAreaSummary.Caption := FormatCountAndMetric('Alan', mdArea.RecordCount, 'Toplam Alan', SumField(mdArea, 'AREA'));
+      lblLineSummary.Caption := FormatCountAndMetric('Cizgi', mdLine.RecordCount, 'Toplam Uzunluk', SumField(mdLine, 'LENGTH'));
+      lblPointSummary.Caption := FormatCountAndMetric('Nokta', mdPoint.RecordCount, '', 0);
     finally
-    FRefreshingSummaries := False;
+      FRefreshingSummaries := False;
+    end;
   end;
-  end;
->>>>>>> a65df2c ('7')
 
 procedure TfmKatmanOznitelikTablosu.sbFilterClick(Sender: TObject);
 begin

@@ -322,10 +322,7 @@ begin
   Expected := ExpectedGeometryType(DataSet);
   GeomType := NormalizeGeometryType(DataSet.FieldByName('GEOMETRYTYPE').AsString);
   if GeomType = '' then
-  begin
     GeomType := Expected;
-    DataSet.FieldByName('GEOMETRYTYPE').AsString := Expected;
-  end;
   Note := '';
 
   if not SameText(GeomType, Expected) then
